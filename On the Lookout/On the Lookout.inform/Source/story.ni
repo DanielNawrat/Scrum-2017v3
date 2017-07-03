@@ -118,11 +118,6 @@ The carrying capacity of the player is 3. The backpack is the player's holdall. 
 
 
 
-
-
-
-
-
 Chapter 1 - Sitis
 
 [Beginn meiner Mapkonstruktion - Landing Zone, Wüste und Sicuum]
@@ -189,10 +184,12 @@ The Agora_Sitis is a room. The printed name of the Agora_Sitis is "The Agora of 
 After looking in the Agora_Sitis for the first time:
 	say "[italic type]You realize a boy staring at you. His name must be Anaidis because someone calls him[roman type] 'Anaidis, catching is about running after the other ones, not staring around!' [italic type]What about connecting to him?[roman type]";
 	now Anaidis_Sitis is in the Agora_Sitis;
-	now the description of the Agora_Sitis is "-";
+	now the description of the Agora_Sitis is "";
+	[Description muss weg!]
 
 After examining Anaidis_Sitis the first time:
 	say "[italic type]The boy takes a step back. He radiates a mixture of fear and fascination. [roman type]'You have spoken about finding water. You will not be successful here.'"
+	[Description "You see nothing about..." muss weg]
 
 
 
@@ -200,14 +197,18 @@ After examining Anaidis_Sitis the first time:
 
 Table of Anaidis_Sitis Responses
 Topic	Response
-"no water" 	"But why not? You are all living here. A whole village. You would not survive without water. [paragraph break]"	
-
+"no water" 	"But why not? You are all living here. A whole village. You would not survive without water. [paragraph break]"
+"the great scorpius" 	"What is going on here? Who is this Scorpius?[paragraph break]"
 
 After asking Anaidis_Sitis about "no water":
-	say "I have never said we do not have any water here. Of course we do need water to survive. But we also need to fight for it. That's the reason we're not giving it away easily. Especially not to total strangers. [paragraph break]";
-	say "[italic type] You are not quite sure how to react to Anaidis statement. He seems to see this. So he starts to smile and mentions[roman type] 'Don't worry - it's less about you. It's more about our history. I know someone who could make you understanding these things. Come with me!' [italic type] Anaidis walks west to a huge hut. Follow him![roman type]";
+	say "[italic type]Anaidis shakes his head[roman type]. 'I have never said we do not have any water here. Of course we do need water to survive. But we also need to fight for it. That's the reason we're not giving it away easily. Especially not to total strangers. [paragraph break]";
+	say "[italic type]You are not quite sure how to react to Anaidis statement. He seems to see this. So he starts to smile and mentions[roman type] 'Don't worry - it's less about you. It's more about our history. I know someone who could make you understanding these things. Come with me!' [italic type] Anaidis walks west to a huge hut. Follow him![roman type]";
 	now the printed name of Anaidis_Sitis is "Anaidis";
-	
+	now Scorpius_Sitis is in the Agora_Sitis;
+	now Machitikos_Sitis is in the Agora_Sitis;
+
+Scorpius_Sitis is a person in the Shelter_Sitis. The printed name of Scorpius_Sitis is "The Great Scorpius". 
+Machitikos_Sitis is a person in the Shelter_Sitis. The printed name of Machitikos_Sitis is "Machitikos". 
 
 Anaidis_Sitis is a person. Anaidis_Sitis is in the Shelter_Sitis. The printed name of Anaidis_Sitis is "The staring boy". 
 
@@ -220,14 +221,38 @@ Mitéra's Room_Sitis is a room. The printed name of Mitéra's Room_Sitis is "Mit
 Mitéra_Sitis is a person in Mitéra's Room_Sitis. The printed name of Mitéra_Sitis is "Mitéra". The description of Mitéra_Sitis is "[italic type]Mitéra is a small and wrinkled woman. At the moment she lies on a narrow enhancement out of stone. It seems to be her bed. Anaidis kneels on the ground next to her whispering something incomprehensible. Suddenly, she gets up, actuates you and then her eyes lighten up[roman type]. 'Hello stranger! My name is Mitéra, I am the protectress of my loved ones here in Sicuum. Anaidis mentioned you are searching for water. Is that right?'"
 
 After examining Mitéra_Sitis for the first time:
-	say "[italic type]You nod.[roman type] 'I would appreciate it, if you could help me out. But Anaidis said I need to fight for it?"
+	say "[italic type]You nod. It feels like Mitéra is trusting you. She continues.[roman type][paragraph break]";
+	say "'You know, Axesto, there was a time, when our village Sicuum and the whole planet Sitis has been a lovely, trustfull and vivid place. Of course - the environment always resembled a desert. But we've had some plants, we've had some animals living here and especially we've had different water sources. These sources have been all around. You never needed to walk a long time until you've found one. But then, there came Scorpius...'[paragraph break]";
+	say "[italic type]Suddenly you hear loud noises from the Agora. Kids are screaming, parents are calling them concerned and deep male voices are yelling [roman type]'Out of our way! Out of HIS way!' [italic type]Anaidis runs shocked out of the room. First, you want to follow him, but then you focuse on Mitéra again. However, she directly signals, you should go after him. So, what are you waiting for?[paragraph break]";
+	now Anaidis_Sitis is in the Agora_Sitis;
+	now the description of the Domum Praesidium_Sitis is "";
 
 
-[[Dialogtabelle]
+After asking Anaidis_Sitis about "the great scorpius":
+	say "[italic type]Anaidis whispers [roman type]'He is a dictator. Earlier, Scorpius was one of us. Beschreibung fehlt. Right now - he's forcing us every week to fight against his strongest warrior. If you win, you will get two full keg of water. If you lose... you have to try to survive one week without new water. So. This is the answer you were looking for. Are you going to fight?'[paragraph break]";
+	say "[italic type]You hesitate few seconds. This gladiator Machitikos looks highly dangerous. He is tall, muscular and Beschreibung fehlt. But you feel determined - you are going to beat him. For yourself and for the repressed Sitisianer. You step directly in front of the great Scorpius.[roman type]"
 
-Table of  Responses
-Topic	Response
-"no water" 	"But why not? You are all living here. A whole village. You would not survive without water. [paragraph break]"]
+After examining Scorpius_Sitis for the first time:
+	say "[italic type]Scorpius sits on a high wooden throne.[roman type] 'What do you want? You little deformed bastard?!' [italic type]You answer assertive.[roman type] 'I wanna fight. I wanna fight against your bastard Machitikos.'"
+
+
+After examining Machitikos_Sitis for the first time:
+	say "[italic type]Machitikos does not say a word. He just grunts aggressively and throws two weapons in front of you: a long sharp spear and a huge spiked mace. Which one do you take?[roman type]";
+	now the Spear_Sitis is in the Agora_Sitis;
+	now the Spiked Mace_Sitis is in the Agora_Sitis;
+[take all vermeiden - einrichten]
+
+After taking the Spear_Sitis:
+	say "[italic type]The moment you took the spear, Machitikos straight begins to attac you with the spiked mace. Beschreibung fehlt. But finally - you bet him![roman type]"
+	
+After taking the Spiked Mace_Sitis:
+	say "[italic type]The moment you took the spiked mace, Machitikos straight begins to attac you with the spear. Beschreibung fehlt. But finally - you bet him![roman type]"
+	
+[Ende fehlt; Kampf muss noch ausgiebiger]
+
+
+The Spear_Sitis is a thing. The Spear_Sitis is in the Shelter_Sitis. The Spear_Sitis is portable. The description of the Spear_Sitis is "You can fight with this spear."
+The Spiked Mace_Sitis is a thing. The Spiked Mace_Sitis is in the Shelter_Sitis. The Spiked Mace_Sitis is portable. The description of the Spiked Mace_Sitis is "You can fight with this spiked mace."
 
 
 
@@ -259,8 +284,6 @@ The Holy Palace_Sitis is north of the Protection Bridge_Sitis.
 
 [Charaktere]
 Carissimi_Sitis is a person in the Shelter_Sitis.The printed name of Carissimi_Sitis is "Carissimi".
-Scorpius_Sitis is a person in the Holy Palace_Sitis. The printed name of Scorpius_Sitis is "The Great Scorpius". 
-Machitikos_Sitis is a person in the Holy Palace_Sitis. The printed name of Machitikos_Sitis is "Machitikos". 
 Ilithios_Sitis is a person in the Rock Mine_Sitis. The printed name of Ilithios_Sitis is "Ilithios". 
 
 
@@ -294,6 +317,8 @@ After examining Dunia for the first time:
 			say "[italic type]- You are painfully near to trespass holy ground, stranger. I would advise against it. Who are you, anyway? You don't look like a Techie. Tell me your [bold type]name[roman type].";
 			now ConcealedDunia is false.]
 	
+
+
 
 
 

@@ -1,6 +1,5 @@
 "Kaldríss" by Daniel
 
-"Planet Kaldríss" by Daniel
 
 [BUGFIXING]
 [

@@ -612,10 +612,12 @@ Instead of going nowhere from the Cave_Geysiria, say "You're in a cave, go explo
 Chapter 4 - Frizza
 
 
-[---]
-
-[---]
-
+[Notizen für den Übergang zu Frizza:
+	- Man stürzt ab, weil die Energiequelle des Raumschiffs alle ist
+	- Man hat keine zusätzlichen Items
+	- Die Beschreibung ab Eintritt in die Atmosphäre kann von mir übernommen werden
+	- Frizza ist ein dunkler, felsiger Planet, mit blauen Energieströmen, die sich über die Oberfläche winden, man sieht tobende Gewitter
+	- Man hat keine zusätzliche Infos über den Planeten, außer vielleicht dass er als Goldgrube für risikofreude Unternehmer gilt]
 
 [Regions and Rooms]
 [Surface Regions]
@@ -1040,10 +1042,9 @@ After approaching the Flux Current 2:
 	if ToppledRock is true:
 		if UnregulatedEssence is false:
 			if the player wears the Sinkan Cloak:
-				say "With little effort you climb down your newfound ramp. As you come closer to the Flux, you feel your body resonating, feeling as if it would prefer to dissolve. Quickly, you extend the Extractor into the Flux and try to keep your fluttering mind together, while hearing the beeping sound. Shorty, you have visions of a brute Duju, clad in plates of thick metal, thorns protruding from the shoulders. Then a lean figure, wrapped in a long black robe, operating some sort of complex device in front of what seems to you like an altar. A penetrating beeping draws you out of your sight. The Extractor is finished. You scramble up to the shore and quickly bring some distance between you and the Flux, your mind and body slowly regaining their place. Suddenly you realize that Dunia's cloak isn't in one piece anymore, rather, its matter looks like it melted and solidified again, whole parts of it are missing. Perhaps you submitted yourself too long to the flux for it to resist. You leave the remaining tatters on the ground.[paragraph break]You receive an[bold type] Unregulated Flux Essence[roman type].";
+				say "With little effort you climb down your newfound ramp. As you come closer to the Flux, you feel your body resonating, feeling as if it would prefer to dissolve. Quickly, you extend the Extractor into the Flux and try to keep your fluttering mind together, while hearing the beeping sound. Shorty, you have visions of a brute Duju, clad in plates of thick metal, thorns protruding from the shoulders. Then a lean figure, wrapped in a long black robe, operating some sort of complex device in front of what seems to you like an altar. A penetrating beeping draws you out of your sight. The Extractor is finished. You scramble up to the shore and quickly bring some distance between you and the Flux, your mind and body slowly regaining their place. [paragraph break]You receive an[bold type] Unregulated Flux Essence[roman type].";
 				now the Unregulated Flux Essence is in the Flux Extractor;
 				now UnregulatedEssence is true;
-				remove the Sinkan Cloak from play;
 			else:
 				say "[paragraph break]As you set foot on the ledge you already feel the Flux dragging your essence out of your body. Your mind starts to scatter uncontrollably. Just before losing control, you fall backwards, onto the hard ground, taking some time to regain corporal and mental integrity.";
 		else:
@@ -1123,7 +1124,8 @@ Instead of inserting the Regulated Flux Essence into the Essence Pool:
 	else:
 		say "As you drop the Regulated Flux Essence from beyond the gate into the Pool, you hear an impressive silence - the sample actually makes no sound at all as it meets the surface. Excited, you stare at the pool. It shows a rash shiver, a quick swirld, before regaining its calm state. Du'un turns to you, his eyes smiling.[paragraph break][italic type]You might want to know - that is a quite good outcome.";
 		remove Regulated Flux Essence from play;
-		say "[paragraph break]As soon as Du'un finished, the pool again starts to move, first swirling, then seething heavily. The bubbles coming from it become solid in mid-air and drop down again, ghostly arcs of blue smoke emerge from the pool, deep rifts start to form. Unvoluntarily, you take a step back. Just when it seems that the pool would sputter out of its basin the tensions abate, the rifts close and the convulsive motions subside. On turning, you see Du'un holding his staff fixed towards the pool. The last movement goes through the pool, then it falls silent. Suddenly, a small object comes to the surface - a transparent orb with a balanced source of energy inside it: a Pure Flux Orb. [line break]Du'un points his staff in the direction of the orb and lifts it out of the pool, without touching it, right into a glass container that Dunia stands ready with. As soon as the orb is in the container, Dunia seals it, holding it triumphantly. Du'un turns to you.[paragraph break][italic type]That, now, is something special.[paragraph break][roman type]You receive a [bold type]Pure Flux Essence.";
+		say "[paragraph break]As soon as Du'un finished, the pool again starts to move, first swirling, then seething heavily. The bubbles coming from it become solid in mid-air and drop down again, ghostly arcs of blue smoke emerge from the pool, deep rifts start to form. Unvoluntarily, you take a step back. Just when it seems that the pool would sputter out of its basin the tensions abate, the rifts close and the convulsive motions subside. On turning, you see Du'un holding his staff fixed towards the pool. The last movement goes through the pool, then it falls silent. Suddenly, a small object comes to the surface - a transparent orb with a balanced source of energy inside it: a Pure Flux Orb. [line break]Du'un points his staff in the direction of the orb and lifts it out of the pool, without touching it, right into a glass container that Dunia stands ready with. As soon as the orb is in the container, Dunia seals it, holding it triumphantly. Du'un turns to you.[paragraph break][italic type]That, now, is something special.[paragraph break][roman type]Suddenly you realize that Dunia's cloak isn't in one piece anymore, rather, its matter looks like it melted and solidified again, whole parts of it are missing. Perhaps the direct contact to the Core was too much for it.[paragraph break]You receive a [bold type]Pure Flux Essence.";
+		remove the Sinkan Cloak from play;
 		now the player has the Pure Flux Essence;
 		say "[line break][italic type]Oh, and we will need that back.[paragraph break][roman type]Dunia takes the Flux Extractor from you, smiling cheekily.";
 		remove Flux Extractor from play;
@@ -1132,9 +1134,23 @@ Instead of inserting the Regulated Flux Essence into the Essence Pool:
 
 The description of the Pure Flux Essence is "A transparent orb inside a glass container, its core is an even sphere of pure blue energy. It is more than fit to start you ship back up. You should try inserting it."
 
-The Discharged Spaceship is a container in the Landing Zone_Frizza. The description of the Discharged Spaceship is "Your spaceship, broken down due to power loss. The clouds in the atmosphere may have sped up the discharge."
 
-After inserting the Pure Flux Essence into the Discharged Spaceship:
+[End]
+
+The Discharged Spaceship is inside the Landing Zone_Frizza. The description of the Discharged Spaceship is "Your spaceship, broken down due to power loss. The clouds in the atmosphere may have sped up the discharge."  The Discharged Spaceship is fixed in place.
+
+Instead of inserting anything into the Discharged Spaceship:
+	say "That wouldn't be of much use. The only thing that sincerely needs maintenance is the Power Unit."
+
+The Power Unit is a container inside the Discharged Spaceship. The Discharged Spaceship is fixed in place.
+Instead of taking the Power Unit:
+	say "You would have to disassemble it, but you don't know how that would help you."
+
+Instead of inserting something which is not the Pure Flux Essence into the Power Unit:
+	say "That wouldn't generate much energy. You need a real power source."
+
+
+After inserting the Pure Flux Essence into the Power Unit:
 	say "You put the Essence into the generator of the ship and it instantly starts working - the lights go on, you hear the engine starting and the turbines spinning. Time to take off.[paragraph break]You lift your ship, up and up, until you are far above the surface of Frizza. You take a last glance at the blue Fluxes, the city structures and the rocky landscape, before breaching through the clouds and entering the stratosphere. You did it, you survived Frizza.[paragraph break]For a long time you sail through space, passing moons, asteroids, planets ... you think about your past actions, and of what will come. Before you can help it, you fall to sleep of exhaustion.[paragraph break]Chapter 5 - Kaldriss[paragraph break]You are suddenly woke by heavy jolts and a bursting noise. You quickly orient yourself and grasp the situation. You got caught in a meteor shower and while trying your best to manouver your spaceship through it  your engine still took a hit. You then had to crash-land on Kaldríss - one of the most cold planets in this solar system.  Since only a few explorers made their to this planet there's not a whole lot of information available about this icy place. You are pretty much on your own now. The spaceship also won't take off before it hasn't been properly repaired. But first things first. Without any kind of heat you won't survive this bleakness for long. You tame a look at the command panel in hopes of finding something of use but it doesn't look very good. There's only a single green button on the command panel. What could this mean? I might also wanna  take a look at the spaceship exit that lies straight ahead since it seems to be busted, too.";
 	remove Pure Flux Essence from play.
 	[now the player is in the Spaceship Bridge_Kaldríss.]
@@ -1145,7 +1161,6 @@ After answering Dunia that "Techies" for the first time:
 		say "[italic type]Then begone with you! I don't want anything to do with that!";
 		now BlooSympathy is false.
 	
-
 
 
 

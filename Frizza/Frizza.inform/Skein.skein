@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-1">
   <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-61"/>
+  <activeNode nodeId="node-1"/>
   <item nodeId="node-1">
     <command xml:space="preserve">- start -</command>
-    <result xml:space="preserve">Your ship falls through thick layers of dark clouds. Red flashes illuminate your surroundings. The lights on your console warn you of the dangerously fast approaching energy level zero. As you finally break through the last cloud, you get a glimpse of what awaits you underneath. &#x000A;Black planes and sharp cliffs of a dark red shape the landscape. In the east you perceive a massive rock formation, in the west you see a thick blue stream cutting through the plane , illuminating big portions of it in the process. Somewhere to the south there seem to be some sort of industrial constructions, far in the north you believe to recognize cubic shapes that reveal a city. You don't have time to study the landscape much longer. All you concentration is desperately needed as you find a gap in the ghastly cliffs and bring down your ship. Heavy jolting, followed by a sudden blow signalize your landing. &#x000A;Your ship's on the ground, and you are too, barely. Welcome to Frizza.&#x000A;&#x000A;Frizza&#x000A;An Interactive Fiction by Tim&#x000A;Release 1 / Serial number 170704 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Landing Zone&#x000A;You step out of your ship onto a small square in the middle of nowhere. Your ship's dead and so is the computer. It seems like you ought to explore the environment. You remeber having seen civilization-like shapes to the south-west and to the north. To the east  there is a huge mountain, to the west there seems to be a Flux.&#x000A;&#x000A;You can see a Discharged Spaceship (empty) here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Your ship falls through thick layers of dark clouds. Red flashes illuminate your surroundings. The lights on your console warn you of the dangerously fast approaching energy level zero. As you finally break through the last cloud, you get a glimpse of what awaits you underneath. &#x000A;Black planes and sharp cliffs of a dark red shape the landscape. In the east you perceive a massive rock formation, in the west you see a thick blue stream cutting through the plane , illuminating big portions of it in the process. Somewhere to the south there seem to be some sort of industrial constructions, far in the north you believe to recognize cubic shapes that reveal a city. You don't have time to study the landscape much longer. All you concentration is desperately needed as you find a gap in the ghastly cliffs and bring down your ship. Heavy jolting, followed by a sudden blow signalize your landing. &#x000A;Your ship's on the ground, and you are too, barely. Welcome to Frizza.&#x000A;&#x000A;Frizza&#x000A;An Interactive Fiction by Tim&#x000A;Release 1 / Serial number 170704 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Landing Zone&#x000A;You step out of your ship onto a small square in the middle of nowhere. Your ship's dead and so is the computer. It seems like you ought to explore the environment. You remeber having seen civilization-like shapes to the south-west and to the north. To the east  there is a huge mountain, to the west there seems to be a Flux.&#x000A;&#x000A;You can see a Discharged Spaceship (in which is a Power Unit (empty)) and a stone here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
@@ -14,6 +14,7 @@
       <child nodeId="node-6"/>
       <child nodeId="node-12"/>
       <child nodeId="node-22"/>
+      <child nodeId="node-89"/>
     </children>
   </item>
   <item nodeId="node-2">
@@ -276,7 +277,7 @@
     <result xml:space="preserve">(Dunia)&#x000A;A lean but athletic figure, wrapped by several layers of what looks like tough leather. In a small gap of her hood you can see glinting eyes that reveal a sharp mind.&#x000A;&#x000A;You are painfully near to trespass holy ground, stranger. I would advise against it. Who are you, anyway? You don't look like a Techie. Tell me your name.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
       <child nodeId="node-27"/>
@@ -298,7 +299,7 @@
     <result xml:space="preserve">(to Dunia)&#x000A;Well then, that's not a bad way to start. Thinking about it - an outsider might be what we need. I'll introduce you to someone, and that is not an invitation.&#x000A;&#x000A; With seemingly little effort she climbs down the cliffs to your level, before insistently inviting you to come with her.&#x000A; Both of you walk through the scraggy landscape, her leading the way with distinct commands. Slowly you approach an archlike structure, close to one branch of the Flux. As you get nearer you perceive a couple of bulky shapes, guarding the entrance to the structure. Some hundred metes in front of the entrance your companion turns to you. &#x000A;&#x000A;Try not to look too provoking.&#x000A;&#x000A;You know why while passing the guards: each and every one of them gazes at you. In consideration of the thick armour plates, the rather oversized guns and their radiating blue glow you refrain from making any quick motions.&#x000A;&#x000A;Flux Gate&#x000A;You can see a console, a weapon's rack (on which is a gun), Duju Operator 1 and Duju Operator 2 here.&#x000A;&#x000A;Inside you find yourself in the midst of a small-sized hall, that doesn't appear to justify any of the expenditure you just encountered. In the back you spot an opening and a staircase, leading downwards. To the left there is a full board of controls and two figures unhastily operating them. You can't look around any more, as you are approached quickly by an impressive sized person, already bellowing a few direct words with a booming voice.&#x000A;&#x000A;Dunia! Who is this? Explain yourself!&#x000A;&#x000A;A guest of sorts. He stumbled about the Ascent when I found him. I don't think he's a Techie, at least he has a slightly better manners and he keeps his voice down to a sensible level when talking. Besides, I thought about his use in regard to certain issues, due to his undujulike appearance.&#x000A;&#x000A;Both eyeball you thoroughly for what seems to you like hours. Eventually, the massive Duju makes a quick motion towards Dunia, indicating her to follow him. He shoots a last glance at you.&#x000A;&#x000A;Don't let yourself be found sniffing around somewhere, it would not contribute to your wellbeing.&#x000A;&#x000A; They march off, disappearing into the opening at the end of the hall. You are not guarded, it seems like you could look around. Of course you could also do as you were told and wait.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
       <child nodeId="node-29"/>
@@ -331,7 +332,7 @@
     <result xml:space="preserve">Finally you see the two Duju returning from the opening. As they approach, the big one actually looks amazed by your decent behaviour.&#x000A;&#x000A;It seems like you did as you were told. Maybe you don't have no ill intent after all. Indeed - that is exactly what we're going to find out, if you're willing. But you see, we don't want to force anything on you, you are free to leave. But if you are interested in helping us, we would be glad.&#x000A;&#x000A;He hands you something that distantly reminds you of a fishing net, only is this one almost ridiculously overengineered. You must have a rather puzzled look to your face, as Du'un starts to explain soon after. &#x000A;&#x000A;That is a Flux Extractor, the Techies call them "Scoops". It is used to extract small portions of the Flux and isolate it for examination. If you want to help us out, showing us that you have no evil intent in the process, go and extract two samples of the Flux, one from the current before it passes through this gate, and one after it has done so. I am sure you will find the proper locations for this purpose yourself. When you are done or have any questions, return here, Dunia will be to your assistance.&#x000A;&#x000A;You receive a Flux Extractor.&#x000A;&#x000A;With that, Du'un goes off, quickly descending the stairs at the back of the hall. You are left with a vague task and Dunia, who doesn't look very pleased.&#x000A;&#x000A;To your assitance, eh? Well, better than climbing that awful piece of a mountain, I suppose.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
       <child nodeId="node-32"/>
@@ -342,7 +343,7 @@
     <result xml:space="preserve">She giggles a bit.&#x000A;&#x000A;It is simple, you will see when you get to the Flux. Just dip it in.&#x000A;&#x000A;She shows a devilish grin. Oh, but there's something I can help you with.&#x000A;&#x000A;Suddenly Dunia grasps a corner of her leathery clothing and, with one swoosh, unwraps it from her body. Underneath, a sinewy, bluish body comes to appearance.&#x000A;&#x000A;Here, take this, it will prevent the Flux from disintegrating you all too fast.&#x000A;&#x000A;The devilish grin emerges again.&#x000A;&#x000A;And stop staring.&#x000A;&#x000A;You receive a Sinkan Cloak.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
       <child nodeId="node-33"/>
@@ -513,7 +514,7 @@
   </item>
   <item nodeId="node-48">
     <command xml:space="preserve">s</command>
-    <result xml:space="preserve">Landing Zone&#x000A;Your crash site. You can go in all directions.&#x000A;&#x000A;You can see a Discharged Spaceship (empty) here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Landing Zone&#x000A;Your crash site. You can go in all directions.&#x000A;&#x000A;You can see a Discharged Spaceship (in which is a Power Unit (empty)) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
@@ -546,7 +547,7 @@
   </item>
   <item nodeId="node-51">
     <command xml:space="preserve">e</command>
-    <result xml:space="preserve">Landing Zone&#x000A;Your crash site. You can go in all directions.&#x000A;&#x000A;You can see a Discharged Spaceship (empty) here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Landing Zone&#x000A;Your crash site. You can go in all directions.&#x000A;&#x000A;You can see a Discharged Spaceship (in which is a Power Unit (empty)) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
@@ -601,7 +602,7 @@
   </item>
   <item nodeId="node-56">
     <command xml:space="preserve">s</command>
-    <result xml:space="preserve">Landing Zone&#x000A;Your crash site. You can go in all directions.&#x000A;&#x000A;You can see a Discharged Spaceship (empty) here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Landing Zone&#x000A;Your crash site. You can go in all directions.&#x000A;&#x000A;You can see a Discharged Spaceship (in which is a Power Unit (empty)) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
@@ -645,10 +646,10 @@
   </item>
   <item nodeId="node-60">
     <command xml:space="preserve">approach current</command>
-    <result xml:space="preserve">With little effort you climb down your newfound ramp. As you come closer to the Flux, you feel your body resonating, feeling as if it would prefer to dissolve. Quickly, you extend the Extractor into the Flux and try to keep your fluttering mind together, while hearing the beeping sound. Shorty, you have visions of a brute Duju, clad in plates of thick metal, thorns protruding from the shoulders. Then a lean figure, wrapped in a long black robe, operating some sort of complex device in front of what seems to you like an altar. A penetrating beeping draws you out of your sight. The Extractor is finished. You scramble up to the shore and quickly bring some distance between you and the Flux, your mind and body slowly regaining their place. Suddenly you realize that Dunia's cloak isn't in one piece anymore, rather, its matter looks like it melted and solidified again, whole parts of it are missing. Perhaps you submitted yourself too long to the flux for it to resist. You leave the remaining tatters on the ground.&#x000A;&#x000A;You receive an Unregulated Flux Essence.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">With little effort you climb down your newfound ramp. As you come closer to the Flux, you feel your body resonating, feeling as if it would prefer to dissolve. Quickly, you extend the Extractor into the Flux and try to keep your fluttering mind together, while hearing the beeping sound. Shorty, you have visions of a brute Duju, clad in plates of thick metal, thorns protruding from the shoulders. Then a lean figure, wrapped in a long black robe, operating some sort of complex device in front of what seems to you like an altar. A penetrating beeping draws you out of your sight. The Extractor is finished. You scramble up to the shore and quickly bring some distance between you and the Flux, your mind and body slowly regaining their place. &#x000A;&#x000A;You receive an Unregulated Flux Essence.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
       <child nodeId="node-61"/>
@@ -656,7 +657,444 @@
   </item>
   <item nodeId="node-61">
     <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  a Flux Extractor&#x000A;    an Unregulated Flux Essence&#x000A;    a Regulated Flux Essence&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You are carrying:&#x000A;  a Sinkan Cloak (being worn)&#x000A;  a Flux Extractor&#x000A;    an Unregulated Flux Essence&#x000A;    a Regulated Flux Essence&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-62"/>
+    </children>
+  </item>
+  <item nodeId="node-62">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Landing Zone&#x000A;Your crash site. You can go in all directions.&#x000A;&#x000A;You can see a Discharged Spaceship (in which is a Power Unit (empty)) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-63"/>
+    </children>
+  </item>
+  <item nodeId="node-63">
+    <command xml:space="preserve">go into spaceship</command>
+    <result xml:space="preserve">That's not something you can enter.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-64"/>
+    </children>
+  </item>
+  <item nodeId="node-64">
+    <command xml:space="preserve">insert </command>
+    <result xml:space="preserve">What do you want to insert?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-65"/>
+    </children>
+  </item>
+  <item nodeId="node-65">
+    <command xml:space="preserve">insert the regulated into the spaceship</command>
+    <result xml:space="preserve">That wouldn't be of much use. The only thing that sincerely needs maintenance is the Power Unit.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-66"/>
+    </children>
+  </item>
+  <item nodeId="node-66">
+    <command xml:space="preserve">in</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-67"/>
+    </children>
+  </item>
+  <item nodeId="node-67">
+    <command xml:space="preserve">go inside</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-68"/>
+    </children>
+  </item>
+  <item nodeId="node-68">
+    <command xml:space="preserve">go into the spaceship</command>
+    <result xml:space="preserve">That's not something you can enter.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-69"/>
+    </children>
+  </item>
+  <item nodeId="node-69">
+    <command xml:space="preserve">x spaceship</command>
+    <result xml:space="preserve">Your spaceship, broken down due to power loss. The clouds in the atmosphere may have sped up the discharge.&#x000A;&#x000A;In the Discharged Spaceship is a Power Unit.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-70"/>
+    </children>
+  </item>
+  <item nodeId="node-70">
+    <command xml:space="preserve">x power unit</command>
+    <result xml:space="preserve">Impressively empty. You wouldn't be able to light a lamp with what remains in there.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-71"/>
+    </children>
+  </item>
+  <item nodeId="node-71">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a Sinkan Cloak (being worn)&#x000A;  a Flux Extractor&#x000A;    an Unregulated Flux Essence&#x000A;    a Regulated Flux Essence&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-72"/>
+    </children>
+  </item>
+  <item nodeId="node-72">
+    <command xml:space="preserve">insert unregulated into power unit</command>
+    <result xml:space="preserve">(first taking the Unregulated Flux Essence)&#x000A;You put the Unregulated Flux Essence into the Power Unit.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-73"/>
+    </children>
+  </item>
+  <item nodeId="node-73">
+    <command xml:space="preserve">take spaceship</command>
+    <result xml:space="preserve">That's fixed in place.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-74"/>
+    </children>
+  </item>
+  <item nodeId="node-74">
+    <command xml:space="preserve">take power unit</command>
+    <result xml:space="preserve">You would have to disassemble it, but you don't know how that would help you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-75"/>
+    </children>
+  </item>
+  <item nodeId="node-75">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Wasteland&#x000A;One of the dreary planes in the region.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-76"/>
+    </children>
+  </item>
+  <item nodeId="node-76">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Endless flats of black sand and sharp crags extend in front of you. You wouldn't want to go there.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-77"/>
+    </children>
+  </item>
+  <item nodeId="node-77">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a Sinkan Cloak (being worn)&#x000A;  a Flux Extractor&#x000A;    a Regulated Flux Essence&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-78"/>
+    </children>
+  </item>
+  <item nodeId="node-78">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Verge of the Bloo City&#x000A;The pathway into the alien city.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-79"/>
+    </children>
+  </item>
+  <item nodeId="node-79">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Flux beyond the Gate&#x000A;A branch of the Flux, it emerges from under the Flux Gate to the south.&#x000A;&#x000A;You can see a Regulated Flux Current here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-80"/>
+    </children>
+  </item>
+  <item nodeId="node-80">
+    <command xml:space="preserve">approach current</command>
+    <result xml:space="preserve">You already got what you wanted, no need to take risks.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-81"/>
+    </children>
+  </item>
+  <item nodeId="node-81">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Verge of the Bloo City&#x000A;The pathway into the alien city.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-82"/>
+    </children>
+  </item>
+  <item nodeId="node-82">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Wasteland&#x000A;One of the dreary planes in the region.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-83"/>
+    </children>
+  </item>
+  <item nodeId="node-83">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Landing Zone&#x000A;Your crash site. You can go in all directions.&#x000A;&#x000A;You can see a Discharged Spaceship (in which is a Power Unit (in which is an Unregulated Flux Essence)) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-84"/>
+    </children>
+  </item>
+  <item nodeId="node-84">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Flux&#x000A;The main Flux current of the region. A huge rock loosely stands at its shores.&#x000A;&#x000A;You can see an Unregulated Flux Current here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-85"/>
+    </children>
+  </item>
+  <item nodeId="node-85">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Landing Zone&#x000A;Your crash site. You can go in all directions.&#x000A;&#x000A;You can see a Discharged Spaceship (in which is a Power Unit (in which is an Unregulated Flux Essence)) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-86"/>
+    </children>
+  </item>
+  <item nodeId="node-86">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Wasteland&#x000A;One of the dreary planes in the region.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-87"/>
+    </children>
+  </item>
+  <item nodeId="node-87">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Flux Gate&#x000A;A gate of some sort, guarded.&#x000A;&#x000A;You can see Dunia, a console, a weapon's rack (on which is a gun), Duju Operator 1 and Duju Operator 2 here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-88"/>
+    </children>
+  </item>
+  <item nodeId="node-88">
+    <command xml:space="preserve">ask dunia about gun</command>
+    <result xml:space="preserve">Ah, I see, you look for a way to get down to the current. Well, the gun is not what will help you, even if I gave it to you, which I won't, you still needed to fire it, which you can't. So erase that thought. However ... what might help you ... wait a moment.&#x000A;&#x000A; Dunia turns to the rack, which the gun lies on, and resolutely approaches it. With a few precise movements she breaks loose one of the bars framing the rack, accompanied by a bright clang. Even the guards take a short glance, before respectfully turning to the entrance again. Triumphantly, Dunia returns to you and hands you the bar with a smirk. &#x000A;&#x000A;Congratulations, you are now the owner of a convenient lifting tool.&#x000A;&#x000A;You receive a Miserable Lever.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-89">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Ascent&#x000A;The mountains are composed of stone in various shades of red and reach far to the sky. In between the cliffs and sheers you see a narrow path winding up. There is no clue on where it might lead, but you could find out.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-90"/>
+    </children>
+  </item>
+  <item nodeId="node-90">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">You have the feeling of being watched. You wouldn't want to climb the cliffs if someone is around.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-91"/>
+    </children>
+  </item>
+  <item nodeId="node-91">
+    <command xml:space="preserve">x</command>
+    <result xml:space="preserve">(Dunia)&#x000A;A lean but athletic figure, wrapped by several layers of what looks like tough leather. In a small gap of her hood you can see glinting eyes that reveal a sharp mind.&#x000A;&#x000A;You are painfully near to trespass holy ground, stranger. I would advise against it. Who are you, anyway? You don't look like a Techie. Tell me your name.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-92"/>
+    </children>
+  </item>
+  <item nodeId="node-92">
+    <command xml:space="preserve">answer Axesto</command>
+    <result xml:space="preserve">(to Dunia)&#x000A;What a strange name. It doesn't matter anyway - there's only one thing I need to know: are you on the side of the Techies or of the Duju?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-93"/>
+    </children>
+  </item>
+  <item nodeId="node-93">
+    <command xml:space="preserve">answer Duju</command>
+    <result xml:space="preserve">(to Dunia)&#x000A;Well then, that's not a bad way to start. Thinking about it - an outsider might be what we need. I'll introduce you to someone, and that is not an invitation.&#x000A;&#x000A; With seemingly little effort she climbs down the cliffs to your level, before insistently inviting you to come with her.&#x000A; Both of you walk through the scraggy landscape, her leading the way with distinct commands. Slowly you approach an archlike structure, close to one branch of the Flux. As you get nearer you perceive a couple of bulky shapes, guarding the entrance to the structure. Some hundred metes in front of the entrance your companion turns to you. &#x000A;&#x000A;Try not to look too provoking.&#x000A;&#x000A;You know why while passing the guards: each and every one of them gazes at you. In consideration of the thick armour plates, the rather oversized guns and their radiating blue glow you refrain from making any quick motions.&#x000A;&#x000A;Flux Gate&#x000A;You can see a console, a weapon's rack (on which is a gun), Duju Operator 1 and Duju Operator 2 here.&#x000A;&#x000A;Inside you find yourself in the midst of a small-sized hall, that doesn't appear to justify any of the expenditure you just encountered. In the back you spot an opening and a staircase, leading downwards. To the left there is a full board of controls and two figures unhastily operating them. You can't look around any more, as you are approached quickly by an impressive sized person, already bellowing a few direct words with a booming voice.&#x000A;&#x000A;Dunia! Who is this? Explain yourself!&#x000A;&#x000A;A guest of sorts. He stumbled about the Ascent when I found him. I don't think he's a Techie, at least he has a slightly better manners and he keeps his voice down to a sensible level when talking. Besides, I thought about his use in regard to certain issues, due to his undujulike appearance.&#x000A;&#x000A;Both eyeball you thoroughly for what seems to you like hours. Eventually, the massive Duju makes a quick motion towards Dunia, indicating her to follow him. He shoots a last glance at you.&#x000A;&#x000A;Don't let yourself be found sniffing around somewhere, it would not contribute to your wellbeing.&#x000A;&#x000A; They march off, disappearing into the opening at the end of the hall. You are not guarded, it seems like you could look around. Of course you could also do as you were told and wait.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-94"/>
+    </children>
+  </item>
+  <item nodeId="node-94">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">You stand still where you were left. Time passes. However, that seems to be the only thing to change.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-95"/>
+    </children>
+  </item>
+  <item nodeId="node-95">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">You pass the time looking closer at your surroundings, but you can't interpret all too much from the metallic alien structures. The architecture somewhat reminds you of the spiritual buildings on your home planet, as for the arching walls and the high ceiling. The only thing you hear is the distant, lamish flow of the Flux and the dull sounds of the two operators at the console.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-96"/>
+    </children>
+  </item>
+  <item nodeId="node-96">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Finally you see the two Duju returning from the opening. As they approach, the big one actually looks amazed by your decent behaviour.&#x000A;&#x000A;It seems like you did as you were told. Maybe you don't have no ill intent after all. Indeed - that is exactly what we're going to find out, if you're willing. But you see, we don't want to force anything on you, you are free to leave. But if you are interested in helping us, we would be glad.&#x000A;&#x000A;He hands you something that distantly reminds you of a fishing net, only is this one almost ridiculously overengineered. You must have a rather puzzled look to your face, as Du'un starts to explain soon after. &#x000A;&#x000A;That is a Flux Extractor, the Techies call them "Scoops". It is used to extract small portions of the Flux and isolate it for examination. If you want to help us out, showing us that you have no evil intent in the process, go and extract two samples of the Flux, one from the current before it passes through this gate, and one after it has done so. I am sure you will find the proper locations for this purpose yourself. When you are done or have any questions, return here, Dunia will be to your assistance.&#x000A;&#x000A;You receive a Flux Extractor.&#x000A;&#x000A;With that, Du'un goes off, quickly descending the stairs at the back of the hall. You are left with a vague task and Dunia, who doesn't look very pleased.&#x000A;&#x000A;To your assitance, eh? Well, better than climbing that awful piece of a mountain, I suppose.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-97"/>
+    </children>
+  </item>
+  <item nodeId="node-97">
+    <command xml:space="preserve">ask Dunia about Flux Extractor</command>
+    <result xml:space="preserve">She giggles a bit.&#x000A;&#x000A;It is simple, you will see when you get to the Flux. Just dip it in.&#x000A;&#x000A;She shows a devilish grin. Oh, but there's something I can help you with.&#x000A;&#x000A;Suddenly Dunia grasps a corner of her leathery clothing and, with one swoosh, unwraps it from her body. Underneath, a sinewy, bluish body comes to appearance.&#x000A;&#x000A;Here, take this, it will prevent the Flux from disintegrating you all too fast.&#x000A;&#x000A;The devilish grin emerges again.&#x000A;&#x000A;And stop staring.&#x000A;&#x000A;You receive a Sinkan Cloak.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-98"/>
+    </children>
+  </item>
+  <item nodeId="node-98">
+    <command xml:space="preserve">wear cloak</command>
+    <result xml:space="preserve">You put on the Sinkan Cloak.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-99"/>
+    </children>
+  </item>
+  <item nodeId="node-99">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Wasteland&#x000A;A pitiful piece of land. Black sand, red rocks and some sickish looking plants. If you are not looking for something particular there is no need to linger.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-100"/>
+    </children>
+  </item>
+  <item nodeId="node-100">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Verge of the Bloo City&#x000A;An averagely sized city extends in front of you. Its cityscape is dominated by an enormous building in the rear part, not resembling any architecture that you have ever seen. Halfway to it there seems to be some sort of city center. The city is surrounded by a foreign sort of fencing, with a gate not far form you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-101"/>
+    </children>
+  </item>
+  <item nodeId="node-101">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Flux beyond the Gate&#x000A;Another current of the Flux. Even from the distance you feel the pure energy flooding your body. It appears to have a slightly different viscosity than the other Fluxes, maybe it has something to do with the Flux Gate arking above the Flux in the south.&#x000A;&#x000A;You can see a Regulated Flux Current here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>

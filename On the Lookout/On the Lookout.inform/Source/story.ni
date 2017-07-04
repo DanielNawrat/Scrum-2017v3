@@ -996,15 +996,15 @@ Before doing anything other than extracting:
 			say "You try to ... there is no ... possible ... ";
 			stop the action.
 
-Instead of examining the player:
+Before examining the player:
 	if FluxExperience is true:
 		if the player is in the Surface Flux 2_Frizza:
 			now the description of the player is "[if the player is in the Surface Flux 2_Frizza for the first time]Everything seems usual at first. Your mind and body are where you remeber them. You take a long glance at the Flux, casually taking its path. For a second, you are terrified, then you calm yourself and wonder if that all really happened. You look at the Cloak you are wearing - the same old strange leather, you think. But ... some of the edges appear to have changed their course, and the leather itself too seems to be contorted somehow ... you don't want to wonder what would have happened if you didn't have the cloak. You silently send a belssing to Dunia and stand up.[otherwise if the player is in the Surface Flux 2_Frizza for more than the first time]As good-looking as ever. Only ... you thought you had a spot on that left hand of yours, which is gone now ...";
-			continue the action;
 		else:
 			now the description of the player is "As good-looking as ever. Only ... you thought you had a spot on that left hand of yours, which is gone now ...";
-			continue the action.
-		
+			continue the action;
+	else:
+		now the description of the player is "Good-looking as ever."
 [Surface Flux 2 end]
 
 [Surface Flux]

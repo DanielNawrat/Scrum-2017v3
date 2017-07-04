@@ -37,6 +37,9 @@ take (something) - take and carry something[line break]
 (s)outh - go south[line break]
 (n)orth - go north[line break]
 
+save - produce a local save file on your computer[line break]
+restore - load a local save file[line break]
+
 Frizza[line break]
 ask (someone) about (something) - the typical way to begin a dialogue, the topics you can ask about are printed [bold type]bold [roman type]in the text beforehand[line break]
 answer (something) to (someone) - the typical way to respond to questions, the topics you can answer are printed [bold type]bold [roman type]in the text beforehand[line break]

@@ -116,7 +116,7 @@ After going from the Spaceship Bridge_Kaldríss for the first time:
 [End of Teleport Stone Section ]
 
 [Limited Inventory]
-The carrying capacity of the player is 3. The backpack is the player's holdall. The player is wearing the backpack. The backpack is open and not openable. The carrying capacity of the backpack is 3.
+The carrying capacity of the player is 3. The backpack is the player's holdall. The player is wearing the backpack. The backpack is open and not openable. The carrying capacity of the backpack is 3.]
 
 
 
@@ -200,7 +200,7 @@ After examining Anaidis_Sitis the first time:
 Table of Anaidis_Sitis Responses
 Topic	Response
 "no success"	"But why not? You are all living here. A whole village. You would not survive without water. [paragraph break]"
-"the great scorpius" 	"What is going on here? Who is this Scorpius?[paragraph break]"
+"scorpius" 	"What is going on here? Who is this Scorpius?[paragraph break]"
 
 After asking Anaidis_Sitis about "no success":
 	say "Anaidis shakes his head. [italic type]'I have never said we do not have any water here. Of course we do need water to survive. But we also need to fight for it. That's the reason we're not giving it away easily. Especially not to total strangers.[roman type][paragraph break]";
@@ -225,12 +225,14 @@ After examining Mitéra_Sitis for the first time:
 	say "You nod. It feels like Mitéra is trusting you. She continues.[paragraph break]";
 	say "[italic type]'You know, Axesto, there was a time, when our village Sicuum and the whole planet Sitis has been a lovely, peaceful and vivid place. Of course - the environment always resembled a desert. But we've had some plants, we've had some animals living here and especially we've had different water sources. These sources have been all around. You never needed to walk a long time until you've found one. But then, there came Scorpius...'[roman type][paragraph break]";
 	say "Suddenly you hear loud noises from the Agora. Kids are screaming, parents are calling them concerned and deep male voices are yelling [italic type]'Out of our way! Out of HIS way!' [roman type]Anaidis runs shocked out of the room. First, you want to follow him, but then you focuse on Mitéra again. However, she directly signals, [bold type]you should go after him[roman type]. So, what are you waiting for?[paragraph break]";
+	now the description of Mitéra_Sitis is "The old woman is friendly looking at you.";
 	now Anaidis_Sitis is in the Agora_Sitis;
 	now the description of the Domum Praesidium_Sitis is "";
+	now the description of the Agora_Sitis is "As you arrive at the Agora, you just wanna know what this Scorpius did. Specially, when you see, how the people are reacting to him. So use your chance, ask Anaidis about.";
 
 [Hint fehlt, dass man mit Anaidis sprechen sollte; vielleicht neue Beschreibung des Platzes - wie du dich fühlst?!]
-After asking Anaidis_Sitis about "the great scorpius":
-	say "Anaidis whispers, [italic type]'He is a dictator. Earlier, Scorpius was one of us. Beschreibung fehlt. Right now - he's forcing us every week to fight against his strongest warrior. If you win, you will get two full keg of water. If you lose... you have to try to survive one week without new water. So. This is the answer you were looking for. [bold type]Are you going to fight?'[roman type][paragraph break]";
+After asking Anaidis_Sitis about "scorpius":
+	say "Anaidis whispers, [italic type]'He is a dictator. Earlier, Scorpius was one of us. I mean, the time before I was born. But he was always kind of different. A bit more selfish than other ones, a bit more aggressive and a bit more oppressive. One summer, an aridity befall the whole planet Sitis. We needed to calculate the water more precisely. Consequently, dividing it between everyone and relinquishing, when someone else still got no water, was taken for granted. Except for Scorpius. He refused to share his water and started to manipulate other ones to do the same. This reckless behaviour culminates in his decision to construct Right now - he's forcing us every week to fight against his strongest warrior. If you win, you will get two full keg of water. If you lose... you have to try to survive one week without new water. So. This is the answer you were looking for. [bold type]Are you going to fight?'[roman type][paragraph break]";
 	say "You hesitate few seconds. This gladiator Machitikos looks highly dangerous. He is tall, muscular and Beschreibung fehlt. But you feel determined - you are going to beat him. For yourself and for the repressed Sitisianer. [bold type]You step directly in front of the great Scorpius.[roman type]"
 
 After examining Scorpius_Sitis for the first time:
@@ -319,6 +321,15 @@ After examining Dunia for the first time:
 			say "[italic type]- You are painfully near to trespass holy ground, stranger. I would advise against it. Who are you, anyway? You don't look like a Techie. Tell me your [bold type]name[roman type].";
 			now ConcealedDunia is false.]
 	
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1596,4 +1607,3 @@ After asking heimdallr about "open sesame":
 After entering the Bifröst Portal Chamber :
 	end the story;
 	say "You did it!"
-

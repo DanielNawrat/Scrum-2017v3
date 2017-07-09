@@ -89,57 +89,58 @@ The Orbit_Frizza is above the Landing Zone_Frizza. The printed name of Orbit_Fri
 	Instead of going to the Orbit_Frizza, do nothing.
 	
 The Landing Zone_Frizza is a room. The printed name of the Landing Zone_Frizza is "Landing Zone".  The description of Landing Zone_Frizza is "You step out of your ship onto a small square in the middle of nowhere. Your ship's dead and so is the computer. It seems like you ought to explore the environment. You remeber having seen civilization-like shapes to the [bold type]south-west [roman type]and to the [bold type]north[roman type]. To the [bold type]east [roman type] there is a huge mountain, to the [bold type]west [roman type]there seems to be a Flux." 
+
 After going from the Landing Zone_Frizza:
 		now the description of the Landing Zone_Frizza is "Your crash site. You can go in all directions.";
 		produce a room description with going spacing conventions.
 	Instead of going to the Tunnels_Frizza from the Landing Zone_Frizza, say "After looking around a bit you disover a fairly well hidden hatch. It seems to be open at the moment."
 
 [Flux]
-The Surface Flux_Frizza is a room. The Surface Flux_Frizza is west of the Landing Zone_Frizza. The printed name of the Surface Flux_Frizza is "Flux".  The description of Surface Flux_Frizza is "A viscous current of blue fluid cuts through the plane.  You need to screen your eyes from the radiating light to not become blinded. Even at this distance you feel the Flux' presence in your body, as if your atoms were spinning three times their normal pace. You don't know if it's a good idea to approach it further."
+The Surface Flux_Frizza is a room. The Surface Flux_Frizza is west of the Landing Zone_Frizza. The printed name of the Surface Flux_Frizza is "Flux".  The description of Surface Flux_Frizza is "A viscous current of blue fluid cuts through the plane.  You need to screen your eyes from the radiating light to not become blinded. Even at this distance you feel the Flux' presence in your body, as if your atoms were spinning three times their normal pace. You don't know if it's a good idea to approach it further.[paragraph break]You can go [bold type]east[roman type] and [bold type]south[roman type]."
 	After going from the Surface Flux_Frizza:
-		now the description of the Surface Flux_Frizza is "The main Flux current of the region. A huge [bold type]rock[roman type] loosely stands at its shores.";
+		now the description of the Surface Flux_Frizza is "The main Flux current of the region. A huge [bold type]rock[roman type] loosely stands at its shores.[paragraph break]You can go [bold type]east[roman type] and [bold type]south[roman type].";
 		produce a room description with going spacing conventions.
 			Instead of going to the Underground Flux_Frizza from the Surface Flux_Frizza, do nothing.
 			
-The Surface Flux 2_Frizza is west of the Verge_Frizza. The printed name of the Surface Flux 2_Frizza is "Flux beyond the Gate".  The description of Surface Flux 2_Frizza is "Another current of the Flux. Even from the distance you feel the pure energy flooding your body. It appears to have a slightly different viscosity than the other Fluxes, maybe it has something to do with the Flux Gate arking above the Flux in the south."
+The Surface Flux 2_Frizza is west of the Verge_Frizza. The printed name of the Surface Flux 2_Frizza is "Flux beyond the Gate".  The description of Surface Flux 2_Frizza is "Another current of the Flux. Even from the distance you feel the pure energy flooding your body. It appears to have a slightly different viscosity than the other Fluxes, maybe it has something to do with the Flux Gate arking above the Flux in the south.[paragraph break]You can go [bold type]east[roman type]."
 	After going from the Surface Flux 2_Frizza:
-		now the description of the Surface Flux 2_Frizza is "A branch of the Flux, it emerges from under the Flux Gate to the south.";
+		now the description of the Surface Flux 2_Frizza is "A branch of the Flux, it emerges from under the Flux Gate to the south.[paragraph break]You can go [bold type]east[roman type].";
 		produce a room description with going spacing conventions.
 
 [Mountain]
-The Ascent_Frizza is a room. The Ascent_Frizza is east of the Landing Zone_Frizza. The printed name of the Ascent_Frizza is "Ascent".  The description of the Ascent_Frizza is "The mountains are composed of stone in various shades of red and reach far to the sky. In between the cliffs and sheers you see a narrow path winding [bold type]up[roman type]. There is no clue on where it might lead, but you could find out."
+The Ascent_Frizza is a room. The Ascent_Frizza is east of the Landing Zone_Frizza. The printed name of the Ascent_Frizza is "Ascent".  The description of the Ascent_Frizza is "The mountains are composed of stone in various shades of red and reach far to the sky. In between the cliffs and sheers you see a narrow path winding [bold type]up[roman type]. There is no clue on where it might lead, but you could find out.[paragraph break]You can go [bold type]west[roman type] and [bold type]up[roman type]."
 After going from the Ascent_Frizza:
-		now the description of the Ascent_Frizza is "The foot of the mountain. A narrow path leads [bold type]up[roman type]wards..";
+		now the description of the Ascent_Frizza is "The foot of the mountain. [paragraph break]A narrow path leads [bold type]up[roman type]wards. You can also go [bold type]west[roman type].";
 		produce a room description with going spacing conventions.
 
 The Plateau_Frizza is a room. The Plateau_Frizza is above the Ascent_Frizza. The printed name of the Plateau_Frizza is "Plateau".
-Instead of going to the Plateau_Frizza from the Ascent_Frizza:
+Instead of going up from the Ascent_Frizza:
 	if Dunia is not in the Ascent_Frizza:
 		say "You have the feeling of being watched. You wouldn't want to climb the cliffs if someone is around.";
 		now Dunia is in the Ascent_Frizza;
 	else:
-		say "Someone's here."
+		say "You have been made clear that your ascension of the mountain is unwished for - better leave that rocky misery where you found it."
 		
 The Sanctuary_Frizza is a room. The Sanctuary_Frizza is east of the Plateau_Frizza. The printed name of the Sanctuary_Frizza is "Sanctuary".
 	Instead of going to the Sanctuary_Frizza from the Plateau_Frizza, say "A deep gulch separates you from the other side of the mountain. You can't possibly traverse it."
 
 [Upper Region]
-The Upper Desert_Frizza is a room. The Upper Desert_Frizza is north of the Landing Zone_Frizza. The printed name of the Upper Desert_Frizza is "Wasteland". The description of the Upper Desert_Frizza is "A pitiful piece of land. Black sand, red rocks and some sickish looking plants. If you are not looking for something particular there is no need to linger."
+The Upper Desert_Frizza is a room. The Upper Desert_Frizza is north of the Landing Zone_Frizza. The printed name of the Upper Desert_Frizza is "Wasteland". The description of the Upper Desert_Frizza is "A pitiful piece of land. Black sand, red rocks and some sickish looking plants. If you are not looking for something particular there is no need to linger.[paragraph break]You can go [bold type]west[roman type], [bold type]north[roman type] and [bold type]south[roman type]."
 After going from the Upper Desert_Frizza:
-		now the description of the Upper Desert_Frizza is "One of the dreary planes in the region.";
+		now the description of the Upper Desert_Frizza is "One of the dreary planes in the region.[paragraph break]You can go [bold type]west[roman type], [bold type]north[roman type] and [bold type]south[roman type].";
 		produce a room description with going spacing conventions.
 		
-The Upper Gate_Frizza is a room. The Upper Gate_Frizza is west of the Upper Desert_Frizza. The printed name of the Upper Gate_Frizza is "Flux Gate". [The description of the Upper Gate_Frizza is "An archlike structure stands out against the vastness of the planes. As you approach you become aware of some figures in front of the structure. Strangely, it looks like they were glowing bluishly. At second glance they seem hardly human, you don't know how they will react to your appearance."]
-After examining the Upper Gate_Frizza, say "An archlike structure stands out against the vastness of the planes. As you approach you become aware of some figures in front of the structure. Strangely, it looks like they were glowing bluishly. At second glance they seem hardly human, you don't know how they will react to your appearance."
+The Upper Gate_Frizza is a room. The Upper Gate_Frizza is west of the Upper Desert_Frizza. The printed name of the Upper Gate_Frizza is "Flux Gate". The description of the Upper Gate_Frizza is "An archlike structure stands out against the vastness of the planes. As you approach you become aware of some figures in front of the structure. Strangely, it looks like they were glowing bluishly. At second glance they seem hardly human, you don't know how they will react to your appearance. [paragraph break]You can go [bold type]east[roman type]."
+After examining the Upper Gate_Frizza, say "An archlike structure stands out against the vastness of the planes. As you approach you become aware of some figures in front of the structure. Strangely, it looks like they were glowing bluishly. At second glance they seem hardly human, you don't know how they will react to your appearance. [paragraph break]You can go [bold type]east[roman type]. [paragraph break]You can go [bold type]east[roman type]."
 After going from the Upper Gate_Frizza:
-		now the description of the Upper Gate_Frizza is "A gate of some sort, guarded.";
+		now the description of the Upper Gate_Frizza is "A gate of some sort, guarded.[paragraph break]You can go [bold type]east[roman type].";
 		produce a room description with going spacing conventions.
 	Instead of going to the Lower Gate_Frizza from the Upper Gate_Frizza, say "They won't let you pass."
 	
 [Bloo City]
-The Verge_Frizza is north of the Upper Desert_Frizza. The printed name of the Verge_Frizza is "Verge of the Bloo City". The description of the Verge_Frizza is "An averagely sized city extends in front of you. Its cityscape is dominated by an enormous building in the rear part, not resembling any architecture that you have ever seen. Halfway to it there seems to be some sort of city center. The city is surrounded by a foreign sort of fencing, with a gate not far form you."
+The Verge_Frizza is north of the Upper Desert_Frizza. The printed name of the Verge_Frizza is "Verge of the Bloo City". The description of the Verge_Frizza is "An averagely sized city extends in front of you. Its cityscape is dominated by an enormous building in the rear part, not resembling any architecture that you have ever seen. Halfway to it there seems to be some sort of city center. The city is surrounded by a foreign sort of fencing, with a gate not far form you.[paragraph break]You can go [bold type]west[roman type], [bold type]north[roman type] and [bold type]south[roman type]."
 After going from the Verge_Frizza:
-		now the description of the Verge_Frizza is "The pathway into the alien city.";
+		now the description of the Verge_Frizza is "The pathway into the alien city. [paragraph break]You can go [bold type]west[roman type], [bold type]north[roman type] and [bold type]south[roman type].";
 		produce a room description with going spacing conventions.
 	Instead of going to the Central Plaza_Frizza from the Verge_Frizza, say "You can't even say for sure if they will speak to you before killing you. It would be unwise to approach."
 	
@@ -150,15 +151,19 @@ The Citadel_Frizza is north of the Central Plaza_Frizza. The printed name of the
 
 [Lower Region]
 The Lower Desert_Frizza is a room. The Lower Desert_Frizza is south of the Landing Zone_Frizza. The printed name of the Lower Desert_Frizza is "Wasteland". 
-	Instead of going to the Lower Tunnels_Frizza from the Lower Desert_Frizza, do nothing. The description of the Lower Desert_Frizza is "A pitiful piece of land. Black sand, red rocks and some sickish looking plants. If you are not looking for something particular there is no need to linger."
+	Instead of going to the Lower Tunnels_Frizza from the Lower Desert_Frizza, do nothing. 
+The description of the Lower Desert_Frizza is "A pitiful piece of land. Black sand, red rocks and some sickish looking plants. If you are not looking for something particular there is no need to linger. [paragraph break]You can go [bold type]west[roman type] and [bold type]north[roman type]."
 	After going from the Lower Desert_Frizza:
-		now the description of the Lower Desert_Frizza is "One of the dreary planes in the region.";
+		now the description of the Lower Desert_Frizza is "One of the dreary planes in the region.[paragraph break]You can go [bold type]west [roman type]and [bold type]north[roman type].";
 		produce a room description with going spacing conventions.
 		
 The Scoop_Frizza is west of the Lower Desert_Frizza and south of the Surface Flux_Frizza. The printed name of the Scoop_Frizza is "Scoop (Settler's Base)".
-The description of the Scoop_Frizza is "You see a part of the Flux winding through a fjord deep down. Above your level there are metal constructions, thrust into the rock, from where little transportation devices start to the blue current at the valley's bottom, each manned with two humanlike figures. Near the bridgelike scaffold (you think it may be the only way across the gap) you notice some cabins, tightly hugging the cliffs. It seems you could approach the nearest one."
-	Instead of going to the Control Tower_Frizza from the Scoop_Frizza, say "There's no way you will get across the scaffold bridge unnoticed, better introduce yourself first."
-	Instead of going to the Underground Works_Frizza from the Scoop_Frizza, do nothing.
+The description of the Scoop_Frizza is "You see a part of the Flux winding through a fjord deep down. Above your level there are metal constructions, thrust into the rock, from where little transportation devices start to the blue current at the valley's bottom, each manned with two humanlike figures. Near the bridgelike scaffold (you think it may be the only way across the gap) you notice some cabins, tightly hugging the cliffs. It seems you could approach the nearest one.[paragraph break]You can go [bold type]east [roman type] and [bold type]west[roman type]."
+After going from the Scoop_Frizza:
+	now the description of the Scoop_Frizza is "The main Flux working of the region. [paragraph break] You can go [bold type]east[roman type] and [bold type]west[roman type].";
+	produce a room description with going spacing conventions.
+Instead of going to the Control Tower_Frizza from the Scoop_Frizza, say "There's no way you will get across the scaffold bridge unnoticed, better introduce yourself first."
+Instead of going to the Underground Works_Frizza from the Scoop_Frizza, do nothing.
 
 The Control Tower_Frizza is west of the Scoop_Frizza. The printed name of the Control Tower_Frizza is "Control Tower (Settler's Base)".
 
@@ -191,7 +196,7 @@ Kollock is a person in the Citadel_Frizza. The printed name of Kollock_Frizza is
 
 Du'un is a person in the Lower Gate_Frizza. The printed name of Du'un is "Keeper Du'un". The description of Du'un is "A massive build draped with heavy robes. In his left hand he carries an oblong staff, with a glowing ord at the end, that appears to be somewhere between shamanic fetish and technical apparatus. The blue eyes are attentive, especially about you."
 
-Trapist is a person in the Scoop_Frizza. The printed name of Trapist_Frizza is "Foreman Trapist".
+Trapist is a person in the Control Tower_Frizza. The printed name of Trapist_Frizza is "Foreman Trapist".
 
 BOT is a person in the Control Tower_Frizza. The printed name of BOT_Frizza is "Central Cybernetic Unit B.O.T.".
 
@@ -254,6 +259,7 @@ After examining Dunia for the first time:
 		if ConcealedDunia is true:
 			say "[italic type]You are painfully near to trespass holy ground, stranger. I would advise against it. Who are you, anyway? You don't look like a Techie. Tell me your [bold type]name[roman type].";
 			now ConcealedDunia is false.
+			
 	
 After answering Dunia that "Axesto" for the first time, say "[italic type]What a strange name. It doesn't matter anyway - there's only one thing I need to know: are you on the side of the [bold type]Techies [roman type]or of the [bold type]Duju[roman type]?"
 
@@ -269,19 +275,42 @@ After answering Dunia that "Duju" for the first time:
 		say "Inside you find yourself in the midst of a small-sized hall, that doesn't appear to justify any of the expenditure you just encountered. In the back you spot an opening and a staircase, leading downwards. To the left there is a full board of controls and two figures unhastily operating them. You can't look around any more, as you are approached quickly by an impressive sized person, already bellowing a few direct words with a booming voice.[line break][line break][italic type]Dunia! Who is this? Explain yourself![line break][line break]A guest of sorts. He stumbled about the Ascent when I found him. I don't think he's a Techie, at least he has a slightly better manners and he keeps his voice down to a sensible level when talking. Besides, I thought about his use in regard to certain issues, due to his undujulike appearance.[line break][line break][roman type]Both eyeball you thoroughly for what seems to you like hours. Eventually, the massive Duju makes a quick motion towards Dunia, indicating her to follow him. He shoots a last glance at you.[line break][line break][italic type]Don't let yourself be found sniffing around somewhere, it would not contribute to your wellbeing.[line break][line break][roman type] They march off, disappearing into the opening at the end of the hall. You are not guarded, it seems like you could [bold type]look [roman type]around. Of course you could also do as you were told and [bold type]wait[roman type].";
 		now Dunia is in the Lower Gate_Frizza;
 		now Du'un is in the Lower Gate_Frizza;
+		now Duju Operator 2 is in the Upper Gate_Frizza;
+		now Duju Operator 1 is in the Upper Gate_Frizza;
+		now the weapon's rack is in the Upper Gate_Frizza;
+		now the gun is in the Upper Gate_Frizza;
+		now the gun is on the weapon's rack;
+		now the console is in the Upper Gate_Frizza;
 	else:
 		say "[italic type]Begone with you! I don't want anything to do with that!"
 		
-A console and a weapon's rack are in the Upper Gate_Frizza. 
+Instead of going east from the Upper Gate_Frizza:
+	if Dunia is in the Lower Gate_Frizza:
+		say "They won't let you go until your two companions have returned.";
+		stop the action;
+	else:
+		continue the action.
+		
+A console and a weapon's rack are nowhere.
 
+The description of the weapon's rack is "An ugly but pracitcal piece of furniture, made to store weaponry."
 A gun is on the weapon's rack. The description of the gun is "An unfamiliar chunk of metal with a glowing core, you can barely identify it, except for the muzzle. Honestly, you wouldn't even know how to fire it."
-Duju Operator 1 and Duju Operator 2 are persons in the Upper Gate_Frizza. The description of Duju Operator 1 is "They seem very focussed. Their bodies pulse with light - something you haven't seen with the other types yet." The description of Duju Operator 2 is "They seem very focussed. Their bodies pulse with light - something you haven't seen with the other types yet."
+Duju Operator 1 and Duju Operator 2 are persons in the Lower Gate_Frizza. The description of Duju Operator 1 is "They seem very focussed. Their bodies pulse with light - something you haven't seen with the other types yet." The description of Duju Operator 2 is "They seem very focussed. Their bodies pulse with light - something you haven't seen with the other types yet."
 Instead of taking the console, say "It's huge. Besides, you don't even dare touch it."
-Instead of taking the weapon's rack, say "That would be rather unpractical."
+Instead of taking the weapon's rack, say "That would be rather unpractical to carry."
 Instead of taking the gun for the first time, say "Until now you were considered peaceful. Taking a foreign gun in the middle of a foreign building could change that impression. Think good before taking it."
+Instead of taking Duju Operator 1, say "They don't look like they would fancy physical contact."
+Instead of taking Duju Operator 2, say "They don't look like they would fancy physical contact."
 
 [Gun]
-After taking the gun for the second time, say "Instantly you hear shouts and calls behind you. Before even having the chance to turn, you are brutally knocked over and knocked unconscious by a heavy blow. [line break][line break] For a long time you seem to float through thick dark space, sometimes you feel an edge of something metal painfully thrust into your side. As you awake you find yourself in a small chamber with a sterile atmosphere. Three walls are of blank metal with blue veins in them, the fourth is vitreous and reveals a spectacular view: a vast plaza with mingling crowds of glowing shapes, surrounded by exotic buildings made out of crystal and white metal, transportation vehicles of no known origin and static guards, as heavily armed as the ones you saw before - and all radiating a constant bluish sheen like in a dream. However, as much as you see, as little you hear. The chamber seems to be soundproof. The impressions are overwhelming, you feel the exhaustion coming back and fall asleep where you lie."
+Instead of taking the gun for the second time:
+	if the player has the Pure Flux Essence:
+		say "There's no need for weaponry anymore.";
+	else:
+		say "Instantly you hear shouts and calls behind you. Before even having the chance to turn, you are brutally knocked over and knocked unconscious by a heavy blow. [line break][line break] For a long time you seem to float through thick dark space, sometimes you feel an edge of something metal painfully thrust into your side. As you awake you find yourself in a small chamber with a sterile atmosphere. Three walls are of blank metal with blue veins in them, the fourth is vitreous and reveals a spectacular view: a vast plaza with mingling crowds of glowing shapes, surrounded by exotic buildings made out of crystal and white metal, transportation vehicles of no known origin and static guards, as heavily armed as the ones you saw before - and all radiating a constant bluish sheen like in a dream. However, as much as you see, as little you hear. The chamber seems to be soundproof. The impressions are overwhelming, you feel the exhaustion coming back and fall asleep where you lie.";
+		now the player is in the Central Plaza_Frizza;
+		now the Flux Extractor is in the Lower Gate_Frizza;
+		now the Sinkan Cloak is in the Lower Gate_Frizza.
 [--]
 
 [Console]
@@ -592,8 +621,9 @@ Instead of inserting something which is not the Pure Flux Essence into the Power
 
 After inserting the Pure Flux Essence into the Power Unit:
 	say "You put the Essence into the generator of the ship and it instantly starts working - the lights go on, you hear the engine starting and the turbines spinning. Time to take off.[paragraph break]You lift your ship, up and up, until you are far above the surface of Frizza. You take a last glance at the blue Fluxes, the city structures and the rocky landscape, before breaching through the clouds and entering the stratosphere. You did it, you survived Frizza.[paragraph break]For a long time you sail through space, passing moons, asteroids, planets ... you think about your past actions, and of what will come. Before you can help it, you fall to sleep of exhaustion.[paragraph break]Chapter 5 - Kaldriss[paragraph break]You are suddenly woke by heavy jolts and a bursting noise. You quickly orient yourself and grasp the situation. You got caught in a meteor shower and while trying your best to manouver your spaceship through it  your engine still took a hit. You then had to crash-land on Kaldríss - one of the most cold planets in this solar system.  Since only a few explorers made their to this planet there's not a whole lot of information available about this icy place. You are pretty much on your own now. The spaceship also won't take off before it hasn't been properly repaired. But first things first. Without any kind of heat you won't survive this bleakness for long. You tame a look at the command panel in hopes of finding something of use but it doesn't look very good. There's only a single green button on the command panel. What could this mean? I might also wanna  take a look at the spaceship exit that lies straight ahead since it seems to be busted, too.";
-	remove Pure Flux Essence from play.
-	[now the player is in the Spaceship Bridge_Kaldríss.]
+	[now the Pure Flux Essence is in the power reserve;
+	now the description of the Pure Flux Essence is "If used correctly this pure flux essence creates a warm energy that withstands even the coldest temperatures. However, a catalyst is required in order to make use of the orbs sheer amount of energy."
+	now the player is in the Spaceship Bridge_Kaldríss.]
 	
 [Techie]
 After answering Dunia that "Techies" for the first time:

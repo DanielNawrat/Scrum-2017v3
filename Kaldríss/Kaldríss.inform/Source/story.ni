@@ -1,13 +1,71 @@
 "Kaldríss" by Daniel
 
+[Helper]
 
-[BUGFIXING]
+Helper is nowhere. Helper is scenery.
+
+Understand "Helper" as asking Helper about anything.
+Asking Helper about anything is an action applying to nothing. 
+Carry out asking Helper about anything:
+	now Helper is in the location of the player;
+	say "---[line break][bold type]
+This is the help section, you will get a list of essential commands that you can use in the game.[paragraph break][roman type]
+
+look - shows you the room you are currently in[line break]
+e(x)amine (something)- get information about a thing or a person (if no object or person is specified, something will be examined automatically, if it's the only thing in the room[line break]
+take (something) - take and carry something[line break]
+(i)nventory - examine what your are carrying[line break]
+
+(e)ast - go east[line break]
+(w)est - go west[line break]
+(s)outh - go south[line break]
+(n)orth - go north[line break]
+
+save - produce a local save file on your computer[line break]
+restore - load a local save file[line break]
+
+Frizza[line break]
+ask (someone) about (something) - the typical way to begin a dialogue, the topics you can ask about are printed [bold type]bold [roman type]in the text beforehand[line break]
+answer (something) to (someone) - the typical way to respond to questions, the topics you can answer are printed [bold type]bold [roman type]in the text beforehand[line break]
+wait - wait some time, some situations may require this[line break]
+wear (something) -	put clothing on[line break]
+take off (something )-	take off clothing[line break]
+approach (something)- 	try to draw closer to an object, some situations may require this[line break]
+extract -	extract a sample from the Flux Current[line break]
+
+Kaldríss[line break]
+open/close (something)[line break]
+unlock/lock (something)[line break]
+insert (something) into (something)[line break]
+remove (something) from (something)[line break]
+shove (something) aside - some situations with blocked paths may require this[line break]
+put (something) on (e.g. clothing)[line break][paragraph break]";	
+	remove Helper from play;
+	say "End of help section[line break]---"
+
+[End of Helper Section]
+
 [
-- Suit Capacitor per Beschreibung näher erklären
-- End of Game Text verfassen
-- Heimdallr NPC Dialog erweitern (Open Sesame ersetzen)
-- ggf. Response Table einbauen
+[TO DO]
+
+- Navigation verbessern (z.B. "In the south/north", "Instead of going nowhere from X say "..")
+- Beschreibungen für Items (z.B. examine, take) erweitern
+- Beschreibungen für Räume (insbesondere Blakkríss Temple) erweitern
+- UNDO function? (z.B. für energy capacitor) 
+
+[IN PROGRESS]
+
+- "End of Game" Text schreiben und so prpgrammieren, dass er am Spielende ausgegeben wird
+- Dialog mit Heimdallr erweitern (ggf. mit Response Table)
+- Instead of going nowhere from X (für jeden Raum einfügen)
+
+
+[DONE]
+- energy orb Beschreibungen narrativ anpassen (bzgl. Frizza - Pure Flux Essence/insert into Power Unit anstelle command panel)
+- Space Suit als Kleidung inkl. Suit Capacitor (Container) programmieren, den man erst im Raumschiff auf Kaldríss anziehen muss
+- Capacitor Mechanik ggf. vereinfachen (Instead of inserting anything other than into .. )
 ]
+
 Chapter 5 - Kaldríss
 
 Section 1 - Crash Site
@@ -16,79 +74,84 @@ Section 1 - Crash Site
 
 Axesto is a person. The Player is Axesto.
 
-[Weight]
-A weight is a kind of value. 10kg specifies a weight. Everything has a weight. A thing usually has weight 100kg. 
+[Spacesuit with energy capacitor]
+A spacesuit is a kind of thing. A spacesuit is always wearable. An energy capacitor is a kind of container. The energy capacitor is part of every spacesuit.
+The carrying capacity of an energy capacitor is always 1.
+The description of the spacesuit is "Spacesuit Mk. XV[paragraph break]Made for deep space travel due to its extraordinary thermodynamic capabilities.[paragraph break]This model also has an energy capacitor built in that needs some kind of energy in order to properly work. The more pure the energy the more effective the suits thermal protection will work.".
 
-suit capacitor has a weight called breaking strain. The breaking strain of suit capacitor is usually 50kg. Definition: suit capacitor is bursting if the total weight of things in it is greater than its breaking strain. 
+After examining the spacesuit for the first time:
+	say "After taking a closer look it seems like the suit doesn't have any juice left so you would still freeze pretty quickly after leaving the spaceship. Unless, of course, you find some kind of energy source that fits right in.".
 
-The energy orb has weight 50kg.
+[Warnings for inserting wrong items]
+Before inserting protector glove into the energy capacitor:
+	say "This glove will surely not fit into the capacitor so it's not advised to continue this action. Otherwise the energy capacitor might break";
+	stop the action.	
+	
+Before inserting emergency torch into the  energy capacitor:
+	say "No.";
+	stop the action.
+	
+Before inserting encryption key into the energy capacitor:
+	say "No.";
+	stop the action.
 
-[Suit Capacitor]
-Every turn when suit capacitor held by player is bursting: 
-	say "The [suit capacitor] is only meant to only pure energy and nothing else. Inserting anything else destroys it. You discard its ruined remains, looking miserably down at [the list of things in the suit capacitor] on the floor."; 
-	now all of the things in the suit capacitor are in the location; 
-	now the suit capacitor is nowhere. 
+Before inserting Yarwol's Keystone into the energy capacitor:
+	say "No.";
+	stop the action.
 
-The player wears a suit capacitor. The description of the suit capacitor is "This capacitor only holds certain types of energy sources which usually maintain the suit's functionality such as protecting the wearer from extreme temperatures. Inserting anything other than pure energy e.g. matter of all sorts will most likely destroy the capacitor and might even result in a horrible death.  Caution is advised here!" The suit capacitor is a container. The carrying capacity of the suit capacitor is 1.
-
-Before inserting the energy orb into the suit capacitor:
-	say "Do I really wanna do this? Chances of me dying are quite high. On the other hand, I will probably die anyway if I don't try.";
+Before inserting the pure flux essence into the energy capacitor for the first time:
+	say "[italic type]Do I really wanna do this? Chances of me dying are quite high. On the other hand, I will probably die anyway. Careful now. And ..[paragraph break]oh no ..[paragraph break]nonononono[paragraph break]WAIT .. IT WORKED! EUREKA![roman type]";
 	continue the action.
 
 [Protector Glove/Electricity]
-
 A protector glove is a thing and wearable. The description of the protector glove is "This protector glove is made out of a special  rubber compound that temporarily absorbs any kind of energy thus protecting its wearer."
 
 A thing can be safe or electrified. A thing is usually safe.
 
 This is the electrocution-wisdom rule:
 	if the player wears the protector glove, make no decision;
-	if the action requires a touchable noun and the noun is electrified, say "I really shouldn't be touching [the noun] without something that protects my hand." instead;
+	if the action requires a touchable noun and the noun is electrified, say "You really shouldn't be touching [the noun] without something that protects you from its enormous amounts of energy. This flux essence consists of pure energy and would therefore immediately disintegrate your hand if you touched it without a [bold type]glove[roman type]." instead;
 
 The electrocution-wisdom rule is listed before the basic accessibility rule in the action-processing rules.
 
-After taking the energy orb:
-	say "This could really work!";
+After putting on the protector glove for the first time:
+	say "This should work!";
 	continue the action.
+
+After taking the pure flux essence for the first time:
+	say "This glove truly works wonders. No harm done.".
+
+
 
 
 [Global Error Message]
-
 Instead of taking some scenery, say "You don't seem to be strong enough."
 Instead of going nowhere, say "You don't want to go there."
+
+
+
 
 [Region - Crash Site]
 
 The Crash Site_Kaldríss is a region.The Spaceship Bridge_Kaldríss, the Spaceship Storage_Kaldríss, the Spaceship Exit_Kaldríss, the Hunting Grounds_Kaldríss and the Crash Zone_Kaldríss are in Crash Site_Kaldríss. 
 
-[Items]
-
-[Different Items available depending on story branch]
-
-[Plasma Cannon only usable if Energy Orb is used to power it?]
-
-[The plasma cannon is in the Spaceship Storage_Kaldríss.
-Before taking the plasma cannon:
-	say "Even though this is a highly experimental weapon it might prove useful at some point."
-The food ration is in the Spaceship Storage_Kaldríss.  The description of the food ration is "Smells kinda weird. It's super nutritious though!"
-Before taking the food ration:
-	say "Bringing food with you is never a bad idea."]
-[The Götti is in the Spaceship Storage_Kaldríss. The description of the Götti is "Who would've thought you and your fellow Götti would end up here? On the coldest planet this solar system has to offer. He must be freezing."
-Before taking the Götti:
-	say "I'm really impressed by how adaptive this creature is. The cold doesn't seem to bother it at all and it even seems like it want's to come with me."]
-[The smoke nodule is in the Spaceship Storage_Kaldríss. The description of the smoke nodule is "You picked one of these up during your escape from Gaisetto. That was one hell of an escape!"
-Before taking the smoke nodule:
-	say "I totally forgot that I took one of these with me during my escape from the Gaisetto jungle."]
-	
+[Items]	
 [Hidden Items/Riddles]
-[Energy Orb - Energy Orb vorher als Antrieb des Schiffes aber jetzt als Energiequelle zum wärmen]
-In the Spaceship Bridge_Kaldríss is a command panel. It is scenery.  In the command panel is a fried communicator, a protector glove and a secret storage. It is closed and openable. The secret storage is a container. The secret storage is fixed in place. It is closed, locked and openable. The description of the secret storage is "There is a reason this storage compartment is well hidden inside the command panel. Whatever is in there must be of great importance for this spaceship." The green button unlocks the secret storage. In the secret storage is an energy orb. The energy orb is an electrified thing. The description of energy orb is "If used correctly this energy orb creates a warm energy that withstands even the coldest temperatures. It also emits a specific light that only certain creatures are able to see. You are not one of them.". The energy orb can be taken. 
+In the Spaceship Bridge_Kaldríss is a command panel. It is scenery.  In the command panel is a fried communicator, a protector glove and a power reserve. It is closed and openable. The power reserve is a container. The power reserve is fixed in place. It is closed, locked and openable. The description of the power reserve is "Of course! The power reserve basically contains a large portion of the spaceships energy reservoir. If you manage to open it and check if there is still energy left you might be able to use it to power something."
 
-Before taking the energy orb:
-	say "I totally forgot that I've put this here. This orb holds a huge amount of energy which could be used to power all kinds of devices and possibly even my suit capacitor."
+
+The green button unlocks the power reserve. In the power reserve is a pure flux essence. The pure flux essence is an electrified thing. The description of pure flux essence is "If used correctly this pure flux essence creates a warm energy that withstands even the coldest temperatures. However, a catalyst is required in order to make use of the orbs sheer amount of energy.". The pure flux essence can be taken. 
+
+Before taking the pure flux essence:
+	say "This flux essence used to contain way more energy since it's been in use for quite a while but it's possible that it still contains enough energy to power your spacesuit."
+
+
+
+[extreme conditions demand extreme responses]
+
 	
 The fried communicator is fixed in place.
-The encryption key is in the secret storage. The encryption key can be taken. The description of the encryption key is "Test."
+The encryption key is in the command panel. The encryption key can be taken. The description of the encryption key is "Test."
 
 After unlocking locker with encryption key:
 	say "This key seems to fit.  [italic type]Lock mechanism status: [roman type][bold type]DEACTIVATED //[roman type] You may proceed to open the locker.";
@@ -98,31 +161,31 @@ After unlocking locker with encryption key:
 The green button is a device. It is in the command panel. It is switched off. Instead of pushing the green button: if the green button is switched off, try switching on the green button; otherwise try switching off the green button. The green button is fixed in place.
 
 After switching on the green button:
-	now the secret storage is unlocked;
-	say "Beep Boop! Secret storage status: OPEN."
+	now the power reserve is unlocked;
+	say "Beep Boop! Power Reserve status: [bold type]UNLOCKED[roman type].[paragraph break]Caution advised."
 	
 After switching off the green button:
-	now the secret storage is locked;
-	say "Boop Beep! Secret storage status: CLOSED."
+	now the power reserve is locked;
+	say "Boop Beep! Power Reserve status: [bold type]LOCKED[roman type].[paragraph break]Security measures working as intended."
 
 After examining fried communicator:
 	say "Yep, totally busted!"
 
+Before taking the fried communicator:
+	say "You don't have the tools to disassemble the communicator. Since it doesn't seem to work you would be wasting your time anyway.". 
+
 After examining the command panel:
-	say "I could open this baby up and take a peak inside."
+	say "You could open this baby up and take a peak inside."
 
 [Emergency Torch]
-In the Spaceship Storage_Kaldríss is a locker. It is scenery. The locker is an openable lockable container in the Spaceship Storage_Kaldríss. It is closed, locked and openable. The encryption key unlocks the locker. The description of the locker is "Now I remember! I used to store things in here that could come in very hand in emergencies! Let's see if I can find something useful in here.".
-In the locker is an emergency torch. The emergency torch can be taken.  The description of the emergency torch is "Plasma Torch Mk. IV - Survival Issue".
+In the Spaceship Storage_Kaldríss is a locker. It is scenery. The locker is an openable lockable container in the Spaceship Storage_Kaldríss. It is closed, locked and openable. The encryption key unlocks the locker. The description of the locker is "You can't remember exactly what's inside but you know for sure that your spacesuit and probably other useful stuff is in there. Probably worth taking a look.".
+In the locker is an emergency torch and a spacesuit. The emergency torch can be taken. The description of the emergency torch is "Plasma Torch Mk. IV - Survival Issue".
 Before taking the emergency torch:
 	say "This baby will light up no matter how harsh the conditions are since it uses a special fuel for the ignition process."
 
 
 [Rooms]
-The Spaceship Bridge_Kaldríss is a room.  "The place where all the magic happens. Well, it used to be at least - during the impact most of the important equpiment including the communication systems must have been fried and doesn't seem to work anymore.  There's only a single flickering light inside the command panel. What could this mean? I should probably open the command panel and take a look. I could also go south and check the storage of the spaceship first." The printed name of the Spaceship Bridge_Kaldríss is "Spaceship Bridge".
-
-After going to the Spaceship Bridge_Kaldríss for the first  time:
-	say "You got caught in a meteor shower and while trying your best to manouver your spaceship through it  your engine still took a hit. You then had to crash-land on Kaldríss - one of the most cold planets in this solar system.  Since only a few explorers made their to this planet there's not a whole lot of information available about this icy place. You are pretty much on your own now. The spaceship also won't take off before it hasn't been properly repaired. But first things first. Without any kind of heat you won't survive this bleakness for long. You tame a look at the command panel in hopes of finding something of use but it doesn't look very good. There's only a single green button on the command panel. What could this mean? I might also wanna  take a look at the spaceship exit that lies straight ahead since it seems to be busted, too."
+The Spaceship Bridge_Kaldríss is a room.  "The place where all the magic happens. Well, it used to be at least - during the impact most of the important equpiment including the communication systems must have been fried and doesn't seem to work anymore.  There's only a single flickering light inside the command panel. What could this mean? I should probably open the [bold type]command panel[roman type] and take a look. I could also go south and check the storage of the spaceship first." The printed name of the Spaceship Bridge_Kaldríss is "Spaceship Bridge".
 	
 The Spaceship Storage_Kaldríss is a room. "Taking a quick look inside the storage room doesn't seem to reveal anything particularly interesting. There are only some random souvenirs from your previous intergalactic travels and your locker which you haven't opened in ages.  It also looks like the airlock in the south doesn't seem to function anymore so perhaps I should go check that out as well?" The printed name of the  Spaceship Storage_Kaldríss is "Spaceship Storage".
 The Spaceship Exit_Kaldríss is a room. "The airlock also seems to be affected by the crash and the temperatures inside the spaceship are nearing dangerous levels. I could leave the spaceship right now by going east but I if I don't have something to protect me from the cold I will probably die." The printed name of the  Spaceship Exit_Kaldríss is "Spaceship Exit".
@@ -134,9 +197,7 @@ The Hunting Grounds_Kaldríss is a room. "Turns out this used to be an explorer 
 The stone plate is above Yundar's Cave. The stone plate is a door. The stone plate is closed and openable.  The description of the stone plate is "This stone plate looks really heavy but if I manage to [bold type]shove it aside[roman type] just a little bit I should be able to get past it."
 
 
-
-
-
+[Stoneplate to Cave System]
 Stoneplateopen is a truth state that varies.  Stoneplateopen is false.
 
 After opening the stone plate:
@@ -150,10 +211,7 @@ Before going to Yundar's Cave from Hunting Grounds_Kaldríss:
 		say "You are finally able to enter the cave but you should still proceed with caution since you never know what's waiting inside.";
 		continue the action.
 
-
-
-
-
+[shove aside Befehl]
 Understand "shove aside [something] " as opening.
 	Understand "put [something] back in place" as closing.
 
@@ -171,29 +229,28 @@ The Hunting Grounds_Kaldríss is north of the Crash Zone_Kaldríss.
 
 [Movement Restrictions]
 	
-[Energy Orb or Emergency Torch required to leave Spaceship]
+[Before leaving the spaceship]
 Before going to the Crash Zone_Kaldríss:
-	unless the player has the emergency torch or the energy orb is in the suit capacitor:
+	unless the player has the emergency torch or EnergyCapacitorReady is true:
 		move the player to the Spaceship Exit_Kaldríss, without printing a room description;
 		say "You can't leave the spaceship just yet. You need to find something to keep you warm before you venture off!";
 		stop the action.
 
+[Variables]
+EnergyCapacitorReady is a truth state that varies. EnergyCapacitorReady is false.
 
+After inserting pure flux essence into energy capacitor:
+	now EnergyCapacitorReady is true.
+	
+After removing pure flux essence from energy capacitor:
+	now EnergyCapacitorReady is false.
+	
 After going to the Crash Zone_Kaldríss:
 	say "Now that you found a way to stay warm you should be able to leave the spaceship without instantly freezing to death.";
 	continue the action.
 
 
 
-[Before going to the Crash Zone_Kaldríss:
-	if the player has the emergency torch:
-		move the player to the Spaceship Exit_Kaldríss;
-		say "Now that I found something to keep me warm I should be able to leave the spaceship without instantly freezing to death.  Let's just hope I don't attract any unwelcome visitors.";
-		stop the action.]
-
-[NPCs]
-[Sköllháti is a neuter animal in the Hunting Grounds_Kaldríss. "Grrrhrrrhrrr".]
-[Rymr is a person in the Hunting Grounds_Kaldríss. "Vega óvinr!".]
 
 
 Section 2 - Yetíss Cave System
@@ -280,65 +337,6 @@ Instead of going to the Hunting Grounds_Kaldríss from Yundar's Cave:
 		move the player to Yundar's Cave, without printing a room description;
 		say "There's no way you can make it out of the cave this way. You will have to find another way.";
 		stop the action.
-		
-[A person has a room called last location.
-
-Understand "follow [any person]" as following. Understand the commands "chase" and "pursue" as "follow".
-
-Following is an action applying to one visible thing.
-
-Check following:
-	if the noun is the player, say "Wherever you go, there you are." instead;
-	if the noun is visible, say "[The noun] is right here." instead;
-	if the last location of the noun is not the location, say "It's not clear where [the noun] has gone." instead.
-
-Carry out following:
-	let the destination be the location of the noun;
-	if the destination is not a room, say "[The noun] isn't anywhere you can follow." instead;
-	let aim be the best route from the location to the destination;
-	say "(heading [aim])[line break]";
-	try going aim.
-
-
-
-To move (pawn - a person) tidily to (target - a room):
-	now the last location of the pawn is the holder of the pawn;
-	move the pawn to the target.
-
-[Follow Yundar]
-
-Every turn:
-	let current location be the location of Yundar;
-	let next location be a random room which is adjacent to the current location;
-	if Yundar is visible, say "Yundar heads to [the next location].";
-	move Yundar tidily to next location;
-	if Yundar is visible, say "Yundar arrives from [the current location]."
-
-[Follow Yarwol]
-
-Every turn:
-	let current location be the location of Yundar;
-	let next location be a random room which is adjacent to the current location;
-	if Yarwol is visible, say "Yarwol heads to [the next location].";
-	move Yarwol tidily to next location;
-	if Yarwol is visible, say "Yarwol arrives from [the current location]."
-
-[Movement Restrictions Yetíss]
-Instead of Yundar trying going to Hunting Grounds_Kaldríss:
-	if Yundar is visible, say "Grrhrhhrhrhrhr";
-	stop the action.
-	
-Instead of Yundar trying going to Secret Cave_Kaldríss:
-	if Yundar is visible, say "Hnnnghhgngnnhgghhhhn";
-	stop the action.
-	
-Instead of Yarwol trying going to Hunting Grounds_Kaldríss:
-	if Yarwol is visible, say "Grmmmppfpprrpprrrffffr.";
-	stop the action.
-	
-Instead of Yarwol trying going to Secret Cave_Kaldríss:
-	if Yarwol is visible, say "Arggghhhhrrhrrhrhrhrrh";
-	stop the action.]
 
 [Directions]
 Hunting Grounds_Kaldríss is above stone plate.
@@ -364,28 +362,6 @@ Before taking Yarwol's Keystone:
 After entering Secret Cave_Kaldríss:
 	remove Yarwol's Keystone from play.
 
-[Section 3 - Jötunheimr
-
-[Region - Jötunheimr]
-Jötunheimr is a region.  Jötunheimr Main Gate, Hunting Lodge and  Throne Room_Kaldríss is in Jötunheimr.
-
-[Rooms]
-Jötunheimr Main Gate is a room. "Insert description here."
-Hunting Lodge is a room. "Insert description here."
-Throne Room_Kaldríss is a room. "Insert description here." The printed name of Throne Room_Kaldríss is "Throne Room".
-
-[Directions]
-Jötunheimr Main Gate is east of Hunting Lodge.
-Hunting Lodge is north of Throne Room_Kaldríss.
-Jötunheimr Main Gate is above the Hunting Grounds_Kaldríss.
-
-[NPCs]
-[Rymr is a person in the Hunting Lodge. "Insert description here."]
-Loptr is a person in the Jötunheimr Main Gate. "Insert description here."
-Wodan is a person in  the Throne Room_Kaldríss. "Insert description here."]
-
-
-
 Section 4 - Blakkríss Temple
 
 [Region -  Blakkríss Temple]
@@ -406,11 +382,9 @@ The pillars is a thing inside the Blakkríss Temple Entrance. The description of
 
 
 [Directions]
-[The Blakkríss Temple Entrance is down from Throne Room_Kaldríss.]
 The Blakkríss Temple Entrance is above the Secret Cave_Kaldríss.
 The Blakkríss Temple Entrance is east of the Great Hall_Kaldríss.
 The Great Hall_Kaldríss is east of the Spectral Bridge.
-[The Spectral Bridge is east of the Bifröst Portal Chamber.]
 
 [NPCs]
 Heimdallr is a person in the Spectral Bridge. The description of Heimdallr is "My name is Heimdallr and I am the oathsworn protector of the [bold type]portal chamber[roman type]. For centuries I have been guarding this place and never did I let anyone past my sword.".

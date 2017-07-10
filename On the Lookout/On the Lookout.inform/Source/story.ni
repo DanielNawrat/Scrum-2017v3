@@ -144,7 +144,7 @@ The Flat Rock_Sitis is a room. The printed name of the Flat Rock_Sitis is "Your 
 [Beschreibungen für andere Himmelsrichtungen?]
 
 [Region 2 - The Desert of Sitis]
-The Desert_Sitis is a region. The Wide Desert of Sitis_Sitis, the Protection Bridge_Sitis and the Rampart around Sicuum_Sitis are in the Desert_Sitis.
+The Desert_Sitis is a region. The Wide Desert of Sitis_Sitis, the Protection Bridge_Sitis, the Rock Mine_Sitis and the Rampart around Sicuum_Sitis are in the Desert_Sitis.
 
 [Räume]
 The Wide Desert of Sitis_Sitis is a room. The printed name of the Wide Desert of Sitis_Sitis is "The Wide Desert". "You've reached the Desert of Sitis. It gives you two things: First, an impression of what whole Sitis looks like - sandy, dry, with some deep stone canyons and huge rocks afar. But although this planet does not seem to be a place to life, the Desert also gives you the chance to discern that you are not alone. There IS life! When you look north, directly in front of you is a long corrugated iron bridge, guiding over one of those ravines. You can not access the bridge, it is blocked with a barbed wire fence, but straight ahead, at the end you see a majestic sandstone palace. In the bridge's middel, a wooden ladder leads to an enormous square block in the east. Likewise it is built out of stone and gives a somber impression. If you look east from the point you are standing at right now, you see the kind of a rock mine. [bold type]In the south[roman type] you recognise a lot of small white houses surrounded by a rampart. It seems like [bold type]people are living here[roman type]."
@@ -155,6 +155,8 @@ The Rampart around Sicuum_Sitis is south of the Wide Desert of Sitis_Sitis.
 
 The wooden gate is south of the Rampart around Sicuum_Sitis and north of the Agora_Sitis. The wooden gate is a door. The wooden gate is closed and openable.  
 The description of the wooden gate is "It seems to be closed. [bold type]Let's try to open it[roman type]."
+
+The Rock Mine_Sitis is a room. The printed name of the Rock Mine_Sitis is "Rock Mine". The Description of the Rock Mine_Sitis is "". The Rock Mine_Sitis is east of the Wide Desert of Sitis_Sitis.
 
 The Person behind the door_Sitis is a person. The Person behind the door_Sitis is in the Agora_Sitis. The printed name of the Person behind the door_Sitis is "the faceless guardian". 
 
@@ -178,7 +180,7 @@ The Protection Bridge_Sitis is north of the Wide Desert of Sitis_Sitis. [Beschre
 
 [Region 3 - The Village Sicuum]
 The Village Sicuum_Sitis is a region. The printed name of the Village Sicuum_Sitis is "The Village Sicuum". 
-The Agora_Sitis, the Domum Praesidium_Sitis, the Shelter_Sitis, the Secret Passage_Sitis, the Rock Mine_Sitis and Mitéra's Room_Sitis are in the Village Sicuum_Sitis. 
+The Agora_Sitis, the Domum Praesidium_Sitis, the Shelter_Sitis, the Secret Passage_Sitis and Mitéra's Room_Sitis are in the Village Sicuum_Sitis. 
 
 [Räume]
 The Agora_Sitis is a room. The printed name of the Agora_Sitis is "The Agora of Sicuum". The Agora_Sitis is south of the wooden gate. The description of the Agora_Sitis is "You enter the wooden gate. Finally, you do not just expect other people, rather you see them. The Sitisianer, that is how they are called, looks different then you. They are taller, with longer legs and shorter necks. Also they definitely got more hair. But their faces seems to be drawn by life. You really do not know how to connect to these people without scaring them. You should [bold type]look[roman type] around for the one who has opened the gate for you."
@@ -187,12 +189,12 @@ After looking in the Agora_Sitis for the first time:
 	say "You realize a boy staring at you. His name must be [bold type]Anaidis[roman type] because someone calls him [italic type]'Anaidis, catching is about running after the other ones, not staring around!' [roman type]What about [bold type]connecting to him[roman type]?";
 	now Anaidis_Sitis is in the Agora_Sitis;
 	now the description of the Agora_Sitis is "";
+
 	[Description muss weg!]
 
 After examining Anaidis_Sitis the first time:
 	say "The boy takes a step back. He radiates a mixture of fear and fascination. [italic type]'You have spoken about finding water. You will [bold type]not be successful[roman type] here.'[roman type]"
 	[Description "You see nothing about..." muss weg]
-
 
 
 [Dialogtabelle]
@@ -227,13 +229,15 @@ After examining Mitéra_Sitis for the first time:
 	say "Suddenly you hear loud noises from the Agora. Kids are screaming, parents are calling them concerned and deep male voices are yelling [italic type]'Out of our way! Out of HIS way!' [roman type]Anaidis runs shocked out of the room. First, you want to follow him, but then you focuse on Mitéra again. However, she directly signals, [bold type]you should go after him[roman type]. So, what are you waiting for?[paragraph break]";
 	now the description of Mitéra_Sitis is "The old woman is friendly looking at you.";
 	now Anaidis_Sitis is in the Agora_Sitis;
-	now the description of the Domum Praesidium_Sitis is "";
+	now the description of the Domum Praesidium_Sitis is "Anaidis is outside at the Agora.";
 	now the description of the Agora_Sitis is "As you arrive at the Agora, you just wanna know what this Scorpius did. Specially, when you see, how the people are reacting to him. So use your chance, ask Anaidis about.";
+	now the description of the Wide Desert Sitis_Sitis is "However, you have been faster than Machitikos. That means, you have a bit time to think about, how you could defend yourself against this machine. As you look around, [bold type]you discover in the east the desert is going downhill.[roman type] You should go there and check your possibilities to hide.";
+	
+The sharp stone_Sitis is a thing. The sharp stone_Sitis is portable. The sharp stone_Sitis is in the Rock Mine_Sitis. The printed name of the sharp stone_Sitis is "sharp stone". 
 
-[Hint fehlt, dass man mit Anaidis sprechen sollte; vielleicht neue Beschreibung des Platzes - wie du dich fühlst?!]
 After asking Anaidis_Sitis about "scorpius":
-	say "Anaidis whispers, [italic type]'He is a dictator. Earlier, Scorpius was one of us. I mean, the time before I was born. But he was always kind of different. A bit more selfish than other ones, a bit more aggressive and a bit more oppressive. One summer, an aridity befall the whole planet Sitis. We needed to calculate the water more precisely. Consequently, dividing it between everyone and relinquishing, when someone else still got no water, was taken for granted. Except for Scorpius. He refused to share his water and started to manipulate other ones to do the same. This reckless behaviour culminates in his decision to construct Right now - he's forcing us every week to fight against his strongest warrior. If you win, you will get two full keg of water. If you lose... you have to try to survive one week without new water. So. This is the answer you were looking for. [bold type]Are you going to fight?'[roman type][paragraph break]";
-	say "You hesitate few seconds. This gladiator Machitikos looks highly dangerous. He is tall, muscular and Beschreibung fehlt. But you feel determined - you are going to beat him. For yourself and for the repressed Sitisianer. [bold type]You step directly in front of the great Scorpius.[roman type]"
+	say "Anaidis whispers, [italic type]'He is a dictator. Earlier, Scorpius was one of us. I mean, the time before I was born. But he was always kind of different. A bit more selfish than other ones, a bit more aggressive and a bit more oppressive. One summer, an aridity befall the whole planet Sitis. We needed to calculate the water more precisely. Consequently, dividing it between everyone and relinquishing, when someone else still got no water, was taken for granted. Except for Scorpius. He refused to share his water and started to manipulate other ones to do the same. This reckless behaviour culminates in his decision to construct an underground system which blocks all of our water sources, so we can not draw on them anymore. The only one that still gave water, was the one in his new built palace, deep in the north. There was and there is no chance to burgle. His guardians are doing their job very well. Since that day, he comes to Siccum every week and forces us to fight for our water. If you win, you will get two full keg of water. If you lose... you have to try to survive one week without new water. And everyone who is trying to steal it or to trick him, is going to prison. Immediately. So. This is the answer you were looking for. When you wanna leave the planet with new water, [bold type]your only chance is to fight against this warrior Machitikos.[roman type][paragraph break]";
+	say "You hesitate few seconds. This gladiator Machitikos looks highly dangerous. He is tall, muscular and his sight is totally aggressive. But you feel determined - you are going to beat him. For yourself and for the repressed Sitisianer. [bold type]You step directly in front of the great Scorpius.[roman type]"
 
 After examining Scorpius_Sitis for the first time:
 	say "Scorpius sits on a high wooden throne. [italic type]'What do you want? You little deformed bastard?!'[roman type] You answer assertive. [italic type][paragraph break]'I wanna fight. I wanna fight against your bastard Machitikos.'[roman type][paragraph break]";
@@ -244,17 +248,18 @@ After examining Machitikos_Sitis for the first time:
 	say "Machitikos does not say a word. He just grunts aggressively and throws two weapons in front of you: a long sharp spear and a huge spiked mace. [bold type]Which one do you take[italic type]?";
 	now the Spear_Sitis is in the Agora_Sitis;
 	now the Spiked Mace_Sitis is in the Agora_Sitis;
-[take all vermeiden - einrichten; remove eines der beiden vom Play][; instead of taking all ]
 
 After taking the Spear_Sitis:
-	say "The moment you took the spear, Machitikos straight begins to attac you with the spiked mace. Beschreibung fehlt. But finally - you bet him!"
+	say "The moment you take the spear, Machitikos begins to attac you with the spiked mace. You definitively underestimated this beast. He strikes you so hard, you do not know how to fight back, then running away towards the desert. Initially!";
+	now Axesto is in the Wide Desert of Sitis_Sitis;
+	remove the Spiked Mace_Sitis from play;
+	
 	
 After taking the Spiked Mace_Sitis:
-	say "The moment you took the spiked mace, Machitikos straight begins to attac you with the spear. Beschreibung fehlt. But finally - you bet him!"
+	say "The moment you took the spiked mace, Machitikos straight begins to attac you with the spear. Beschreibung fehlt. But finally - you bet him!";
+	remove the Spear_Sitis from play;
 	
-[Ende fehlt; Kampf muss noch ausgiebiger]
-
-
+	
 The Spear_Sitis is a thing. The Spear_Sitis is in the Shelter_Sitis. The Spear_Sitis is portable. The description of the Spear_Sitis is "You can fight with this spear."
 The Spiked Mace_Sitis is a thing. The Spiked Mace_Sitis is in the Shelter_Sitis. The Spiked Mace_Sitis is portable. The description of the Spiked Mace_Sitis is "You can fight with this spiked mace."
 
@@ -264,9 +269,7 @@ The Shelter_Sitis is a room. The printed name of the Shelter_Sitis is "Your Shel
 
 
 The Secret Passage_Sitis is a room. The printed name of the Secret Passage_Sitis is "A secret Passage". 
-The Secret Passage_Sitis is north of the Shelter_Sitis.
 
-The Rock Mine_Sitis is a room. The printed name of the Rock Mine_Sitis is "The Rock Mine". The Rock Mine_Sitis is north of the Secret Passage_Sitis. 
 
 
 [Region 4 - The Jail]
@@ -288,7 +291,7 @@ The Holy Palace_Sitis is north of the Protection Bridge_Sitis.
 
 [Charaktere]
 Carissimi_Sitis is a person in the Shelter_Sitis.The printed name of Carissimi_Sitis is "Carissimi".
-Ilithios_Sitis is a person in the Rock Mine_Sitis. The printed name of Ilithios_Sitis is "Ilithios". 
+Ilithios_Sitis is a person. The printed name of Ilithios_Sitis is "Ilithios". 
 
 
 [instead of going nowhere from xy, say ]
@@ -1575,6 +1578,5 @@ After asking heimdallr about "open sesame":
 After entering the Bifröst Portal Chamber :
 	end the story;
 	say "You did it!"
-
 
 

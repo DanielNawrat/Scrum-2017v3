@@ -194,7 +194,8 @@ After looking in the Agora_Sitis for the first time:
 
 After examining Anaidis_Sitis the first time:
 	say "The boy takes a step back. He radiates a mixture of fear and fascination. [italic type]'You have spoken about finding water. You will [bold type]not be successful[roman type] here.'[roman type]"
-	[Description "You see nothing about..." muss weg]
+	
+	[Description "You see nothing about..." muss weg!]
 
 
 [Dialogtabelle]
@@ -231,9 +232,18 @@ After examining Mitéra_Sitis for the first time:
 	now Anaidis_Sitis is in the Agora_Sitis;
 	now the description of the Domum Praesidium_Sitis is "Anaidis is outside at the Agora.";
 	now the description of the Agora_Sitis is "As you arrive at the Agora, you just wanna know what this Scorpius did. Specially, when you see, how the people are reacting to him. So use your chance, ask Anaidis about.";
-	now the description of the Wide Desert Sitis_Sitis is "However, you have been faster than Machitikos. That means, you have a bit time to think about, how you could defend yourself against this machine. As you look around, [bold type]you discover in the east the desert is going downhill.[roman type] You should go there and check your possibilities to hide.";
+	now the description of the Wide Desert Sitis_Sitis is "However, you have been faster than Machitikos. That means, you have a bit time to think about, how you could defend yourself against this machine. As you look around, [bold type]you discover in the east the desert is going downhill.[roman type] You should go there because deeper in the north there is just adversarial territory.";
+	now the description of the Rock Mine_Sitis is "You are surrounded by huge grey stones. Too high for you to climb on. [bold type]But in the east you spot a tree thicket with some old dry trees.[roman type] They are kind of perfect protection with their knotted treetop. Specially because you are small, light and with long claws - the best premises for climbing."
+
+The Tree Thicket_sitis is a room. The tree thicket_sitis is east of the Rock Mine_Sitis. The printed name of the Tree Thicket_sitis is "Tree Thicket". 
+
+The Rock Mine Tree_sitis is a thing. The Rock Mine Tree_sitis is not portable. The description of the Rock Mine Tree_sitis is "It's perfect. It's the perfect tree to climb on." The Rock Mine Tree_sitis is in the Tree Thicket_Sitis. The printed name of the Rock Mine Tree_sitis is "Rock Mine tree". 
+
+After examining the Rock Mine Tree_sitis for the first time:
+	say "Perfect! It's perfect.";
 	
-The sharp stone_Sitis is a thing. The sharp stone_Sitis is portable. The sharp stone_Sitis is in the Rock Mine_Sitis. The printed name of the sharp stone_Sitis is "sharp stone". 
+
+	[The sharp stone_Sitis is a thing. The sharp stone_Sitis is portable. The sharp stone_Sitis is in the Rock Mine_Sitis. The printed name of the sharp stone_Sitis is "sharp stone".]
 
 After asking Anaidis_Sitis about "scorpius":
 	say "Anaidis whispers, [italic type]'He is a dictator. Earlier, Scorpius was one of us. I mean, the time before I was born. But he was always kind of different. A bit more selfish than other ones, a bit more aggressive and a bit more oppressive. One summer, an aridity befall the whole planet Sitis. We needed to calculate the water more precisely. Consequently, dividing it between everyone and relinquishing, when someone else still got no water, was taken for granted. Except for Scorpius. He refused to share his water and started to manipulate other ones to do the same. This reckless behaviour culminates in his decision to construct an underground system which blocks all of our water sources, so we can not draw on them anymore. The only one that still gave water, was the one in his new built palace, deep in the north. There was and there is no chance to burgle. His guardians are doing their job very well. Since that day, he comes to Siccum every week and forces us to fight for our water. If you win, you will get two full keg of water. If you lose... you have to try to survive one week without new water. And everyone who is trying to steal it or to trick him, is going to prison. Immediately. So. This is the answer you were looking for. When you wanna leave the planet with new water, [bold type]your only chance is to fight against this warrior Machitikos.[roman type][paragraph break]";

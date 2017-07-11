@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-1">
   <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-121"/>
+  <activeNode nodeId="node-1"/>
   <item nodeId="node-1">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">On the Lookout&#x000A;An Interactive Fiction by Daniel, Franziska, Tim, Kevin, Tobias&#x000A;Release 1 / Serial number 170711 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Your arrival point. The Flat Rock&#x000A;You arrive on a planet called Sitis. You think the landing went great but as you leave your spaceship, you realise that two of your three water container broke down. Without minimum one new watertank you can not continue your journey. Far away in the east you recognise some kind of different rooftops. Maybe someones living there who could help you?&#x000A;&#x000A;&gt;</result>
@@ -731,7 +731,7 @@
     <temporary score="0">YES</temporary>
     <children>
       <child nodeId="node-68"/>
-      <child nodeId="node-102"/>
+      <child nodeId="node-82"/>
     </children>
   </item>
   <item nodeId="node-68">
@@ -885,7 +885,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-102">
+  <item nodeId="node-82">
     <command xml:space="preserve">x anaidis_sitis</command>
     <result xml:space="preserve">You see nothing special about The staring boy.&#x000A;&#x000A;The boy takes a step back. He radiates a mixture of fear and fascination. "You have spoken about finding water. You will not be successful here."&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -893,10 +893,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-103"/>
+      <child nodeId="node-83"/>
     </children>
   </item>
-  <item nodeId="node-103">
+  <item nodeId="node-83">
     <command xml:space="preserve">ask anaidis_sitis about no success</command>
     <result xml:space="preserve">Anaidis shakes his head. "I have never said we do not have any water here. Of course we do need water to survive. But we also need to fight for it. That's the reason we're not giving it away easily. Especially not to total strangers.&#x000A;&#x000A;You are not quite sure how to react to Anaidis statement. He seems to see this. So he starts to smile and mentions "Don't worry - it's less about you. It's more about our history. I know someone who could make you understanding these things. Come with me!"  Anaidis walks west to a huge hut. Follow him!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -904,10 +904,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-104"/>
+      <child nodeId="node-84"/>
     </children>
   </item>
-  <item nodeId="node-104">
+  <item nodeId="node-84">
     <command xml:space="preserve">west</command>
     <result xml:space="preserve">The Domum Praesidium of Sicuum&#x000A;As you enter, you see a long table standing in the middle of a spacious room, with a lot of chairs around and kind of executive chair at the tabel's end. So, this huge sandy hut seems to have an official function. During you are still thinking about to whom you are going to speak right now, Anaidis already walks straight ahead into a smaller room. Hurry up! Otherwise you maybe going to lose him.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -915,10 +915,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-105"/>
+      <child nodeId="node-85"/>
     </children>
   </item>
-  <item nodeId="node-105">
+  <item nodeId="node-85">
     <command xml:space="preserve">straight</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -926,10 +926,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-106"/>
+      <child nodeId="node-86"/>
     </children>
   </item>
-  <item nodeId="node-106">
+  <item nodeId="node-86">
     <command xml:space="preserve">north</command>
     <result xml:space="preserve">Mit&#x00E9;ra's Room&#x000A;You can see Anaidis and Mit&#x00E9;ra here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -937,10 +937,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-107"/>
+      <child nodeId="node-87"/>
     </children>
   </item>
-  <item nodeId="node-107">
+  <item nodeId="node-87">
     <command xml:space="preserve">x mit&#x00E9;ra</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -948,10 +948,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-108"/>
+      <child nodeId="node-88"/>
     </children>
   </item>
-  <item nodeId="node-108">
+  <item nodeId="node-88">
     <command xml:space="preserve">x mit&#x00E9;ra_sitis</command>
     <result xml:space="preserve">Mit&#x00E9;ra is a small and wrinkled woman. At the moment she lies on a narrow enhancement out of stone. It seems to be her bed. Anaidis kneels on the ground next to her whispering something incomprehensible. Suddenly, she gets up, actuates you and then her eyes lighten up. &#x000A;&#x000A;"Hello stranger! My name is Mit&#x00E9;ra, I am the protectress of my loved ones here in Sicuum. Anaidis mentioned you are searching for water. Is that right?"&#x000A;&#x000A;You nod. It feels like Mit&#x00E9;ra is trusting you. She continues.&#x000A;&#x000A;"You know, Axesto, there was a time, when our village Sicuum and the whole planet Sitis has been a lovely, peaceful and vivid place. Of course - the environment always resembled a desert. But we've had some plants, we've had some animals living here and especially we've had different water sources. These sources have been all around. You never needed to walk a long time until you've found one. But then, there came Scorpius..."&#x000A;&#x000A;Suddenly you hear loud noises from the Agora. Kids are screaming, parents are calling them concerned and deep male voices are yelling "Out of our way! Out of HIS way!" Anaidis runs shocked out of the room. First, you want to follow him, but then you focuse on Mit&#x00E9;ra again. However, she directly signals, you should go after him. So, what are you waiting for?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -959,10 +959,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-109"/>
+      <child nodeId="node-89"/>
     </children>
   </item>
-  <item nodeId="node-109">
+  <item nodeId="node-89">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">The Domum Praesidium of Sicuum&#x000A;Anaidis is outside at the Agora.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -970,10 +970,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-110"/>
+      <child nodeId="node-90"/>
     </children>
   </item>
-  <item nodeId="node-110">
+  <item nodeId="node-90">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">The Agora of Sicuum&#x000A;As you arrive at the Agora, you just wanna know what this Scorpius did. Specially, when you see, how the people are reacting to him. So use your chance, ask Anaidis about.&#x000A;&#x000A;You can see Anaidis, Machitikos and The Great Scorpius here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -981,10 +981,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-111"/>
+      <child nodeId="node-91"/>
     </children>
   </item>
-  <item nodeId="node-111">
+  <item nodeId="node-91">
     <command xml:space="preserve">ask anaidis_sitis about scorpius</command>
     <result xml:space="preserve">Anaidis whispers, "He is a dictator. Earlier, Scorpius was one of us. I mean, the time before I was born. But he was always kind of different. A bit more selfish than other ones, a bit more aggressive and a bit more oppressive. One summer, an aridity befall the whole planet Sitis. We needed to calculate the water more precisely. Consequently, dividing it between everyone and relinquishing, when someone else still got no water, was taken for granted. Except for Scorpius. He refused to share his water and started to manipulate other ones to do the same. This reckless behaviour culminates in his decision to construct an underground system which blocks all of our water sources, so we can not draw on them anymore. The only one that still gave water, was the one in his new built palace, deep in the north. There was and there is no chance to burgle. His guardians are doing their job very well. Since that day, he comes to Siccum every week and forces us to fight for our water. If you win, you will get two full keg of water. If you lose... you have to try to survive one week without new water. And everyone who is trying to steal it or to trick him, is going to prison. Immediately. So. This is the answer you were looking for. When you wanna leave the planet with new water, your only chance is to fight against this warrior Machitikos.&#x000A;&#x000A;You hesitate few seconds. This gladiator Machitikos looks highly dangerous. He is tall, muscular and his sight is totally aggressive. But you feel determined - you are going to beat him. For yourself and for the repressed Sitisianer. You step directly in front of the great Scorpius.&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -992,10 +992,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-112"/>
+      <child nodeId="node-92"/>
     </children>
   </item>
-  <item nodeId="node-112">
+  <item nodeId="node-92">
     <command xml:space="preserve">x scorpius</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1003,10 +1003,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-113"/>
+      <child nodeId="node-93"/>
     </children>
   </item>
-  <item nodeId="node-113">
+  <item nodeId="node-93">
     <command xml:space="preserve">x scorpius_sitis</command>
     <result xml:space="preserve">You see nothing special about The Great Scorpius.&#x000A;&#x000A;Scorpius sits on a high wooden throne. "What do you want? You little deformed bastard?!" You answer assertive. &#x000A;&#x000A;"I wanna fight. I wanna fight against your bastard Machitikos."&#x000A;&#x000A;All the people around you start whispering fluttered. Scorpius stares at you incredulous. &#x000A;&#x000A;"So... go on. Abortion!&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1014,10 +1014,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-114"/>
+      <child nodeId="node-94"/>
     </children>
   </item>
-  <item nodeId="node-114">
+  <item nodeId="node-94">
     <command xml:space="preserve">x machitikos_sitis</command>
     <result xml:space="preserve">You see nothing special about Machitikos.&#x000A;&#x000A;Machitikos does not say a word. He just grunts aggressively and throws two weapons in front of you: a long sharp spear and a huge spiked mace. Which one do you take?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1025,21 +1025,21 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-115"/>
+      <child nodeId="node-95"/>
     </children>
   </item>
-  <item nodeId="node-115">
+  <item nodeId="node-95">
     <command xml:space="preserve">take the spear_sitis</command>
-    <result xml:space="preserve">The moment you take the spear, Machitikos begins to attac you with the spiked mace. You definitively underestimated this beast. He strikes you so hard, you do not know how to fight back, then running away towards the desert. Initially!&#x000A;&#x000A;The Wide Desert&#x000A;However, you have been faster than Machitikos. That means, you have a bit time to think about, how you could defend yourself against this machine. As you look around, you discover in the east the desert is going downhill. You should go there because deeper in the north there is just adversarial territory.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">The moment you take the spear, Machitikos begins to attack you with the spiked mace. You definitively underestimated this beast. He strikes you so hard, you do not know how to fight back, then running away towards the desert. Initially!&#x000A;&#x000A;The Wide Desert&#x000A;However, you have been faster than Machitikos. That means, you have a bit time to think about, how you could defend yourself against this machine. As you look around, you discover in the east the desert is going downhill. You should go there because deeper in the north there is just adversarial territory.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-116"/>
+      <child nodeId="node-96"/>
     </children>
   </item>
-  <item nodeId="node-116">
+  <item nodeId="node-96">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Rock Mine&#x000A;You are surrounded by huge grey stones. Too high for you to climb on. But in the east you spot a tree thicket with some old dry trees. They are kind of perfect protection with their knotted treetop. Specially because you are small, light and with long claws - the best premises for climbing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1047,21 +1047,21 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-117"/>
+      <child nodeId="node-97"/>
     </children>
   </item>
-  <item nodeId="node-117">
+  <item nodeId="node-97">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Tree Thicket&#x000A;You can see a Rock Mine tree here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-118"/>
+      <child nodeId="node-98"/>
     </children>
   </item>
-  <item nodeId="node-118">
+  <item nodeId="node-98">
     <command xml:space="preserve">x you shelter_sitis</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1069,10 +1069,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-119"/>
+      <child nodeId="node-99"/>
     </children>
   </item>
-  <item nodeId="node-119">
+  <item nodeId="node-99">
     <command xml:space="preserve">x shelter tree</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1080,10 +1080,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-120"/>
+      <child nodeId="node-100"/>
     </children>
   </item>
-  <item nodeId="node-120">
+  <item nodeId="node-100">
     <command xml:space="preserve">x rock mine tree_sitis</command>
     <result xml:space="preserve">It's perfect. It's the perfect tree to climb on.&#x000A;&#x000A;Perfect! It's perfect.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1091,12 +1091,12 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-121"/>
+      <child nodeId="node-101"/>
     </children>
   </item>
-  <item nodeId="node-121">
+  <item nodeId="node-101">
     <command xml:space="preserve">climb on the rock mine tree_sitis</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Yeah! You made it! Just a few seconds before you see Machitikos running downhill. Keep your spear ready. He is there in three, two, one... THROW IT!&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>

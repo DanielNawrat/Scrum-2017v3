@@ -234,6 +234,7 @@ After examining Mitéra_Sitis for the first time:
 	now the description of the Agora_Sitis is "As you arrive at the Agora, you just wanna know what this Scorpius did. Specially, when you see, how the people are reacting to him. So use your chance, ask Anaidis about.";
 	now the description of the Wide Desert Sitis_Sitis is "However, you have been faster than Machitikos. That means, you have a bit time to think about, how you could defend yourself against this machine. As you look around, [bold type]you discover in the east the desert is going downhill.[roman type] You should go there because deeper in the north there is just adversarial territory.";
 	now the description of the Rock Mine_Sitis is "You are surrounded by huge grey stones. Too high for you to climb on. [bold type]But in the east you spot a tree thicket with some old dry trees.[roman type] They are kind of perfect protection with their knotted treetop. Specially because you are small, light and with long claws - the best premises for climbing."
+	
 
 The Tree Thicket_sitis is a room. The tree thicket_sitis is east of the Rock Mine_Sitis. The printed name of the Tree Thicket_sitis is "Tree Thicket". 
 
@@ -242,8 +243,27 @@ The Rock Mine Tree_sitis is a thing. The Rock Mine Tree_sitis is not portable. T
 After examining the Rock Mine Tree_sitis for the first time:
 	say "Perfect! It's perfect.";
 	
+Understand the command "climb" as something new.
+Climbing on is an action applying to one thing.
+Understand "climb on/onto [something]" as climbing on.
 
-	[The sharp stone_Sitis is a thing. The sharp stone_Sitis is portable. The sharp stone_Sitis is in the Rock Mine_Sitis. The printed name of the sharp stone_Sitis is "sharp stone".]
+After climbing on the Rock Mine Tree_Sitis for the first time:
+	say "Yeah! You made it! Just a few seconds before you see Machitikos running downhill. Keep your spear ready. He is there in three, two, one... [bold type]ATTACK HIM![roman type]";
+	now Machitikos_Sitis is in the Tree Thicket_sitis;
+	now the description of Machitikos_Sitis is "";
+	
+Attacking Machitikos is an action applying to nothing.
+Understand "attack Machitikos" as attacking Machitikos.
+
+After attacking Machitikos the first time:
+	say "With an epic jump, holding the spear in the air, you fall on Machitikos muscly back. He shrieks, as your weapon pierces into his chest. You let up on him, he falters and falls![paragraph break]";
+	say "Erzählschluss vom Kampf.";
+	now Scorpius_Sitis is in the Tree Thicket_sitis;
+	now Mitéra_Sitis is in the Tree Thicket_sitis;
+	now Anaidis_Sitis is in the Tree Thicket_sitis;
+
+
+[The sharp stone_Sitis is a thing. The sharp stone_Sitis is portable. The sharp stone_Sitis is in the Rock Mine_Sitis. The printed name of the sharp stone_Sitis is "sharp stone".]
 
 After asking Anaidis_Sitis about "scorpius":
 	say "Anaidis whispers, [italic type]'He is a dictator. Earlier, Scorpius was one of us. I mean, the time before I was born. But he was always kind of different. A bit more selfish than other ones, a bit more aggressive and a bit more oppressive. One summer, an aridity befall the whole planet Sitis. We needed to calculate the water more precisely. Consequently, dividing it between everyone and relinquishing, when someone else still got no water, was taken for granted. Except for Scorpius. He refused to share his water and started to manipulate other ones to do the same. This reckless behaviour culminates in his decision to construct an underground system which blocks all of our water sources, so we can not draw on them anymore. The only one that still gave water, was the one in his new built palace, deep in the north. There was and there is no chance to burgle. His guardians are doing their job very well. Since that day, he comes to Siccum every week and forces us to fight for our water. If you win, you will get two full keg of water. If you lose... you have to try to survive one week without new water. And everyone who is trying to steal it or to trick him, is going to prison. Immediately. So. This is the answer you were looking for. When you wanna leave the planet with new water, [bold type]your only chance is to fight against this warrior Machitikos.[roman type][paragraph break]";
@@ -260,13 +280,13 @@ After examining Machitikos_Sitis for the first time:
 	now the Spiked Mace_Sitis is in the Agora_Sitis;
 
 After taking the Spear_Sitis:
-	say "The moment you take the spear, Machitikos begins to attac you with the spiked mace. You definitively underestimated this beast. He strikes you so hard, you do not know how to fight back, then running away towards the desert. Initially!";
+	say "The moment you take the spear, Machitikos begins to attack you with the spiked mace. You definitively underestimated this beast. He strikes you so hard, you do not know how to fight back, then running away towards the desert. Initially!";
 	now Axesto is in the Wide Desert of Sitis_Sitis;
 	remove the Spiked Mace_Sitis from play;
 	
 	
 After taking the Spiked Mace_Sitis:
-	say "The moment you took the spiked mace, Machitikos straight begins to attac you with the spear. Beschreibung fehlt. But finally - you bet him!";
+	say "The moment you took the spiked mace, Machitikos straight begins to attack you with the spear. Beschreibung fehlt. But finally - you bet him!";
 	remove the Spear_Sitis from play;
 	
 	

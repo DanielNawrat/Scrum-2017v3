@@ -316,10 +316,20 @@ Instead of taking the gun for the second time:
 	if the player has the Pure Flux Essence:
 		say "There's no need for weaponry anymore.";
 	else:
-		say "Instantly you hear shouts and calls behind you. Before even having the chance to turn, you are brutally knocked over and knocked unconscious by a heavy blow. [line break][line break] For a long time you seem to float through thick dark space, sometimes you feel an edge of something metal painfully thrust into your side. As you awake you find yourself in a small chamber with a sterile atmosphere. Three walls are of blank metal with blue veins in them, the fourth is vitreous and reveals a spectacular view: a vast plaza with mingling crowds of glowing shapes, surrounded by exotic buildings made out of crystal and white metal, transportation vehicles of no known origin and static guards, as heavily armed as the ones you saw before - and all radiating a constant bluish sheen like in a dream. However, as much as you see, as little you hear. The chamber seems to be soundproof. The impressions are overwhelming, you feel the exhaustion coming back and fall asleep where you lie.";
-		now the player is in the Central Plaza_Frizza;
+		say "Instantly you hear shouts and calls behind you. Before even having the chance to turn, you are brutally knocked over and knocked unconscious by a heavy blow. [line break][line break] For a long time you seem to float through thick dark space, sometimes you feel an edge of something metal painfully thrust into your side. As you awake you find yourself in a small chamber with a sterile atmosphere. Three walls are of blank metal with blue veins in them, the fourth is vitreous and reveals a spectacular view: a vast plaza with mingling crowds of glowing shapes, surrounded by exotic buildings made out of crystal and white metal, transportation vehicles of no known origin and static guards, as heavily armed as the ones you saw before - and all radiating a constant bluish sheen like in a dream. However, as much as you see, as little you hear. The chamber seems to be soundproof. The impressions are overwhelming, you feel the exhaustion coming back and fall asleep where you lie.[paragraph break]The next that you awake, you find yourself in the dust. Beside you sits your spaceship, discharged as ever. It seems that they brought you back to the Landing Zone and left you here, both the Extractor and the cloak are gone. Pity.";
+		now BlooSympathy is false;
+		now the player is in the Landing Zone_Frizza;
 		now the Flux Extractor is in the Lower Gate_Frizza;
-		now the Sinkan Cloak is in the Lower Gate_Frizza.
+		now the Sinkan Cloak is in the Lower Gate_Frizza;
+		now Dunia is in the Flux Core_Frizza;
+		now Du'un is in the Lower Gate_Frizza;
+		now Duju Operator 2 is in the Lower Gate_Frizza;
+		now Duju Operator 1 is in the Lower Gate_Frizza;
+		now the weapon's rack is in the Lower Gate_Frizza;
+		now the gun is in the Lower Gate_Frizza;
+		now the gun is on the weapon's rack;
+		now the console is in the Lower Gate_Frizza;
+		now BlooSympathy is false.
 [--]
 
 [Console]

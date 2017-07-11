@@ -902,10 +902,20 @@ Instead of taking the gun for the second time:
 	if the player has the Pure Flux Essence:
 		say "There's no need for weaponry anymore.";
 	else:
-		say "Instantly you hear shouts and calls behind you. Before even having the chance to turn, you are brutally knocked over and knocked unconscious by a heavy blow. [line break][line break] For a long time you seem to float through thick dark space, sometimes you feel an edge of something metal painfully thrust into your side. As you awake you find yourself in a small chamber with a sterile atmosphere. Three walls are of blank metal with blue veins in them, the fourth is vitreous and reveals a spectacular view: a vast plaza with mingling crowds of glowing shapes, surrounded by exotic buildings made out of crystal and white metal, transportation vehicles of no known origin and static guards, as heavily armed as the ones you saw before - and all radiating a constant bluish sheen like in a dream. However, as much as you see, as little you hear. The chamber seems to be soundproof. The impressions are overwhelming, you feel the exhaustion coming back and fall asleep where you lie.";
-		now the player is in the Central Plaza_Frizza;
+		say "Instantly you hear shouts and calls behind you. Before even having the chance to turn, you are brutally knocked over and knocked unconscious by a heavy blow. [line break][line break] For a long time you seem to float through thick dark space, sometimes you feel an edge of something metal painfully thrust into your side. As you awake you find yourself in a small chamber with a sterile atmosphere. Three walls are of blank metal with blue veins in them, the fourth is vitreous and reveals a spectacular view: a vast plaza with mingling crowds of glowing shapes, surrounded by exotic buildings made out of crystal and white metal, transportation vehicles of no known origin and static guards, as heavily armed as the ones you saw before - and all radiating a constant bluish sheen like in a dream. However, as much as you see, as little you hear. The chamber seems to be soundproof. The impressions are overwhelming, you feel the exhaustion coming back and fall asleep where you lie.[paragraph break]The next that you awake, you find yourself in the dust. Beside you sits your spaceship, discharged as ever. It seems that they brought you back to the Landing Zone and left you here, both the Extractor and the cloak are gone. Pity.";
+		now BlooSympathy is false;
+		now the player is in the Landing Zone_Frizza;
 		now the Flux Extractor is in the Lower Gate_Frizza;
-		now the Sinkan Cloak is in the Lower Gate_Frizza.
+		now the Sinkan Cloak is in the Lower Gate_Frizza;
+		now Dunia is in the Flux Core_Frizza;
+		now Du'un is in the Lower Gate_Frizza;
+		now Duju Operator 2 is in the Lower Gate_Frizza;
+		now Duju Operator 1 is in the Lower Gate_Frizza;
+		now the weapon's rack is in the Lower Gate_Frizza;
+		now the gun is in the Lower Gate_Frizza;
+		now the gun is on the weapon's rack;
+		now the console is in the Lower Gate_Frizza;
+		now BlooSympathy is false.
 [--]
 
 [Console]
@@ -1221,16 +1231,16 @@ Instead of inserting a thing into the Power Unit:
 
 After inserting the Pure Flux Essence into the Power Unit:
 	say "You put the Essence into the generator of the ship and it instantly starts working - the lights go on, you hear the engine starting and the turbines spinning. Time to take off.[paragraph break]You lift your ship, up and up, until you are far above the surface of Frizza. You take a last glance at the blue Fluxes, the city structures and the rocky landscape, before breaching through the clouds and entering the stratosphere. You did it, you survived Frizza.[paragraph break]For a long time you sail through space, passing moons, asteroids, planets ... you think about your past actions, and of what will come. Before you can help it, you fall to sleep of exhaustion.[paragraph break]Chapter 5 - Kaldriss[paragraph break]You are suddenly woke by heavy jolts and a bursting noise. You quickly orient yourself and grasp the situation. You got caught in a meteor shower and while trying your best to manouver your spaceship through it  your engine still took a hit. You then had to crash-land on Kaldríss - one of the most cold planets in this solar system.  Since only a few explorers made their to this planet there's not a whole lot of information available about this icy place. You are pretty much on your own now. The spaceship also won't take off before it hasn't been properly repaired. But first things first. Without any kind of heat you won't survive this bleakness for long. You tame a look at the command panel in hopes of finding something of use but it doesn't look very good. There's only a single green button on the command panel. What could this mean? I might also wanna  take a look at the spaceship exit that lies straight ahead since it seems to be busted, too.";
-	now the Pure Flux Essence is in the power reserve;
-	now the description of the Pure Flux Essence is "If used correctly this pure flux essence creates a warm energy that withstands even the coldest temperatures. However, a catalyst is required in order to make use of the orbs sheer amount of energy.";
-	now the player is in the Spaceship Bridge_Kaldríss.
+	[now the Pure Flux Essence is in the power reserve;
+	now the description of the Pure Flux Essence is "If used correctly this pure flux essence creates a warm energy that withstands even the coldest temperatures. However, a catalyst is required in order to make use of the orbs sheer amount of energy."
+	now the player is in the Spaceship Bridge_Kaldríss.]
 	
 
 After inserting the Power Cell into the Power Unit:
 	say "You put the Essence into the generator of the ship and it instantly starts working - the lights go on, you hear the engine starting and the turbines spinning. Time to take off.[paragraph break]You lift your ship, up and up, until you are far above the surface of Frizza. You take a last glance at the blue Fluxes, the city structures and the rocky landscape, before breaching through the clouds and entering the stratosphere. You did it, you survived Frizza.[paragraph break]For a long time you sail through space, passing moons, asteroids, planets ... you think about your past actions, and of what will come. Before you can help it, you fall to sleep of exhaustion.[paragraph break]Chapter 5 - Kaldriss[paragraph break]You are suddenly woke by heavy jolts and a bursting noise. You quickly orient yourself and grasp the situation. You got caught in a meteor shower and while trying your best to manouver your spaceship through it  your engine still took a hit. You then had to crash-land on Kaldríss - one of the most cold planets in this solar system.  Since only a few explorers made their to this planet there's not a whole lot of information available about this icy place. You are pretty much on your own now. The spaceship also won't take off before it hasn't been properly repaired. But first things first. Without any kind of heat you won't survive this bleakness for long. You tame a look at the command panel in hopes of finding something of use but it doesn't look very good. There's only a single green button on the command panel. What could this mean? I might also wanna  take a look at the spaceship exit that lies straight ahead since it seems to be busted, too.";
-	remove the Power Cell from play;
-	now the player is in the Spaceship Bridge_Kaldríss.
-
+	[remove the Power Cell from play;
+	now the player is in the Spaceship Bridge_Kaldríss.]
+	
 [Techie]
 
 After answering Dunia that "Techies" for the first time:
@@ -1295,8 +1305,6 @@ After asking Trapist about "Discharged Spaceship":
 	else:
 		say "[italic type]Gosh, bad situation that. Can't do anything for ya at the moment though, pardon me Mate."
 		
-
-
 
 [
 [TO DO]

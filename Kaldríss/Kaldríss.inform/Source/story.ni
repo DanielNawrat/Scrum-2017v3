@@ -52,6 +52,7 @@ put (something) on (e.g. clothing)[line break][paragraph break]";
 - Beschreibungen für Items (z.B. examine, take) erweitern
 - Beschreibungen für Räume (insbesondere Blakkríss Temple) erweitern
 - UNDO function? (z.B. für energy capacitor) 
+- Image Extension installieren
 
 [IN PROGRESS]
 

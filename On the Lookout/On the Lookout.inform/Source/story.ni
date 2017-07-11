@@ -626,6 +626,8 @@ Instead of going nowhere from the Cave_Geysiria, say "You're in a cave, go explo
 Chapter 4 - Frizza
 
 
+
+
 [Notizen für den Übergang zu Frizza:
 	- Man stürzt ab, weil die Energiequelle des Raumschiffs alle ist
 	- Man hat keine zusätzlichen Items
@@ -823,8 +825,11 @@ The carrying capacity of the player is 3.
 
 After asking Dunia about anything:
 	if Dunia is in the Ascent_Frizza:
-		say "[if we have not examined Dunia][italic type]- You are painfully near to trespass holy ground, stranger. I would advise against it. Who are you, anyway? You don't look like a Techie. Tell me your [bold type]name[roman type].[otherwise][italic type]- Answer my question first. What is your [bold type]name[roman type]?[end if]";
-		now ConcealedDunia is false;
+		if BlooSympathy is true:
+			say "[if we have not examined Dunia][italic type]You are painfully near to trespass holy ground, stranger. I would advise against it. Who are you, anyway? You don't look like a Techie. Tell me your [bold type]name[roman type].[otherwise][italic type]Answer my question first. What is your [bold type]name[roman type]?[end if]";
+			now ConcealedDunia is false;
+		if BlooSympathy is false:
+			say "[italic type]Begone with you! I don't want anything to do with that!";
 	else:
 		continue the action.
 		
@@ -835,7 +840,12 @@ After examining Dunia for the first time:
 			now ConcealedDunia is false.
 			
 	
-After answering Dunia that "Axesto" for the first time, say "[italic type]What a strange name. It doesn't matter anyway - there's only one thing I need to know: are you on the side of the [bold type]Techies [roman type]or of the [bold type]Duju[roman type]?"
+After answering Dunia that "Axesto":
+	 if Dunia is in the Ascent_Frizza:
+		if BlooSympathy is true:
+			say "[italic type]What a strange name. It doesn't matter anyway - there's only one thing I need to know: are you on the side of the [bold type]Techies [roman type]or of the [bold type]Duju[roman type]?";
+		else:
+			say "[italic type]Begone with you! I don't want anything to do with that!"
 
 
 [Duju]
@@ -855,6 +865,7 @@ After answering Dunia that "Duju" for the first time:
 		now the gun is in the Upper Gate_Frizza;
 		now the gun is on the weapon's rack;
 		now the console is in the Upper Gate_Frizza;
+		now BlooSympathy is false;
 	else:
 		say "[italic type]Begone with you! I don't want anything to do with that!"
 		
@@ -1124,7 +1135,7 @@ The description of the Flux Core_Frizza is "A huge cavern with a Flux lake at it
 [Energy Orb is an object in the Flux Core_Frizza.]
 The Essence Pool is a container in the Flux Core_Frizza. The Essence Pool is scenery. The description of it is "A small bluish lake, its surface entirely still, sparkling with a pure sheen."
 
-The Pure Flux Essence is in the Sanctuary_Frizza. 
+The Pure Flux Essence is in the Sanctuary_Frizza.
 
 After asking Du'un about a topic listed in the Table of Du'un responses:
 	if Du'un is in the Flux Core_Frizza:
@@ -1189,8 +1200,13 @@ The Power Unit is a container inside the Discharged Spaceship. The Discharged Sp
 Instead of taking the Power Unit:
 	say "You would have to disassemble it, but you don't know how that would help you."
 
-Instead of inserting something which is not the Pure Flux Essence into the Power Unit:
-	say "That wouldn't generate much energy. You need a real power source."
+Instead of inserting a thing into the Power Unit:
+	if the thing is the Pure Flux Essence:
+		continue the action;
+	if the thing is the Power Cell:
+		continue the action;
+	else:
+		say "That wouldn't generate much energy. You need a real power source."
 
 
 After inserting the Pure Flux Essence into the Power Unit:
@@ -1199,13 +1215,76 @@ After inserting the Pure Flux Essence into the Power Unit:
 	now the description of the Pure Flux Essence is "If used correctly this pure flux essence creates a warm energy that withstands even the coldest temperatures. However, a catalyst is required in order to make use of the orbs sheer amount of energy.";
 	now the player is in the Spaceship Bridge_Kaldríss.
 	
+
+After inserting the Power Cell into the Power Unit:
+	say "You put the Essence into the generator of the ship and it instantly starts working - the lights go on, you hear the engine starting and the turbines spinning. Time to take off.[paragraph break]You lift your ship, up and up, until you are far above the surface of Frizza. You take a last glance at the blue Fluxes, the city structures and the rocky landscape, before breaching through the clouds and entering the stratosphere. You did it, you survived Frizza.[paragraph break]For a long time you sail through space, passing moons, asteroids, planets ... you think about your past actions, and of what will come. Before you can help it, you fall to sleep of exhaustion.[paragraph break]Chapter 5 - Kaldriss[paragraph break]You are suddenly woke by heavy jolts and a bursting noise. You quickly orient yourself and grasp the situation. You got caught in a meteor shower and while trying your best to manouver your spaceship through it  your engine still took a hit. You then had to crash-land on Kaldríss - one of the most cold planets in this solar system.  Since only a few explorers made their to this planet there's not a whole lot of information available about this icy place. You are pretty much on your own now. The spaceship also won't take off before it hasn't been properly repaired. But first things first. Without any kind of heat you won't survive this bleakness for long. You tame a look at the command panel in hopes of finding something of use but it doesn't look very good. There's only a single green button on the command panel. What could this mean? I might also wanna  take a look at the spaceship exit that lies straight ahead since it seems to be busted, too.";
+	remove the Power Cell from play;
+	now the player is in the Spaceship Bridge_Kaldríss.
+
 [Techie]
+
 After answering Dunia that "Techies" for the first time:
 	if Dunia is in the Ascent_Frizza:
 		say "[italic type]Then begone with you! I don't want anything to do with that!";
 		now BlooSympathy is false.
 	
+The description of Trapist is "A huge man with thick strands of muscle. His eyes are shaded by pitch black sunglasses, he wears an orange helmet under which a broad smile splits his mouth apart. Between the teeth he holds some sort of cigarette which seems to be fueled by Flux."
 
+A person can be friendly or neutral. Trapist is neutral. A person can be unasked or asked. Trapist is unasked.
+A Power Cell is in the Control Tower_Frizza. The description of the Power Cell is "Two solid columns of dark metal, welded together and supplied with little blue lines that indicate their power level. They're beastly heavy. On their backside you see the words [italic type]Fluxus Corp[roman type] impressed into the metal."
+
+A Cabin is in the Scoop_Frizza. The Cabin is fixed in place. The Cabin is an open container. The description of the Cabin is "The only one you can safely reach. One part of it seems to be solidly built into the rock, the other half protruding into the sheer abyss of the ravine. By the look of it you could swear that it will topple down the cliff any moment, but it holds. Inside you see a warm light and someone moving. You could try to [bold type]approach[roman type]."
+
+After approaching the Cabin:
+	say "You scramble over the ghastly landscape, keeping the ravine's edge to a good distance. You get an even better view of the structures that span the width of the gorge, you are now certain that there is mining equipment and transportation units, some manned and some apparently controlled remotely. You approach the cabin, saving a couple of steps in distance, and try to glance into the inside of the cabin. Someone sits there at a metal desk, wearing a hardhat and sunglasses, between ridiculous heaps of papers and files. In his mouth there is an oblong roll, glowing blue, and on one of the inside wall hangs an oversized metal suit, equipped with all kind of complex-looking gear. As you eyeball the scene, the man suddenly turns his head and straigthly spots you through his shaded glasses. He stands up opens a window, pointing in your direction. You see a broad smile stamped into his face.[paragraph break][italic type]Oi, mate! What ya doin' all by yaself out there? Ya ain't have no mischief in mind, do ya? Don't look like one of those blue Duju folk. What's ya [bold type]name[roman type], mate?[paragraph break][roman type]The thick accent washes over you. Momentarily, you believe you smelled grilled meat ... you abandon the thought.";
+	now Trapist is in the Cabin in the Scoop_Frizza.
+	
+After answering Trapist that "Axesto" for the first time:
+	say "[italic type]Strange name that. Ah well, I don't mind as long as you ain't starting to act funny. Mine's Trapist ... guess that sounds strange as well, I'm the foreman here. I guess it's back to work now, you certainly see that pile of misery on the desk there. Ain't no gain for no work. Let me now if y'all need something";
+	now Trapist is asked;
+	now Trapist is friendly.
+
+After asking Trapist about anything:
+	if Trapist is unasked:
+		say "[italic type]Wait a second, why not introduce yourself first? You shy, mate? What's ya[bold type] name[roman type]?";
+	if Trapist is asked:
+		continue the action.
+		
+After asking Trapist about a topic listed in the Table of Trapist responses:
+	if Trapist is unasked:
+		say "[italic type]Wait a second, why not introduce yourself first? You shy, mate? What's ya[bold type] name[roman type]?";
+	if Trapist is asked:
+		say "[response entry]".
+		
+Table of Trapist Responses 
+Topic	Response
+"Flux" 	"[italic type]Now that's why we're all here. That slack goo gives yaself, ya family, ya neighbors and ya soot'n great-step-uncle money for a thousand years to come. One time lucky, never care about anything anymore. At least if we'd keep the profit. Damn tough mining that stuff though.[paragraph break]"	
+"Techies"	"[italic type]Ah, you've met one of the Bloo folk, eh? Otherwise ya hadn't got our nickname. Nevermind. I've grown to it - that baby there on the wall, that's the only thing keeping me alive when I'm in the stream scoopin'. If that's no proof for the power of technology, I don't know what is.[paragraph break]"
+"Kollock"	"[italic type]Bloody zealot. He wish that we go right to hell, and that feeling's mutual. I'd throw him in the deepest hole on that godforsaken planet if I could.[paragraph break]"
+"Dunia"	"[italic type]Who? Never heard of that.[paragraph break]"
+"Duju"	"[italic type]Them were here before us, you bet. But that ain't meaning the planet's all theirs. We keep their sacred grounds where we can, but there's no drilling aroung a hundred-mile-mountain. You ought to make a compromise in such cases, but not that folk, no. I respect them and I try helping where I can, but when talking about the 'Bloo' here in the Scoop, you know what's up, and you know the talk won't be gentle.[paragraph break]"
+"Scoop"	"[italic type]That's our main source of the Flux right here. We established it a couple decades ago - Duju folk were okay with it back then. Things have changed though.[paragraph break]"
+"Cabin"	"[italic type]Oh my, you must have quite a bore if you want about that miserable hut. I'm here for the bureaucracy shenanigans, so that's what's all the paperwork about. I'll fall asleep though if you ask about it further.[paragraph break]"
+
+After asking Trapist about "Discharged Spaceship":
+	if Trapist is friendly:
+		if ConcealedDunia is true:
+			say "[italic type]Y'are in quite a pickle, eh? Mhh... Tell ya something: come back later a bit. I'll see what I can do. If we do have one thing, it's energy.";
+		else if ConcealedDunia is false:			
+			if BlooSympathy is true:
+				say "[italic type]Yeah, I might soon have something for ya. One thing tough ... ya look like Flux, not the Techie type, but rather blue, one gets a sense for that after staying on that planet longer than healthy. My advice: don't get too close with the Duju. It's not that I will judge ya, but the others will judge me for giving anything to ya.";
+			else if the player wears the Sinkan Cloak:
+				say "[italic type]Now that's a surprise. Listen, you better get rid of that cloak of yours. Everybody here knows what that is and who it is that wears it. That fuel you look for, I guess that has to wait now, folk would talk about me giving a cloak-wearer our gear. Look out for yaself.";
+				now Trapist is neutral;
+			else if BlooSympathy is false:
+				if the Power Cell is in the Control Tower_Frizza:
+					say "[italic type]Mate! I've got somethin' for ya. Catch![paragraph break][roman type]Trapist produces something that looks like two columns of dark metal, welded together on their long end. He leisurely throws it in your direction, you rush to catch it and are crushed by their weight.[paragraph break][italic type]That stuff kicks your cute spaceship through whole galaxies, if you let it. We fuel dozens of these each and every day for gear that would take your dinghy pickaback. Now no need to get emotional, I'm glad for everyone who leaves these lands all in one piece.[paragraph break][roman type]You receive a [bold type]Power Cell[roman type].";
+					now the player has the Power Cell;
+				else:
+					say "[italic type]That thingy should power ya vessel through all that comes. I'm glad for everyone who leaves these lands all in one piece.";
+	else:
+		say "[italic type]Gosh, bad situation that. Can't do anything for ya at the moment though, pardon me Mate."
+		
 
 
 
@@ -1303,11 +1382,11 @@ The Crash Site_Kaldríss is a region.The Spaceship Bridge_Kaldríss, the Spacesh
 In the Spaceship Bridge_Kaldríss is a command panel. It is scenery.  In the command panel is a fried communicator, a protector glove and a power reserve. It is closed and openable. The power reserve is a container. The power reserve is fixed in place. It is closed, locked and openable. The description of the power reserve is "Of course! The power reserve basically contains a large portion of the spaceships energy reservoir. If you manage to open it and check if there is still energy left you might be able to use it to power something."
 
 
-<<<<<<< HEAD
+
 The green button unlocks the power reserve. [In the power reserve is a pure flux essence.] The pure flux essence is an electrified thing. [The description of pure flux essence is "If used correctly this pure flux essence creates a warm energy that withstands even the coldest temperatures. However, a catalyst is required in order to make use of the orbs sheer amount of energy."] The pure flux essence can be taken. 
-=======
-The green button unlocks the power reserve. In the power reserve is a pure flux essence. The pure flux essence is an electrified thing. The description of pure flux essence is "Energy in its purest form. But at the same time just as dangerous and unstable. What you have here are just the remains of the once fully capable flux essence that you put into the spaceship's generator in order to escape from Frizza. Small portions of the main energy stream within the spaceship are stored in here for emergency cases - just like this one you are in.". The pure flux essence can be taken. 
->>>>>>> 4d873611c4697537fe0ed5efaaecc037baaec743
+
+The green button unlocks the power reserve. [In the power reserve is a pure flux essence.] The pure flux essence is an electrified thing. [The description of pure flux essence is "Energy in its purest form. But at the same time just as dangerous and unstable. What you have here are just the remains of the once fully capable flux essence that you put into the spaceship's generator in order to escape from Frizza. Small portions of the main energy stream within the spaceship are stored in here for emergency cases - just like this one you are in.". The pure flux essence can be taken. ]
+
 
 Before taking the pure flux essence:
 	say "This flux essence used to contain way more energy its remains might contain just enough energy to power your spacesuit."

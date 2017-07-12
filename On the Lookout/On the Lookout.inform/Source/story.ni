@@ -398,9 +398,15 @@ After examining Dunia for the first time:
 Chapter 2 - Gaisetto
 
 
-
 [neue befehle dick
-name vom skorpion]
+name vom ameisenlöwe
+spiel gibt nicht komplette totem beschreibung aus
+instead of going nowhere befehl fehlt in dorf
+satteln, reiten und kämpfen lokal begrenzen
+examining tempelwände fehlen
+zerstören aufheben
+village gate löschen
+not portoble]
 
 
 [Dschungel]
@@ -409,17 +415,69 @@ Jungle_Gaisetto is region.
 
 Landingzone_Gaisetto is a room in the Jungle_Gaisetto. "Hell that was a harsh landing. Thanks God you landed safely on this clearing right next to the cliff. Only some meters besides and your Spaceship would have been shuttered into a thousand pieces. Hopeful all this effort isn’t for nothing at all and I will find some food here. You look around. Behind you is the spaceship in front of the cliff. All the other directions you see a jungle." The printed name of Landingzone_Gaisetto is "Landingzone".
 
-Jungle_1 is a room in the Jungle_Gaisetto. The printed name of Jungle_1 is "Jungle".
-Temple_Gaisetto is a room in the Jungle_Gaisetto. The printed name of the Temple_Gaisetto is "Temple".
-Jungle_2 is a room in the Jungle_Gaisetto. "You are surrounded by strange plants. Some of them have beautiful colourful blossoms and shine in the sunlight. There are huge trees, so high you can’t the top of the crowns and violet ferns covered in blue sticky fluid. Sadly none of the plant around youbear fruits or nuts, that could be eatable. South of you is the cliff. East of you lies the clearing with your spaceship. North of you is something shining through the trees. Maybe there is something reflecting the sunlight."  The printed name of Jungle_2 is "Jungle".
-Jungle_3 is a room in the Jungle_Gaisetto. "There are many trees around you, but only one very huge and old one. Because of its gigantic crown no sunlight reaches the mossy floor. This gives the place a very mystery and unreal aura. South of you is the cliff. West of you lies the clearing with your spaceship. North of you stretches the vastness of the jungle."  The printed name of Jungle_3 is "Jungle".
+Jungle_1 is a room in the Jungle_Gaisetto. "The versatility of the flora around you is incredible. All thinkable sizes and forms of trees, bushes, ferns and flowers exdend   everywhere as far as the eye can reach. Sadly nothing here looks eatable. You look around and see your Spaceship south of you. Eastward it looks like it goes deeper in the jungle. Somethink shines threw th trees west of you and in the south it there seems to be something stony." The printed name of Jungle_1 is "Jungle".
+
+	[Tempel]
+				[Alles zum Tempel an Beschreibungen]
+
+Temple_Gaisetto is a room in the Jungle_Gaisetto. "You found a little temple in the middle of the jungle. It looks very old, because the whole building is covered in moss and seems to be in danger of collapsing. Inside the temple there are inscriptions on the right and left wall as well as a colourfull floor mosaic, that shows a triangle.  In front of you on the south wall of the temple is a gigantic statue on a plinth. It looks like a (...) and holds a shiny green emerald." The printed name of the Temple_Gaisetto is "Temple".
+				
+				[Container und Türen im Tempel]
+
+The plinth is door. The plinth is north of the Temple_Gaisetto. The plinth is locked and closed. the golden plate unlocks the plinth. 
+
+
+
+After opening the plinth:
+	remove golden plate from play;
+	say "the plinth opend bla bla".
+
+The floor mosaic is door. Floor mosaic is above the Catacombs. The floor mosaic is locked. 
+
+The statue is in the Temple_Gaisetto. it is fixed in place. the emerald is in the statue.
+the Inscription on the Plinth is scenery. 
+
+
+After examining the floor mosaic:
+	if the player has the flute:
+		say "The floor mosaic moved apart and reveals a secret staircase down to Catacombs ";
+	else:
+		say "On each corner of it is a stone to bee seen. One is red as fire and covered in flames, the otherone blue like the ocean and covered in waves and the last one green like the jungle, that is all around the temple, covered in leavs."
+	
+
+After examining the plinth:
+	say "There is a round cafity and a engraving on the plinth that says [italic type] From this day till the end of time this guard will keep us save from the (...) "
+
+After examining the statue:
+	say " (...)"
+	
+
+
+
+The left Templewall is a object in the Temple_gaisetto. it is scenery.
+ "jdfbjefgb".
+
+
+The right Templewall is a object in the Temple_gaisetto. it is scenery.
+"kjdgbfowqaeGBOUQA"
+
+					
+
+After examining huge very old tree:
+	say "Is this the sound of the wind blowing threw the leaves or is there somthing snorring?".
+
+
+[Dschungel]
+
+Jungle_2 is a room in the Jungle_Gaisetto. "You are surrounded by strange plants. Some of them have beautiful colourful blossoms and shine in the sunlight. There are huge trees, so high you can’t the top of the crowns and violet ferns covered in blue sticky fluid. Sadly none of the plant around you bear fruits or nuts, that could be eatable. South of you is the cliff. East of you lies the clearing with your spaceship. North of you is something shining through the trees. Maybe there is something reflecting the sunlight."  The printed name of Jungle_2 is "Jungle".
+Jungle_3 is a room in the Jungle_Gaisetto. "There are many trees around you, but only one very huge and old one with dark red leavs. Because of its gigantic crown no sunlight reaches the mossy floor. This gives the place a very mystery and unreal aura. South of you is the cliff. West of you lies the clearing with your spaceship. North of you stretches the vastness of the jungle."  The printed name of Jungle_3 is "Jungle".
 Jungle_4 is a room in the Jungle_Gaisetto. "You found a lake in the middle of the jungle. It’s strange, because you can’t find a spring or a stream. Is it water? It looks like, but where is the water coming from?"  The printed name of Jungle_4 is "Jungle".
-Jungle_5 is a room in the Jungle_Gaisetto.  The printed name of Jungle_5 is "Jungle".
-Jungle_6 is a room in the Jungle_Gaisetto. The printed name of Jungle_6 is "Jungle".
-Jungle_7 is a room in the Jungle_Gaisetto. "Threw a small hole in the dense jungle you found a little green shrine. It seems like it is able to unlock and open it, Who built that?"  The printed name of Jungle_7 is "Jungle".
-Catacombs is a room in the Jungle_Gaisetto. 
-Tunnel is a room in the Jungle_Gaisetto. 
-Jungle_8 is a room in Jungle_Gaisetto. The printed name of Jungle_8 is "Jungle".
+Jungle_5 is a room in the Jungle_Gaisetto. " Some plants look snapped off. Was it an animal that made its way threw the undergrowth? It's strange because you haven't heared any animal sound so far. Not a single bird was singing. Only total silence besides the sound of the wind blowing softly threw the branches. There is a possibility to go west or south deeper in the jungle." The printed name of Jungle_5 is "Jungle".
+Jungle_6 is a room in the Jungle_Gaisetto. "Threw a small hole in the dense jungle you found a little blue shrine. It seems like it is able to unlock and open with some kind of stone. Who built that?"The printed name of Jungle_6 is "Jungle".
+Jungle_7 is a room in the Jungle_Gaisetto. "Threw a small hole in the dense jungle you found a little green shrine. It seems like it is able to unlock and open with some kind of stone. Who built that?"  The printed name of Jungle_7 is "Jungle".
+Catacombs is a room in the Jungle_Gaisetto. "The Catacombs is a small room carryed by six massive stone pillars. Its verys dark but it seems to be totaly empty. Only east of you is a faint light coming from a tunnel."
+Tunnel is a room in the Jungle_Gaisetto. "Surrounded by stonewalls and a low ceiling is looks like there is a small hole above your head that let the sunlight through". 
+Jungle_8 is a room in Jungle_Gaisetto. "Without the hot flames you can see a little red shrine. It seems like it is able to unlock and open it with some kind of stone." The printed name of Jungle_8 is "Jungle".
 
 Jungle_1 is north of the Landingzone_Gaisetto.
 Temple_gaisetto is north of the Jungle_1.
@@ -446,66 +504,69 @@ Instead of going nowhere from Jungle_8, say "The Jungle is to dense to move forw
 
 [Objecte im Dschungel]
 
-The golden plate is a object.
+
 the emerald is a object.
 the sapphirine is a object in the Lager.
 the ruby is a object in the lager.
-flute is a object [in the lager] in the Jungle_1.
+flute is a object in the lager.
+golden plate is a object in the lager.
+food is a object in the lager.
 
 [Dorf]
 
 The Formizer_Village is a region. 
-The Chain_bridge is a room in the Formizer_Village. the printed name of Chain_bridge is "Chain Bridge".
-The Village_Square is a room in Formizer_Village. The printed name of Village_Square is "Square".
-Village_hut1 is a room in Formizer_Village. The printed name of Village_hut1 is "Hut".
+The Chain_bridge is a room in the Formizer_Village. "You are standing on a chain bridge made by vines and wood. Hopefulls it carries my way and wount tear down. You can see a gate made out of truns north of you at the end of the chain bridge. It seems like you fond some kind of zivilization." The printed name of Chain_bridge is "Chain Bridge".
+The Village_Square is a room in Formizer_Village. "You stand in the middle of a huge square that looks like the heart of the village. There are many paths that proberply leads to all the huts in the back, because there are only two huts right next to the square. One on the left and one on the right. In front of you, in the north, you can see a totem."The printed name of Village_Square is "Square".
+[Village_hut1 is a room in Formizer_Village. "You're in a small hut in which some strange little being are. They   The printed name of Village_hut1 is "Hut".]
 Village_hut2 is a room in Formizer_Village. The printed name of Village_hut2 is "Shaman's Hut".
-
 Village_hut3 is a room in Formizer_Village. The printed name of the Village_hut3 is "Hut".
-Village_Path is a room in Formizer_Village. The printed name of the Village_path is "Path".
-Village_stable is a room in Formizer_Village. The printed name of the Village_hut5 is "Stable".
-The totem is a room in Formizer_Village. The printed name of the totem is "Totem".
+Village_Path is a room in Formizer_Village. "The dusty path leads north to a big square. On the right is some hut."The printed name of the Village_path is "Path".
+Village_stable is a room in Formizer_Village. The printed name of the Village_stable is "Stable".
+The totem is a room in Formizer_Village. "(..)"  The printed name of the totem is "Totem".
 
 
 The Villagegate is a door. The Villagegate is north of the Chain_bridge. The Villagegate is open.
 The Village_path is north of the Villagegate.
 The Village_stable is east of the Village_path.
 The Village_square is north of the Village_path.
-The village_hut1 is west of the Village_path.
+[The village_hut1 is west of the Village_path.]
 The village_hut2 is west of the Village_square.
 The Village_hut3 is east of the Village_square.
 The totem is north of the Village_square.
 The Chain_bridge is north of the Plinth. 
 
+Instead of going nowhere from chain_bridge: say "You don't really want to jump from the chain bridge. You're so high you cant even see the bottom of the ravine.".
+Instead of going nowhere from Village_path: say "You should follow the path of otherwise you will get lost in the jungle.".
 	
 [Objekte im Dorf]
 
-Shaman's götti is a object in the lager.
+
 spear is a object in the lager.
-chest is a container in the Village_hut2. it is fixed in place. the printed name is "lol". The chest is a closed openable container. the carving is in the chest.
+chest is a container in the Village_hut2. it is fixed in place. the printed name is "chest". The chest is a closed openable container. the carving is in the chest.
 saddle is a object in the lager.
 [Personen im Dorf]
-
+Götti is a person in Village_stable.
 Shaman is a person in totem.
-Collector is a person in Village_hut1.
-child is a person in Village_hut1.
+[Collector is a person in Village_hut1.
+child is a person in Village_hut1.]
 old man is a person in Village_hut3.
 
 Before going to the Village_hut2:
 	unless player carries spear:
 		move the player to the village_square;
-		say "verbarikadiert";
+		say "It is locked";
 		stop the action.
 
 Before going to the Village_stable:
 	unless player carries saddle:
 		move the player to the village_path;
-		say "verbarikadiert";
+		say "It is locked";
 		stop the action.	
 		
 Before going to the Village_hut3:
 	unless player carries carving:
 		move the player to the village_square;
-		say "verbarikadiert";
+		say "It is locked";
 		stop the action.
 		
 [Personen, Objekte und Container im Dschungel]
@@ -513,82 +574,42 @@ Before going to the Village_hut3:
 The huge very old tree is a person in the Jungle_3. 
 the lake is in the Jungle_4. It is scenery. 
 
-[Container und Türen im Tempel]
-
- The Plinth is door. The Plinth is north of the Temple_Gaisetto. The Plinth is closed and openable. The Plinth has matching key the golden plate.
-
-[Plinthopen is a truth state that varies. Plinthopen is false.
-
-After opening the Plinth:
-	now Plinthopen is true.
-	
-Before going to Chain_bridge from Temple_Gaisetto:
-	if Plinthopen is false:
-	say "Test.";
-	stop the action;
-	if Plinthopen is true:
-		say "Fail.";
-		continue the action.
-]
-[The stone plate is above Yundar's Cave. The stone plate is a door. The stone plate is closed and openable. 
-
-Stoneplateopen is a truth state that varies.  Stoneplateopen is false.
-
-After opening the stone plate:
-	now Stoneplateopen is true.
-
-Before going to Yundar's Cave from Hunting Grounds_Kaldríss:
-	if Stoneplateopen is false:
-		say "You can't possibly enter whatever it is that lies behind this stone plate before you've [bold type]shoved it aside[roman type]!";
-		stop the action;
-	if Stoneplateopen is true:
-		say "You are finally able to enter the cave but you should still proceed with caution since you never know what's waiting inside.";
-		continue the action.
-]
-
-
-The floor mosaic is door. Floor mosaic is above the Catacombs. The floor mosaic is closed and openable.
-
-the Statue is in the Temple_Gaisetto. it is fixed in place. the emerald is in the statue.
-the Inscription on the Plinth is scenery. 
-The Inscription on the left Templewall is scenery. The left Templewall is a object in the Temple_gaisetto. it is scenery.
-The Inscription on the right Templewall is scenery. The right Templewall is a object in the Temple_gaisetto. it is scenery.
 
 [Schreine]
 
 The green shrine is in Jungle_7. It is fixed in place. The printed name is "Shrine covered in moss. It looks very old and has a mysterious green shine." The green shrine is a openable container. it is locked. The emerald unlocks the green shrine. 
 The blue shrine is in the Jungle_6. It is fixed in place. The printed name is "Shrine surrounded my blue grass and shallow water. It looks very old and has a mysterious blue shine." The blue shrine is a openable container. it is locked. The sapphirine unlocks the blue shrine. 
-The red shrine is in Jungle_8. It is fixed in place. The printed name is "Shrine circled by a firewall. It looks very old and hat a mysterious red shine." The red shrine is a openable container. it is locked. The ruby unlocks the red shrine. In the locker is a golden plate.
+The red shrine is in Jungle_8. It is fixed in place. The printed name is "Shrine circled by a firewall. It looks very old and hat a mysterious red shine." The red shrine is a openable container. it is locked. The ruby unlocks the red shrine. 
 
 Before going to the Jungle_8:
 	unless player carries ruby:
 		move the player to the Tunnel;
-		say "Oh no. It is too hot there. The fire will burn you. You have to find something taht prtect you from the flames";
+		say "Oh no. Its not only the sunlight, that shines through the hole. The whole area is burning. It is too hot to go there. The fire would burn you. You have to find something that prtect you from the flames";
 		stop the action.		
 
 After opening green shrine:
-	 now the description of Jungle_4 is "The lake dried out";
-	now the description of the Jungle_7 is "nothing here";
-	say "The ground starts tn shake and the green shrine gets swollowed by the earth.";
+	 now the description of Jungle_4 is "What happend to the lake? It's completely dried out.";
+	now the description of the Jungle_7 is "It's like the green shrine has never existed. All you can see around you is the dense jungle.";
+	say "The ground starts to shake and the green shrine gets swollowed by the earth.";
 	move green shrine to Lager;
 	move sapphirine to Jungle_4;
 	remove emerald from play.
 
 
 After taking sapphirine:
-	say "Boden öffnet sich bla bla ";
-	now floor mosaic is open;
-	now the description of the Temple_gaisetto is "hjgvjwhe".
+	say "It feels wet".
+	
 
 After opening blue shrine:
-	now the description of the Jungle_6 is "flute here";
-	say "bla bla flöte fällt raus, schrein geht unter";
+	now the description of the Jungle_6 is "It's like the blue shrine has never existed. All you can see around you is the dense jungle.";
+	say "The shrine reveals a hidden secret compartment from where a flute falls out on the ground. The ground starts to shake and the blue shrine gets swollowed by the earth.";
 	move blue shrine to Lager;
 	remove sapphirine from play;
 	move flute to Jungle_6.
 
 After taking flute:
-	say "baum wecken. irgendwelche zeichen"
+	say "What did I just hear? It sounded like stone grinds on stone?";
+	now floor mosaic is open.
 
 PLaying the flute is an action applying to nothing.
 Understand "play the flute" as playing the flute.
@@ -598,21 +619,29 @@ The description of the flute is "you should try to play the flute".
 After playing the flute:
 	if the player has the flute:
 		if the player is in the jungle_3:
-			say "test";
+			say "[italic type] WHAAAAAA! You woke me up from my eternal sleep! I know exactly why you did this. You want the red stone from me that protects you from the flames. You can have it but you should know that if you open the plinth there will be no turning back and you will bing blight and destruction oer all of us!";
+			move ruby to jungle_3;
 		else:
-			say "no";
+			say "It makes a shrill tone";
 	else:
-		say "there is no flute".
+		say "There is no flute".
 		
-After asking huge very old tree about "ruby":
-	say "say";
-	move ruby to Jungle_3.
+After opening red shrine:
+	now the description of the Jungle_8 is "It's like the red shrine has never existed. All you can see around you is the dense jungle.";
+	say "The shrine reveals a hidden secret compartment from where a golden plate falls out on the ground. The ground starts to shake and the red shrine gets swollowed by the earth.";
+	move red shrine to lager;
+	remove ruby from play;
+	move golden plate to Jungle_8.
 	
 
 After going to totem for the first time:
-	say "What have you done?"
+	say "You are on the north end of the square. A five meter high colourful painted totem is in front of you. Right next to it is a about a meter tall being with shining black skin. It stands on four legs that have claws at the end. On both arms it carries a spear. Instead of a head it looks like it wears a triangular mark in the colours green, blue and red. You want to run away, but the being starts to talk: [italic type]Oh what have you done? You moved the plinth and made the way clear for it to attack us! I closed this passage many many lunar cycles in the past, so we can live here safe. Ohh what have you done?! It will kill us! We have to arm us! No! You have to save us from this beast! You allowed it to come here! Give me this flute. It caused enough damage in your hands. Aside from that you should take this spear instead and go in my hut. It's the one on the left from the suqare. Inside you will find a cest. You have to open it and take the carving. Bring it to the oldest across! Hurry up!";
+	remove flute from play;
+	move spear to totem.
+	
 
-After asking shaman about a topic listed in the Table of shaman Responses:
+
+[After asking shaman about a topic listed in the Table of shaman Responses:
 			say "[response entry]";
 			move spear to totem.
 			
@@ -620,10 +649,14 @@ After asking shaman about a topic listed in the Table of shaman Responses:
 Table of shaman Responses
 Topic	Response
 "Götti" 	"[italic type]- Yeah, our essence and all that shit. Don't mention it.[paragraph break]"	
-"weapon"	"[italic type]- We should arm ourselfe..."
+"weapon"	"[italic type]- We should arm ourselfe..."]
 	
 After taking spear:
 	say "yeah".
+
+After taking carving:
+	say "beschreibung ameisenlöwe".
+	
 
 After taking saddle:
 	say "cool".
@@ -639,8 +672,52 @@ After saddle the götti:
 		say "you need a saddle first of all".
 		
 After going to Village_hut3:
-	say "bla bla oh du sollst mir das geben";
-	remove carving from play.
+	say "Oh I hade a feeling this day will come. It's like then! The events will be repeated. The last time i saw this carving many of us died a horrible death. You need a götti to be fast enogh to have a chance against it. Take this saddle over there and go to the stable in the south. You have to saddle one of the göttis so you can ride it.";
+	remove carving from play;
+	move saddle to village_hut3.
+
+[the götti is a person in the village_stable. ]
+
+ride the götti is an action applying to nothing.
+Understand "ride the götti" as ride the götti.
+
+After ride the götti:
+	if the location of the player is the location of the götti and player does not carry saddle:
+		say "you ride outside the stable to fight the beast";
+		move player to village_path;
+		move götti to the village_path;
+	else:
+		say "nope".
+
+after examining götti:
+	say "Grewww".
+	
+After going to the village_path:
+	if the player carries saddle:
+		say "Oh no there it is . you should hurry up! go in the stable and prepare your fight.".
+
+[Irgendwas wenn man mit dem götti auf dem village_path ist]
+
+
+attack is an action applying to nothing.
+Understand "attack" as attack.
+After attack:
+	if the player has the spear and the location of the player is the location of the götti:
+		say "Shaman: [italic type] you attack. you killed it. thank you. here is some food to say we are thankful. take it and we bring you to you spaceship.";
+		move shaman to village_path;
+		move food to the village_path;
+	else:
+		say "you can't attack".
+
+After taking food:
+	say "you got the food and the formizer bring you to your spaceship";
+	move player to landingzone_gaisetto;
+	remove spear from play.
+
+[ (klappt noch nicht.!)
+After going to the landingzone_gaisetto:
+	if the player carries food:
+		say "finally you found somethink to eat and you leave the planet!".]
 
 
 Chapter 3- Geysiria
@@ -677,7 +754,6 @@ Instead of going nowhere from the Cave_Geysiria, say "You're in a cave, go explo
 
 
 Chapter 4 - Frizza
-
 
 
 
@@ -848,11 +924,10 @@ When play begins:
 
 [--]
 
-Chapter 1 - Somewhere on Frizza
 
 [Image Testsection]
 
-Include Simple Graphical Window by Emily Short.
+[Include Simple Graphical Window by Emily Short.
 Include Location Images by Emily Short.
 
 
@@ -861,7 +936,7 @@ Include Location Images by Emily Short.
 	
 	The room-illustration of Upper Desert_Frizza is the Figure of Upper Desert_Frizza.
 	The room-illustration of Landing Zone_Frizza is the Figure of Landing Zone_Frizza.
-	
+	]
 [--]
 
 [Variables]	
@@ -1274,15 +1349,14 @@ Instead of inserting a thing into the Power Unit:
 
 After inserting the Pure Flux Essence into the Power Unit:
 	say "You put the Essence into the generator of the ship and it instantly starts working - the lights go on, you hear the engine starting and the turbines spinning. Time to take off.[paragraph break]You lift your ship, up and up, until you are far above the surface of Frizza. You take a last glance at the blue Fluxes, the city structures and the rocky landscape, before breaching through the clouds and entering the stratosphere. You did it, you survived Frizza.[paragraph break]For a long time you sail through space, passing moons, asteroids, planets ... you think about your past actions, and of what will come. Before you can help it, you fall to sleep of exhaustion.[paragraph break]Chapter 5 - Kaldriss[paragraph break]You are suddenly woke by heavy jolts and a bursting noise. You quickly orient yourself and grasp the situation. You got caught in a meteor shower and while trying your best to manouver your spaceship through it  your engine still took a hit. You then had to crash-land on Kaldríss - one of the most cold planets in this solar system.  Since only a few explorers made their to this planet there's not a whole lot of information available about this icy place. You are pretty much on your own now. The spaceship also won't take off before it hasn't been properly repaired. But first things first. Without any kind of heat you won't survive this bleakness for long. You tame a look at the command panel in hopes of finding something of use but it doesn't look very good. There's only a single green button on the command panel. What could this mean? I might also wanna  take a look at the spaceship exit that lies straight ahead since it seems to be busted, too.";
-	now the Pure Flux Essence is in the power reserve;
-	now the description of the Pure Flux Essence is "If used correctly this pure flux essence creates a warm energy that withstands even the coldest temperatures. However, a catalyst is required in order to make use of the orbs sheer amount of energy.";
-	now the player is in the Spaceship Bridge_Kaldríss.
+	remove the Pure Flux Essence from play.
+	[now the player is in the Spaceship Bridge_Kaldríss.]
 	
 
 After inserting the Power Cell into the Power Unit:
 	say "You put the Essence into the generator of the ship and it instantly starts working - the lights go on, you hear the engine starting and the turbines spinning. Time to take off.[paragraph break]You lift your ship, up and up, until you are far above the surface of Frizza. You take a last glance at the blue Fluxes, the city structures and the rocky landscape, before breaching through the clouds and entering the stratosphere. You did it, you survived Frizza.[paragraph break]For a long time you sail through space, passing moons, asteroids, planets ... you think about your past actions, and of what will come. Before you can help it, you fall to sleep of exhaustion.[paragraph break]Chapter 5 - Kaldriss[paragraph break]You are suddenly woke by heavy jolts and a bursting noise. You quickly orient yourself and grasp the situation. You got caught in a meteor shower and while trying your best to manouver your spaceship through it  your engine still took a hit. You then had to crash-land on Kaldríss - one of the most cold planets in this solar system.  Since only a few explorers made their to this planet there's not a whole lot of information available about this icy place. You are pretty much on your own now. The spaceship also won't take off before it hasn't been properly repaired. But first things first. Without any kind of heat you won't survive this bleakness for long. You tame a look at the command panel in hopes of finding something of use but it doesn't look very good. There's only a single green button on the command panel. What could this mean? I might also wanna  take a look at the spaceship exit that lies straight ahead since it seems to be busted, too.";
-	remove the Power Cell from play;
-	now the player is in the Spaceship Bridge_Kaldríss.
+	[remove the Power Cell from play;
+	now the player is in the Spaceship Bridge_Kaldríss.]
 	
 [Techie]
 
@@ -1300,10 +1374,11 @@ A Cabin is in the Scoop_Frizza. The Cabin is fixed in place. The Cabin is an ope
 
 After approaching the Cabin:
 	say "You scramble over the ghastly landscape, keeping the ravine's edge to a good distance. You get an even better view of the structures that span the width of the gorge, you are now certain that there is mining equipment and transportation units, some manned and some apparently controlled remotely. You approach the cabin, saving a couple of steps in distance, and try to glance into the inside of the cabin. Someone sits there at a metal desk, wearing a hardhat and sunglasses, between ridiculous heaps of papers and files. In his mouth there is an oblong roll, glowing blue, and on one of the inside wall hangs an oversized metal suit, equipped with all kind of complex-looking gear. As you eyeball the scene, the man suddenly turns his head and straigthly spots you through his shaded glasses. He stands up opens a window, pointing in your direction. You see a broad smile stamped into his face.[paragraph break][italic type]Oi, mate! What ya doin' all by yaself out there? Ya ain't have no mischief in mind, do ya? Don't look like one of those blue Duju folk. What's ya [bold type]name[roman type], mate?[paragraph break][roman type]The thick accent washes over you. Momentarily, you believe you smelled grilled meat ... you abandon the thought.";
-	now Trapist is in the Cabin in the Scoop_Frizza.
+	now Trapist is in the Cabin in the Scoop_Frizza;
+	now the description of the Cabin is "A small hut in which Trapist is working. There are heaps of paperwork, the faint glow of a light bulb and Trapist sitting in the midst of it, his face illuminated by his bluishly burning cigarette."
 	
 After answering Trapist that "Axesto" for the first time:
-	say "[italic type]Strange name that. Ah well, I don't mind as long as you ain't starting to act funny. Mine's Trapist ... guess that sounds strange as well, I'm the foreman here. I guess it's back to work now, you certainly see that pile of misery on the desk there. Ain't no gain for no work. Let me now if y'all need something";
+	say "[italic type]Strange name that. Ah well, I don't mind as long as you ain't starting to act funny. Mine's Trapist ... guess that sounds strange as well, I'm the foreman here. I guess it's back to work now, you certainly see that pile of misery on the desk there. Ain't no gain for no work. Let me now if y'all need something.";
 	now Trapist is asked;
 	now Trapist is friendly.
 
@@ -1328,6 +1403,7 @@ Topic	Response
 "Duju"	"[italic type]Them were here before us, you bet. But that ain't meaning the planet's all theirs. We keep their sacred grounds where we can, but there's no drilling aroung a hundred-mile-mountain. You ought to make a compromise in such cases, but not that folk, no. I respect them and I try helping where I can, but when talking about the 'Bloo' here in the Scoop, you know what's up, and you know the talk won't be gentle.[paragraph break]"
 "Scoop"	"[italic type]That's our main source of the Flux right here. We established it a couple decades ago - Duju folk were okay with it back then. Things have changed though.[paragraph break]"
 "Cabin"	"[italic type]Oh my, you must have quite a bore if you want about that miserable hut. I'm here for the bureaucracy shenanigans, so that's what's all the paperwork about. I'll fall asleep though if you ask about it further.[paragraph break]"
+"Du'un"	"[italic type]That's that spiritual leader of theirs, right? Never had much to do with him, 'though he seems like the type ya can talk to."
 
 After asking Trapist about "Discharged Spaceship":
 	if Trapist is friendly:
@@ -1349,6 +1425,8 @@ After asking Trapist about "Discharged Spaceship":
 		say "[italic type]Gosh, bad situation that. Can't do anything for ya at the moment though, pardon me Mate."
 		
 
+	
+
 [
 [TO DO]
 
@@ -1367,13 +1445,14 @@ After asking Trapist about "Discharged Spaceship":
 - Capacitor Mechanik ggf. vereinfachen (Instead of inserting anything other than into .. )
 ]
 
+
 Chapter 5 - Kaldríss
 
 Section 1 - Crash Site
 
 [Finding a way off the space ship]
 
-Axesto is a person. The Player is Axesto.
+[Axesto is a person. The Player is Axesto.]
 
 [Spacesuit with energy capacitor]
 A spacesuit is a kind of thing. A spacesuit is always wearable. An energy capacitor is a kind of container. The energy capacitor is part of every spacesuit.
@@ -1400,7 +1479,7 @@ Before inserting Yarwol's Keystone into the energy capacitor:
 	say "There is only one place this keystone would fit.";
 	stop the action.
 
-Before inserting the pure flux essence into the energy capacitor for the first time:
+Before inserting the flux essence fragment into the energy capacitor for the first time:
 	say "[italic type]Do I really wanna do this? Chances of me dying are quite high. On the other hand, I will probably die anyway. Careful now. And ..[paragraph break]oh no ..[paragraph break]NONONO[paragraph break]WAIT .. EUREKA .. it actually worked![roman type]";
 	continue the action.
 
@@ -1421,7 +1500,7 @@ After putting on the protector glove for the first time:
 	say "This should work!";
 	continue the action.
 
-After taking the pure flux essence for the first time:
+After taking the flux essence fragment for the first time:
 	say "This glove truly works wonders. No harm done.".
 
 
@@ -1440,16 +1519,19 @@ The Crash Site_Kaldríss is a region.The Spaceship Bridge_Kaldríss, the Spacesh
 
 [Items]	
 [Hidden Items/Riddles]
+[Command Panel]
 In the Spaceship Bridge_Kaldríss is a command panel. It is scenery.  In the command panel is a fried communicator, a protector glove and a power reserve. It is closed and openable. The power reserve is a container. The power reserve is fixed in place. It is closed, locked and openable. The description of the power reserve is "Of course! The power reserve basically contains a large portion of the spaceships energy reservoir. If you manage to open it and check if there is still energy left you might be able to use it to power something."
 
+After opening the command panel:
+	say "You manage to remove the protective layer of the command panel revealing the mainframe with all the important stuff.  Usually it's not advised to do this by yourself but tough times call for tough measures.".
+	
+After closing the command panel:
+	say "You put everything back in place and pretend like it never happened. Nobody would ever notice.".
+
+The green button unlocks the power reserve. In the power reserve is a flux essence fragment. The flux essence fragment is an electrified thing. The description of flux essence fragment is "Energy in its purest form. But at the same time just as dangerous and unstable. What you have here are just the remains of the once fully capable flux essence that you put into the spaceship's generator in order to escape from Frizza. Small portions of the main energy stream within the spaceship are stored in here for emergency cases - just like this one you are in.". The flux essence fragment can be taken.
 
 
-The green button unlocks the power reserve. [In the power reserve is a pure flux essence.] The pure flux essence is an electrified thing. [The description of pure flux essence is "If used correctly this pure flux essence creates a warm energy that withstands even the coldest temperatures. However, a catalyst is required in order to make use of the orbs sheer amount of energy."] The pure flux essence can be taken. 
-
-The green button unlocks the power reserve. [In the power reserve is a pure flux essence.] The pure flux essence is an electrified thing. [The description of pure flux essence is "Energy in its purest form. But at the same time just as dangerous and unstable. What you have here are just the remains of the once fully capable flux essence that you put into the spaceship's generator in order to escape from Frizza. Small portions of the main energy stream within the spaceship are stored in here for emergency cases - just like this one you are in.". The pure flux essence can be taken. ]
-
-
-Before taking the pure flux essence:
+Before taking the flux essence fragment:
 	say "This flux essence used to contain way more energy its remains might contain just enough energy to power your spacesuit."
 
 
@@ -1478,10 +1560,22 @@ After examining fried communicator:
 Before taking the fried communicator:
 	say "You don't have the tools to disassemble the communicator. Since it doesn't seem to work you would be wasting your time anyway.". 
 
-After examining the command panel:
-	say "You could open this baby up and take a peak inside."
 
-[Emergency Torch]
+
+
+
+Before examining the command panel:
+	if CommandPanelOpen is true:
+		say "You could open this baby up and take a peak inside.";
+	if CommandPanelOpen is false:
+		say "[italic type]The exposed mainframe is truly gorgeous but I should focus on more important things now![roman type][paragraph break]";
+		continue the action.
+
+
+
+	
+
+[Emergency Torch in the Locker]
 In the Spaceship Storage_Kaldríss is a locker. It is scenery. The locker is an openable lockable container in the Spaceship Storage_Kaldríss. It is closed, locked and openable. The encryption key unlocks the locker. The description of the locker is "You remember putting something important in here but you can't recall what exactly it was. Should probably open it up to know for sure.".
 In the locker is an emergency torch. The emergency torch can be taken. The description of the emergency torch is "Plasma Torch Mk. IV - Survival Issue".
 Before taking the emergency torch:
@@ -1494,8 +1588,9 @@ After opening the suit chamber:
 	
 After closing the suit chamber:
 	say "[italic type]Seal Status: [bold type]ACTIVATED //[roman type][paragraph break][italic type]Closing chamber.[paragraph break]Initiating cleaning sequence --- [roman type][bold type]BOOTING[roman type][paragraph break][roman type]".
+
 [Rooms]
-The Spaceship Bridge_Kaldríss is a room.  "The place where all the magic happens. Well, it used to be at least - during the impact most of the important equpiment including the communication systems must have been fried and doesn't seem to work anymore.  There's only a single flickering light inside the command panel. What could this mean? I should probably open the [bold type]command panel[roman type] and take a look. I could also go south and check the storage of the spaceship first." The printed name of the Spaceship Bridge_Kaldríss is "Spaceship Bridge".
+The Spaceship Bridge_Kaldríss is a room.  "The place where all the magic happens. Well, it used to be at least - during the impact most of the important equpiment including the communication systems must have been fried and doesn't seem to work anymore.[paragraph break]There's only a single flickering light inside the [bold type]command panel[roman type].[paragraph break][italic type]What could this mean? I should probably open the command panel and take a look. I could also go south and check the storage of the spaceship first[roman type]." The printed name of the Spaceship Bridge_Kaldríss is "Spaceship Bridge".
 	
 The Spaceship Storage_Kaldríss is a room. "Taking a quick look inside the storage room doesn't seem to reveal anything particularly interesting. There are only some random souvenirs from your previous intergalactic travels but also your [bold type]locker[roman type] which possibly contains things you could really use in this kind of situation. Oh, and the [bold type]suit chamber[roman type] of course. It also looks like the airlock in the south doesn't seem to function anymore so perhaps I should go check that out as well?" The printed name of the  Spaceship Storage_Kaldríss is "Spaceship Storage".
 The Spaceship Exit_Kaldríss is a room. "The airlock also seems to be affected by the crash and the temperatures inside the spaceship are nearing dangerous levels. I could leave the spaceship right now by going east but I if I don't have something to protect me from the cold I will probably die." The printed name of the  Spaceship Exit_Kaldríss is "Spaceship Exit".
@@ -1552,11 +1647,20 @@ Before going to the Crash Zone_Kaldríss:
 [Variables]
 EnergyCapacitorReady is a truth state that varies. EnergyCapacitorReady is false.
 
-After inserting pure flux essence into energy capacitor:
+After inserting flux essence fragment into energy capacitor:
 	now EnergyCapacitorReady is true.
 	
-After removing pure flux essence from energy capacitor:
+After removing flux essence fragment from energy capacitor:
 	now EnergyCapacitorReady is false.
+
+
+CommandPanelOpen is a truth state that varies. CommandPanelOpen is false.
+
+After opening the command panel:
+	now CommandPanelOpen is true.
+	
+After closing the command panel:
+	now CommandPanelOpen is false.
 	
 After going to the Crash Zone_Kaldríss:
 	say "Now that you found a way to stay warm you should be able to leave the spaceship without instantly freezing to death.";
@@ -1718,5 +1822,3 @@ After asking heimdallr about "open sesame":
 After entering the Bifröst Portal Chamber :
 	end the story;
 	say "You did it!"
-
-

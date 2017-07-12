@@ -4,7 +4,7 @@
   <activeNode nodeId="node-1"/>
   <item nodeId="node-1">
     <command xml:space="preserve">- start -</command>
-    <result xml:space="preserve">Your ship falls through thick layers of dark clouds. Red flashes illuminate your surroundings. The lights on your console warn you of the dangerously fast approaching energy level zero. As you finally break through the last cloud, you get a glimpse of what awaits you underneath. &#x000A;Black planes and sharp cliffs of a dark red shape the landscape. In the east you perceive a massive rock formation, in the west you see a thick blue stream cutting through the plane , illuminating big portions of it in the process. Somewhere to the south there seem to be some sort of industrial constructions, far in the north you believe to recognize cubic shapes that reveal a city. You don't have time to study the landscape much longer. All you concentration is desperately needed as you find a gap in the ghastly cliffs and bring down your ship. Heavy jolting, followed by a sudden blow signalize your landing. &#x000A;Your ship's on the ground, and you are too, barely. Welcome to Frizza.&#x000A;&#x000A;Frizza&#x000A;An Interactive Fiction by Tim&#x000A;Release 1 / Serial number 170711 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Landing Zone&#x000A;You step out of your ship onto a small square in the middle of nowhere. Your ship's dead and so is the computer. It seems like you ought to explore the environment. You remeber having seen civilization-like shapes to the south-west and to the north. To the east  there is a huge mountain, to the west there seems to be a Flux.&#x000A;&#x000A;You can see a Discharged Spaceship (in which is a Power Unit (empty)) here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Your ship falls through thick layers of dark clouds. Red flashes illuminate your surroundings. The lights on your console warn you of the dangerously fast approaching energy level zero. As you finally break through the last cloud, you get a glimpse of what awaits you underneath. &#x000A;Black planes and sharp cliffs of a dark red shape the landscape. In the east you perceive a massive rock formation, in the west you see a thick blue stream cutting through the plane , illuminating big portions of it in the process. Somewhere to the south there seem to be some sort of industrial constructions, far in the north you believe to recognize cubic shapes that reveal a city. You don't have time to study the landscape much longer. All you concentration is desperately needed as you find a gap in the ghastly cliffs and bring down your ship. Heavy jolting, followed by a sudden blow signalize your landing. &#x000A;Your ship's on the ground, and you are too, barely. Welcome to Frizza.&#x000A;&#x000A;Frizza&#x000A;An Interactive Fiction by Tim&#x000A;Release 1 / Serial number 170712 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Landing Zone&#x000A;You step out of your ship onto a small square in the middle of nowhere. Your ship's dead and so is the computer. It seems like you ought to explore the environment. You remeber having seen civilization-like shapes to the south-west and to the north. To the east  there is a huge mountain, to the west there seems to be a Flux.&#x000A;&#x000A;You can see a Discharged Spaceship (in which is a Power Unit (empty)) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
@@ -533,7 +533,7 @@
     <temporary score="0">YES</temporary>
     <children>
       <child nodeId="node-50"/>
-      <child nodeId="node-102"/>
+      <child nodeId="node-92"/>
     </children>
   </item>
   <item nodeId="node-50">
@@ -995,7 +995,7 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-102">
+  <item nodeId="node-92">
     <command xml:space="preserve">take gun</command>
     <result xml:space="preserve">Until now you were considered peaceful. Taking a foreign gun in the middle of a foreign building could change that impression. Think good before taking it.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1003,10 +1003,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-103"/>
+      <child nodeId="node-93"/>
     </children>
   </item>
-  <item nodeId="node-103">
+  <item nodeId="node-93">
     <command xml:space="preserve">take gun</command>
     <result xml:space="preserve">Instantly you hear shouts and calls behind you. Before even having the chance to turn, you are brutally knocked over and knocked unconscious by a heavy blow. &#x000A;&#x000A; For a long time you seem to float through thick dark space, sometimes you feel an edge of something metal painfully thrust into your side. As you awake you find yourself in a small chamber with a sterile atmosphere. Three walls are of blank metal with blue veins in them, the fourth is vitreous and reveals a spectacular view: a vast plaza with mingling crowds of glowing shapes, surrounded by exotic buildings made out of crystal and white metal, transportation vehicles of no known origin and static guards, as heavily armed as the ones you saw before - and all radiating a constant bluish sheen like in a dream. However, as much as you see, as little you hear. The chamber seems to be soundproof. The impressions are overwhelming, you feel the exhaustion coming back and fall asleep where you lie.&#x000A;&#x000A;The next that you awake, you find yourself in the dust. Beside you sits your spaceship, discharged as ever. It seems that they brought you back to the Landing Zone and left you here, both the Extractor and the cloak are gone. Pity.&#x000A;&#x000A;Landing Zone&#x000A;Your crash site. You can go in all directions.&#x000A;&#x000A;You can see a Discharged Spaceship (in which is a Power Unit (empty)) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1014,10 +1014,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-104"/>
+      <child nodeId="node-94"/>
     </children>
   </item>
-  <item nodeId="node-104">
+  <item nodeId="node-94">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Wasteland&#x000A;One of the dreary planes in the region.&#x000A;&#x000A;You can go west, north and south.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1025,10 +1025,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-105"/>
+      <child nodeId="node-95"/>
     </children>
   </item>
-  <item nodeId="node-105">
+  <item nodeId="node-95">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Flux Gate&#x000A;A gate of some sort, guarded.&#x000A;&#x000A;You can go east.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1036,10 +1036,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-106"/>
+      <child nodeId="node-96"/>
     </children>
   </item>
-  <item nodeId="node-106">
+  <item nodeId="node-96">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Wasteland&#x000A;One of the dreary planes in the region.&#x000A;&#x000A;You can go west, north and south.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1047,10 +1047,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-107"/>
+      <child nodeId="node-97"/>
     </children>
   </item>
-  <item nodeId="node-107">
+  <item nodeId="node-97">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Landing Zone&#x000A;Your crash site. You can go in all directions.&#x000A;&#x000A;You can see a Discharged Spaceship (in which is a Power Unit (empty)) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1058,10 +1058,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-108"/>
+      <child nodeId="node-98"/>
     </children>
   </item>
-  <item nodeId="node-108">
+  <item nodeId="node-98">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Wasteland&#x000A;A pitiful piece of land. Black sand, red rocks and some sickish looking plants. If you are not looking for something particular there is no need to linger. &#x000A;&#x000A;You can go west and north.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1069,10 +1069,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-109"/>
+      <child nodeId="node-99"/>
     </children>
   </item>
-  <item nodeId="node-109">
+  <item nodeId="node-99">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Scoop (Settler's Base)&#x000A;You see a part of the Flux winding through a fjord deep down. Above your level there are metal constructions, thrust into the rock, from where little transportation devices start to the blue current at the valley's bottom, each manned with two humanlike figures. Near the bridgelike scaffold (you think it may be the only way across the gap) you notice some cabins, tightly hugging the cliffs. It seems you could approach the nearest one.&#x000A;&#x000A;You can go east  and west.&#x000A;&#x000A;You can see a Cabin (empty) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1080,10 +1080,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-110"/>
+      <child nodeId="node-100"/>
     </children>
   </item>
-  <item nodeId="node-110">
+  <item nodeId="node-100">
     <command xml:space="preserve">approach cabin</command>
     <result xml:space="preserve">You scramble over the ghastly landscape, keeping the ravine's edge to a good distance. You get an even better view of the structures that span the width of the gorge, you are now certain that there is mining equipment and transportation units, some manned and some apparently controlled remotely. You approach the cabin, saving a couple of steps in distance, and try to glance into the inside of the cabin. Someone sits there at a metal desk, wearing a hardhat and sunglasses, between ridiculous heaps of papers and files. In his mouth there is an oblong roll, glowing blue, and on one of the inside wall hangs an oversized metal suit, equipped with all kind of complex-looking gear. As you eyeball the scene, the man suddenly turns his head and straigthly spots you through his shaded glasses. He stands up opens a window, pointing in your direction. You see a broad smile stamped into his face.&#x000A;&#x000A;Oi, mate! What ya doin" all by yaself out there? Ya ain't have no mischief in mind, do ya? Don't look like one of those blue Duju folk. What's ya name, mate?&#x000A;&#x000A;The thick accent washes over you. Momentarily, you believe you smelled grilled meat ... you abandon the thought.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1091,10 +1091,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-111"/>
+      <child nodeId="node-101"/>
     </children>
   </item>
-  <item nodeId="node-111">
+  <item nodeId="node-101">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>

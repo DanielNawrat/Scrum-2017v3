@@ -645,9 +645,8 @@ Instead of inserting a thing into the Power Unit:
 
 After inserting the Pure Flux Essence into the Power Unit:
 	say "You put the Essence into the generator of the ship and it instantly starts working - the lights go on, you hear the engine starting and the turbines spinning. Time to take off.[paragraph break]You lift your ship, up and up, until you are far above the surface of Frizza. You take a last glance at the blue Fluxes, the city structures and the rocky landscape, before breaching through the clouds and entering the stratosphere. You did it, you survived Frizza.[paragraph break]For a long time you sail through space, passing moons, asteroids, planets ... you think about your past actions, and of what will come. Before you can help it, you fall to sleep of exhaustion.[paragraph break]Chapter 5 - Kaldriss[paragraph break]You are suddenly woke by heavy jolts and a bursting noise. You quickly orient yourself and grasp the situation. You got caught in a meteor shower and while trying your best to manouver your spaceship through it  your engine still took a hit. You then had to crash-land on Kaldríss - one of the most cold planets in this solar system.  Since only a few explorers made their to this planet there's not a whole lot of information available about this icy place. You are pretty much on your own now. The spaceship also won't take off before it hasn't been properly repaired. But first things first. Without any kind of heat you won't survive this bleakness for long. You tame a look at the command panel in hopes of finding something of use but it doesn't look very good. There's only a single green button on the command panel. What could this mean? I might also wanna  take a look at the spaceship exit that lies straight ahead since it seems to be busted, too.";
-	[now the Pure Flux Essence is in the power reserve;
-	now the description of the Pure Flux Essence is "If used correctly this pure flux essence creates a warm energy that withstands even the coldest temperatures. However, a catalyst is required in order to make use of the orbs sheer amount of energy."
-	now the player is in the Spaceship Bridge_Kaldríss.]
+	remove the Pure Flux Essence from play.
+	[now the player is in the Spaceship Bridge_Kaldríss.]
 	
 
 After inserting the Power Cell into the Power Unit:

@@ -238,7 +238,7 @@ After examining Mitéra_Sitis for the first time:
 
 The Tree Thicket_sitis is a room. The tree thicket_sitis is east of the Rock Mine_Sitis. The printed name of the Tree Thicket_sitis is "Tree Thicket". 
 
-The Rock Mine Tree_sitis is a thing. The Rock Mine Tree_sitis is not portable. The description of the Rock Mine Tree_sitis is "It's perfect. It's the perfect tree to climb on." The Rock Mine Tree_sitis is in the Tree Thicket_Sitis. The printed name of the Rock Mine Tree_sitis is "Rock Mine tree". 
+The Rock Mine Tree_sitis is a thing. The Rock Mine Tree_sitis is not portable. The description of the Rock Mine Tree_sitis is "Perfect! It's the perfect abditory to conquer Machitikos from the ambush." The Rock Mine Tree_sitis is in the Tree Thicket_Sitis. The printed name of the Rock Mine Tree_sitis is "Rock Mine tree". 
 
 After examining the Rock Mine Tree_sitis for the first time:
 	say "Perfect! It's perfect.";
@@ -263,8 +263,6 @@ After attacking Machitikos the first time:
 	now Anaidis_Sitis is in the Tree Thicket_sitis;
 
 
-[The sharp stone_Sitis is a thing. The sharp stone_Sitis is portable. The sharp stone_Sitis is in the Rock Mine_Sitis. The printed name of the sharp stone_Sitis is "sharp stone".]
-
 After asking Anaidis_Sitis about "scorpius":
 	say "Anaidis whispers, [italic type]'He is a dictator. Earlier, Scorpius was one of us. I mean, the time before I was born. But he was always kind of different. A bit more selfish than other ones, a bit more aggressive and a bit more oppressive. One summer, an aridity befall the whole planet Sitis. We needed to calculate the water more precisely. Consequently, dividing it between everyone and relinquishing, when someone else still got no water, was taken for granted. Except for Scorpius. He refused to share his water and started to manipulate other ones to do the same. This reckless behaviour culminates in his decision to construct an underground system which blocks all of our water sources, so we can not draw on them anymore. The only one that still gave water, was the one in his new built palace, deep in the north. There was and there is no chance to burgle. His guardians are doing their job very well. Since that day, he comes to Siccum every week and forces us to fight for our water. If you win, you will get two full keg of water. If you lose... you have to try to survive one week without new water. And everyone who is trying to steal it or to trick him, is going to prison. Immediately. So. This is the answer you were looking for. When you wanna leave the planet with new water, [bold type]your only chance is to fight against this warrior Machitikos.[roman type][paragraph break]";
 	say "You hesitate few seconds. This gladiator Machitikos looks highly dangerous. He is tall, muscular and his sight is totally aggressive. But you feel determined - you are going to beat him. For yourself and for the repressed Sitisianer. [bold type]You step directly in front of the great Scorpius.[roman type]"
@@ -286,8 +284,33 @@ After taking the Spear_Sitis:
 	
 	
 After taking the Spiked Mace_Sitis:
-	say "The moment you took the spiked mace, Machitikos straight begins to attack you with the spear. Beschreibung fehlt. But finally - you bet him!";
+	say "The moment you take the Spiked Mace, Machitikos begins to attack you with the spear. You definitively underestimated this beast. He strikes you so hard, you do not know how to fight back, then running away towards the desert. Initially!";
 	remove the Spear_Sitis from play;
+	now Axesto is in the Wide Desert of Sitis_Sitis;
+	now the description of the Wide Desert Sitis_Sitis is "However, you have been faster than Machitikos. That means, you have a bit time to think about, how you could defend yourself against this machine. As you look around, [bold type]you discover in the east the desert is going downhill.[roman type] You should go there because deeper in the north there is just adversarial territory.";
+	now the description of the Rock Mine_Sitis is "You are surrounded by huge grey stones. Too high for you to climb on. [bold type]But in the east you spot a tree thicket with some old dry trees.[roman type] They are kind of perfect protection with their knotted treetop. Specially because you are small, light and with long claws - the best premises for climbing."	
+
+
+[The Rock Mine Tree_sitis is a thing. The Rock Mine Tree_sitis is not portable. The description of the Rock Mine Tree_sitis is "It's perfect. It's the perfect tree to climb on." The Rock Mine Tree_sitis is in the Tree Thicket_Sitis. The printed name of the Rock Mine Tree_sitis is "Rock Mine tree". 
+
+After examining the Rock Mine Tree_sitis for the first time:
+	say "Perfect! It's the perfect abditory to conquer Machitikos from the ambush.";
+	
+
+After climbing on the Rock Mine Tree_Sitis for the first time:
+	say "Yeah! You made it. Just a few seconds before you see Machitikos running downhill. Keep your  ready. He is there in three, two, one... [bold type]ATTACK HIM![roman type]";
+	now Machitikos_Sitis is in the Tree Thicket_sitis;
+	now the description of Machitikos_Sitis is "";
+	
+Attacking Machitikos is an action applying to nothing.
+Understand "attack Machitikos" as attacking Machitikos.
+
+After attacking Machitikos the first time:
+	say "With an epic jump, holding the spear in the air, you fall on Machitikos muscly back. He shrieks, as your weapon pierces into his chest. You let up on him, he falters and falls![paragraph break]";
+	say "Erzählschluss vom Kampf.";
+	now Scorpius_Sitis is in the Tree Thicket_sitis;
+	now Mitéra_Sitis is in the Tree Thicket_sitis;
+	now Anaidis_Sitis is in the Tree Thicket_sitis;]	
 	
 	
 The Spear_Sitis is a thing. The Spear_Sitis is in the Shelter_Sitis. The Spear_Sitis is portable. The description of the Spear_Sitis is "You can fight with this spear."
@@ -375,9 +398,15 @@ After examining Dunia for the first time:
 Chapter 2 - Gaisetto
 
 
-
 [neue befehle dick
-name vom skorpion]
+name vom ameisenlöwe
+spiel gibt nicht komplette totem beschreibung aus
+instead of going nowhere befehl fehlt in dorf
+satteln, reiten und kämpfen lokal begrenzen
+examining tempelwände fehlen
+zerstören aufheben
+village gate löschen
+not portoble]
 
 
 [Dschungel]
@@ -386,17 +415,69 @@ Jungle_Gaisetto is region.
 
 Landingzone_Gaisetto is a room in the Jungle_Gaisetto. "Hell that was a harsh landing. Thanks God you landed safely on this clearing right next to the cliff. Only some meters besides and your Spaceship would have been shuttered into a thousand pieces. Hopeful all this effort isn’t for nothing at all and I will find some food here. You look around. Behind you is the spaceship in front of the cliff. All the other directions you see a jungle." The printed name of Landingzone_Gaisetto is "Landingzone".
 
-Jungle_1 is a room in the Jungle_Gaisetto. The printed name of Jungle_1 is "Jungle".
-Temple_Gaisetto is a room in the Jungle_Gaisetto. The printed name of the Temple_Gaisetto is "Temple".
-Jungle_2 is a room in the Jungle_Gaisetto. "You are surrounded by strange plants. Some of them have beautiful colourful blossoms and shine in the sunlight. There are huge trees, so high you can’t the top of the crowns and violet ferns covered in blue sticky fluid. Sadly none of the plant around youbear fruits or nuts, that could be eatable. South of you is the cliff. East of you lies the clearing with your spaceship. North of you is something shining through the trees. Maybe there is something reflecting the sunlight."  The printed name of Jungle_2 is "Jungle".
-Jungle_3 is a room in the Jungle_Gaisetto. "There are many trees around you, but only one very huge and old one. Because of its gigantic crown no sunlight reaches the mossy floor. This gives the place a very mystery and unreal aura. South of you is the cliff. West of you lies the clearing with your spaceship. North of you stretches the vastness of the jungle."  The printed name of Jungle_3 is "Jungle".
+Jungle_1 is a room in the Jungle_Gaisetto. "The versatility of the flora around you is incredible. All thinkable sizes and forms of trees, bushes, ferns and flowers exdend   everywhere as far as the eye can reach. Sadly nothing here looks eatable. You look around and see your Spaceship south of you. Eastward it looks like it goes deeper in the jungle. Somethink shines threw th trees west of you and in the south it there seems to be something stony." The printed name of Jungle_1 is "Jungle".
+
+	[Tempel]
+				[Alles zum Tempel an Beschreibungen]
+
+Temple_Gaisetto is a room in the Jungle_Gaisetto. "You found a little temple in the middle of the jungle. It looks very old, because the whole building is covered in moss and seems to be in danger of collapsing. Inside the temple there are inscriptions on the right and left wall as well as a colourfull floor mosaic, that shows a triangle.  In front of you on the south wall of the temple is a gigantic statue on a plinth. It looks like a (...) and holds a shiny green emerald." The printed name of the Temple_Gaisetto is "Temple".
+				
+				[Container und Türen im Tempel]
+
+The plinth is door. The plinth is north of the Temple_Gaisetto. The plinth is locked and closed. the golden plate unlocks the plinth. 
+
+
+
+After opening the plinth:
+	remove golden plate from play;
+	say "the plinth opend bla bla".
+
+The floor mosaic is door. Floor mosaic is above the Catacombs. The floor mosaic is locked. 
+
+The statue is in the Temple_Gaisetto. it is fixed in place. the emerald is in the statue.
+the Inscription on the Plinth is scenery. 
+
+
+After examining the floor mosaic:
+	if the player has the flute:
+		say "The floor mosaic moved apart and reveals a secret staircase down to Catacombs ";
+	else:
+		say "On each corner of it is a stone to bee seen. One is red as fire and covered in flames, the otherone blue like the ocean and covered in waves and the last one green like the jungle, that is all around the temple, covered in leavs."
+	
+
+After examining the plinth:
+	say "There is a round cafity and a engraving on the plinth that says [italic type] From this day till the end of time this guard will keep us save from the (...) "
+
+After examining the statue:
+	say " (...)"
+	
+
+
+
+The left Templewall is a object in the Temple_gaisetto. it is scenery.
+ "jdfbjefgb".
+
+
+The right Templewall is a object in the Temple_gaisetto. it is scenery.
+"kjdgbfowqaeGBOUQA"
+
+					
+
+After examining huge very old tree:
+	say "Is this the sound of the wind blowing threw the leaves or is there somthing snorring?".
+
+
+[Dschungel]
+
+Jungle_2 is a room in the Jungle_Gaisetto. "You are surrounded by strange plants. Some of them have beautiful colourful blossoms and shine in the sunlight. There are huge trees, so high you can’t the top of the crowns and violet ferns covered in blue sticky fluid. Sadly none of the plant around you bear fruits or nuts, that could be eatable. South of you is the cliff. East of you lies the clearing with your spaceship. North of you is something shining through the trees. Maybe there is something reflecting the sunlight."  The printed name of Jungle_2 is "Jungle".
+Jungle_3 is a room in the Jungle_Gaisetto. "There are many trees around you, but only one very huge and old one with dark red leavs. Because of its gigantic crown no sunlight reaches the mossy floor. This gives the place a very mystery and unreal aura. South of you is the cliff. West of you lies the clearing with your spaceship. North of you stretches the vastness of the jungle."  The printed name of Jungle_3 is "Jungle".
 Jungle_4 is a room in the Jungle_Gaisetto. "You found a lake in the middle of the jungle. It’s strange, because you can’t find a spring or a stream. Is it water? It looks like, but where is the water coming from?"  The printed name of Jungle_4 is "Jungle".
-Jungle_5 is a room in the Jungle_Gaisetto.  The printed name of Jungle_5 is "Jungle".
-Jungle_6 is a room in the Jungle_Gaisetto. The printed name of Jungle_6 is "Jungle".
-Jungle_7 is a room in the Jungle_Gaisetto. "Threw a small hole in the dense jungle you found a little green shrine. It seems like it is able to unlock and open it, Who built that?"  The printed name of Jungle_7 is "Jungle".
-Catacombs is a room in the Jungle_Gaisetto. 
-Tunnel is a room in the Jungle_Gaisetto. 
-Jungle_8 is a room in Jungle_Gaisetto. The printed name of Jungle_8 is "Jungle".
+Jungle_5 is a room in the Jungle_Gaisetto. " Some plants look snapped off. Was it an animal that made its way threw the undergrowth? It's strange because you haven't heared any animal sound so far. Not a single bird was singing. Only total silence besides the sound of the wind blowing softly threw the branches. There is a possibility to go west or south deeper in the jungle." The printed name of Jungle_5 is "Jungle".
+Jungle_6 is a room in the Jungle_Gaisetto. "Threw a small hole in the dense jungle you found a little blue shrine. It seems like it is able to unlock and open with some kind of stone. Who built that?"The printed name of Jungle_6 is "Jungle".
+Jungle_7 is a room in the Jungle_Gaisetto. "Threw a small hole in the dense jungle you found a little green shrine. It seems like it is able to unlock and open with some kind of stone. Who built that?"  The printed name of Jungle_7 is "Jungle".
+Catacombs is a room in the Jungle_Gaisetto. "The Catacombs is a small room carryed by six massive stone pillars. Its verys dark but it seems to be totaly empty. Only east of you is a faint light coming from a tunnel."
+Tunnel is a room in the Jungle_Gaisetto. "Surrounded by stonewalls and a low ceiling is looks like there is a small hole above your head that let the sunlight through". 
+Jungle_8 is a room in Jungle_Gaisetto. "Without the hot flames you can see a little red shrine. It seems like it is able to unlock and open it with some kind of stone." The printed name of Jungle_8 is "Jungle".
 
 Jungle_1 is north of the Landingzone_Gaisetto.
 Temple_gaisetto is north of the Jungle_1.
@@ -423,66 +504,69 @@ Instead of going nowhere from Jungle_8, say "The Jungle is to dense to move forw
 
 [Objecte im Dschungel]
 
-The golden plate is a object.
+
 the emerald is a object.
 the sapphirine is a object in the Lager.
 the ruby is a object in the lager.
-flute is a object [in the lager] in the Jungle_1.
+flute is a object in the lager.
+golden plate is a object in the lager.
+food is a object in the lager.
 
 [Dorf]
 
 The Formizer_Village is a region. 
-The Chain_bridge is a room in the Formizer_Village. the printed name of Chain_bridge is "Chain Bridge".
-The Village_Square is a room in Formizer_Village. The printed name of Village_Square is "Square".
-Village_hut1 is a room in Formizer_Village. The printed name of Village_hut1 is "Hut".
+The Chain_bridge is a room in the Formizer_Village. "You are standing on a chain bridge made by vines and wood. Hopefulls it carries my way and wount tear down. You can see a gate made out of truns north of you at the end of the chain bridge. It seems like you fond some kind of zivilization." The printed name of Chain_bridge is "Chain Bridge".
+The Village_Square is a room in Formizer_Village. "You stand in the middle of a huge square that looks like the heart of the village. There are many paths that proberply leads to all the huts in the back, because there are only two huts right next to the square. One on the left and one on the right. In front of you, in the north, you can see a totem."The printed name of Village_Square is "Square".
+[Village_hut1 is a room in Formizer_Village. "You're in a small hut in which some strange little being are. They   The printed name of Village_hut1 is "Hut".]
 Village_hut2 is a room in Formizer_Village. The printed name of Village_hut2 is "Shaman's Hut".
-
 Village_hut3 is a room in Formizer_Village. The printed name of the Village_hut3 is "Hut".
-Village_Path is a room in Formizer_Village. The printed name of the Village_path is "Path".
-Village_stable is a room in Formizer_Village. The printed name of the Village_hut5 is "Stable".
-The totem is a room in Formizer_Village. The printed name of the totem is "Totem".
+Village_Path is a room in Formizer_Village. "The dusty path leads north to a big square. On the right is some hut."The printed name of the Village_path is "Path".
+Village_stable is a room in Formizer_Village. The printed name of the Village_stable is "Stable".
+The totem is a room in Formizer_Village. "(..)"  The printed name of the totem is "Totem".
 
 
 The Villagegate is a door. The Villagegate is north of the Chain_bridge. The Villagegate is open.
 The Village_path is north of the Villagegate.
 The Village_stable is east of the Village_path.
 The Village_square is north of the Village_path.
-The village_hut1 is west of the Village_path.
+[The village_hut1 is west of the Village_path.]
 The village_hut2 is west of the Village_square.
 The Village_hut3 is east of the Village_square.
 The totem is north of the Village_square.
 The Chain_bridge is north of the Plinth. 
 
+Instead of going nowhere from chain_bridge: say "You don't really want to jump from the chain bridge. You're so high you cant even see the bottom of the ravine.".
+Instead of going nowhere from Village_path: say "You should follow the path of otherwise you will get lost in the jungle.".
 	
 [Objekte im Dorf]
 
-Shaman's götti is a object in the lager.
+
 spear is a object in the lager.
-chest is a container in the Village_hut2. it is fixed in place. the printed name is "lol". The chest is a closed openable container. the carving is in the chest.
+chest is a container in the Village_hut2. it is fixed in place. the printed name is "chest". The chest is a closed openable container. the carving is in the chest.
 saddle is a object in the lager.
 [Personen im Dorf]
-
+Götti is a person in Village_stable.
 Shaman is a person in totem.
-Collector is a person in Village_hut1.
-child is a person in Village_hut1.
+[Collector is a person in Village_hut1.
+child is a person in Village_hut1.]
 old man is a person in Village_hut3.
 
 Before going to the Village_hut2:
 	unless player carries spear:
 		move the player to the village_square;
-		say "verbarikadiert";
+		say "It is locked";
 		stop the action.
 
 Before going to the Village_stable:
 	unless player carries saddle:
 		move the player to the village_path;
-		say "verbarikadiert";
+		say "It is locked";
 		stop the action.	
 		
 Before going to the Village_hut3:
 	unless player carries carving:
 		move the player to the village_square;
-		say "verbarikadiert";
+		say "It is locked";
 		stop the action.
 		
 [Personen, Objekte und Container im Dschungel]
@@ -490,82 +574,42 @@ Before going to the Village_hut3:
 The huge very old tree is a person in the Jungle_3. 
 the lake is in the Jungle_4. It is scenery. 
 
-[Container und Türen im Tempel]
-
- The Plinth is door. The Plinth is north of the Temple_Gaisetto. The Plinth is closed and openable. The Plinth has matching key the golden plate.
-
-[Plinthopen is a truth state that varies. Plinthopen is false.
-
-After opening the Plinth:
-	now Plinthopen is true.
-	
-Before going to Chain_bridge from Temple_Gaisetto:
-	if Plinthopen is false:
-	say "Test.";
-	stop the action;
-	if Plinthopen is true:
-		say "Fail.";
-		continue the action.
-]
-[The stone plate is above Yundar's Cave. The stone plate is a door. The stone plate is closed and openable. 
-
-Stoneplateopen is a truth state that varies.  Stoneplateopen is false.
-
-After opening the stone plate:
-	now Stoneplateopen is true.
-
-Before going to Yundar's Cave from Hunting Grounds_Kaldríss:
-	if Stoneplateopen is false:
-		say "You can't possibly enter whatever it is that lies behind this stone plate before you've [bold type]shoved it aside[roman type]!";
-		stop the action;
-	if Stoneplateopen is true:
-		say "You are finally able to enter the cave but you should still proceed with caution since you never know what's waiting inside.";
-		continue the action.
-]
-
-
-The floor mosaic is door. Floor mosaic is above the Catacombs. The floor mosaic is closed and openable.
-
-the Statue is in the Temple_Gaisetto. it is fixed in place. the emerald is in the statue.
-the Inscription on the Plinth is scenery. 
-The Inscription on the left Templewall is scenery. The left Templewall is a object in the Temple_gaisetto. it is scenery.
-The Inscription on the right Templewall is scenery. The right Templewall is a object in the Temple_gaisetto. it is scenery.
 
 [Schreine]
 
 The green shrine is in Jungle_7. It is fixed in place. The printed name is "Shrine covered in moss. It looks very old and has a mysterious green shine." The green shrine is a openable container. it is locked. The emerald unlocks the green shrine. 
 The blue shrine is in the Jungle_6. It is fixed in place. The printed name is "Shrine surrounded my blue grass and shallow water. It looks very old and has a mysterious blue shine." The blue shrine is a openable container. it is locked. The sapphirine unlocks the blue shrine. 
-The red shrine is in Jungle_8. It is fixed in place. The printed name is "Shrine circled by a firewall. It looks very old and hat a mysterious red shine." The red shrine is a openable container. it is locked. The ruby unlocks the red shrine. In the locker is a golden plate.
+The red shrine is in Jungle_8. It is fixed in place. The printed name is "Shrine circled by a firewall. It looks very old and hat a mysterious red shine." The red shrine is a openable container. it is locked. The ruby unlocks the red shrine. 
 
 Before going to the Jungle_8:
 	unless player carries ruby:
 		move the player to the Tunnel;
-		say "Oh no. It is too hot there. The fire will burn you. You have to find something taht prtect you from the flames";
+		say "Oh no. Its not only the sunlight, that shines through the hole. The whole area is burning. It is too hot to go there. The fire would burn you. You have to find something that prtect you from the flames";
 		stop the action.		
 
 After opening green shrine:
-	 now the description of Jungle_4 is "The lake dried out";
-	now the description of the Jungle_7 is "nothing here";
-	say "The ground starts tn shake and the green shrine gets swollowed by the earth.";
+	 now the description of Jungle_4 is "What happend to the lake? It's completely dried out.";
+	now the description of the Jungle_7 is "It's like the green shrine has never existed. All you can see around you is the dense jungle.";
+	say "The ground starts to shake and the green shrine gets swollowed by the earth.";
 	move green shrine to Lager;
 	move sapphirine to Jungle_4;
 	remove emerald from play.
 
 
 After taking sapphirine:
-	say "Boden öffnet sich bla bla ";
-	now floor mosaic is open;
-	now the description of the Temple_gaisetto is "hjgvjwhe".
+	say "It feels wet".
+	
 
 After opening blue shrine:
-	now the description of the Jungle_6 is "flute here";
-	say "bla bla flöte fällt raus, schrein geht unter";
+	now the description of the Jungle_6 is "It's like the blue shrine has never existed. All you can see around you is the dense jungle.";
+	say "The shrine reveals a hidden secret compartment from where a flute falls out on the ground. The ground starts to shake and the blue shrine gets swollowed by the earth.";
 	move blue shrine to Lager;
 	remove sapphirine from play;
 	move flute to Jungle_6.
 
 After taking flute:
-	say "baum wecken. irgendwelche zeichen"
+	say "What did I just hear? It sounded like stone grinds on stone?";
+	now floor mosaic is open.
 
 PLaying the flute is an action applying to nothing.
 Understand "play the flute" as playing the flute.
@@ -575,21 +619,29 @@ The description of the flute is "you should try to play the flute".
 After playing the flute:
 	if the player has the flute:
 		if the player is in the jungle_3:
-			say "test";
+			say "[italic type] WHAAAAAA! You woke me up from my eternal sleep! I know exactly why you did this. You want the red stone from me that protects you from the flames. You can have it but you should know that if you open the plinth there will be no turning back and you will bing blight and destruction oer all of us!";
+			move ruby to jungle_3;
 		else:
-			say "no";
+			say "It makes a shrill tone";
 	else:
-		say "there is no flute".
+		say "There is no flute".
 		
-After asking huge very old tree about "ruby":
-	say "say";
-	move ruby to Jungle_3.
+After opening red shrine:
+	now the description of the Jungle_8 is "It's like the red shrine has never existed. All you can see around you is the dense jungle.";
+	say "The shrine reveals a hidden secret compartment from where a golden plate falls out on the ground. The ground starts to shake and the red shrine gets swollowed by the earth.";
+	move red shrine to lager;
+	remove ruby from play;
+	move golden plate to Jungle_8.
 	
 
 After going to totem for the first time:
-	say "What have you done?"
+	say "You are on the north end of the square. A five meter high colourful painted totem is in front of you. Right next to it is a about a meter tall being with shining black skin. It stands on four legs that have claws at the end. On both arms it carries a spear. Instead of a head it looks like it wears a triangular mark in the colours green, blue and red. You want to run away, but the being starts to talk: [italic type]Oh what have you done? You moved the plinth and made the way clear for it to attack us! I closed this passage many many lunar cycles in the past, so we can live here safe. Ohh what have you done?! It will kill us! We have to arm us! No! You have to save us from this beast! You allowed it to come here! Give me this flute. It caused enough damage in your hands. Aside from that you should take this spear instead and go in my hut. It's the one on the left from the suqare. Inside you will find a cest. You have to open it and take the carving. Bring it to the oldest across! Hurry up!";
+	remove flute from play;
+	move spear to totem.
+	
 
-After asking shaman about a topic listed in the Table of shaman Responses:
+
+[After asking shaman about a topic listed in the Table of shaman Responses:
 			say "[response entry]";
 			move spear to totem.
 			
@@ -597,10 +649,14 @@ After asking shaman about a topic listed in the Table of shaman Responses:
 Table of shaman Responses
 Topic	Response
 "Götti" 	"[italic type]- Yeah, our essence and all that shit. Don't mention it.[paragraph break]"	
-"weapon"	"[italic type]- We should arm ourselfe..."
+"weapon"	"[italic type]- We should arm ourselfe..."]
 	
 After taking spear:
 	say "yeah".
+
+After taking carving:
+	say "beschreibung ameisenlöwe".
+	
 
 After taking saddle:
 	say "cool".
@@ -616,8 +672,52 @@ After saddle the götti:
 		say "you need a saddle first of all".
 		
 After going to Village_hut3:
-	say "bla bla oh du sollst mir das geben";
-	remove carving from play.
+	say "Oh I hade a feeling this day will come. It's like then! The events will be repeated. The last time i saw this carving many of us died a horrible death. You need a götti to be fast enogh to have a chance against it. Take this saddle over there and go to the stable in the south. You have to saddle one of the göttis so you can ride it.";
+	remove carving from play;
+	move saddle to village_hut3.
+
+[the götti is a person in the village_stable. ]
+
+ride the götti is an action applying to nothing.
+Understand "ride the götti" as ride the götti.
+
+After ride the götti:
+	if the location of the player is the location of the götti and player does not carry saddle:
+		say "you ride outside the stable to fight the beast";
+		move player to village_path;
+		move götti to the village_path;
+	else:
+		say "nope".
+
+after examining götti:
+	say "Grewww".
+	
+After going to the village_path:
+	if the player carries saddle:
+		say "Oh no there it is . you should hurry up! go in the stable and prepare your fight.".
+
+[Irgendwas wenn man mit dem götti auf dem village_path ist]
+
+
+attack is an action applying to nothing.
+Understand "attack" as attack.
+After attack:
+	if the player has the spear and the location of the player is the location of the götti:
+		say "Shaman: [italic type] you attack. you killed it. thank you. here is some food to say we are thankful. take it and we bring you to you spaceship.";
+		move shaman to village_path;
+		move food to the village_path;
+	else:
+		say "you can't attack".
+
+After taking food:
+	say "you got the food and the formizer bring you to your spaceship";
+	move player to landingzone_gaisetto;
+	remove spear from play.
+
+[ (klappt noch nicht.!)
+After going to the landingzone_gaisetto:
+	if the player carries food:
+		say "finally you found somethink to eat and you leave the planet!".]
 
 
 Chapter 3- Geysiria
@@ -827,7 +927,7 @@ When play begins:
 
 [Image Testsection]
 
-Include Simple Graphical Window by Emily Short.
+[Include Simple Graphical Window by Emily Short.
 Include Location Images by Emily Short.
 
 
@@ -836,7 +936,7 @@ Include Location Images by Emily Short.
 	
 	The room-illustration of Upper Desert_Frizza is the Figure of Upper Desert_Frizza.
 	The room-illustration of Landing Zone_Frizza is the Figure of Landing Zone_Frizza.
-	
+	]
 [--]
 
 [Variables]	

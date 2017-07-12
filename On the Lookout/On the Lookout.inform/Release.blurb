@@ -1,36 +1,20 @@
 ! Blurb file created by Inform build 6M62
 
-<<<<<<< HEAD
-status "C:\Program Files (x86)\Inform 7\Internal\Miscellany\CblorbModel.html" "C:\Users\Franzi\Documents\GitHub\Scrum-2017v3\On the Lookout\On the Lookout.inform\Build\StatusCblorb.html"
-=======
-status "C:\Users\tgasc_000\Desktop\Inform 7\Internal\Miscellany\CblorbModel.html" "C:\Users\tgasc_000\Documents\GitHub\Scrum-2017v3\On the Lookout\On the Lookout.inform\Build\StatusCblorb.html"
->>>>>>> 12dab4f2509e661684bd9244a5e7b90b37ef4370
+status "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/CblorbModel.html" "/Users/kevinkoch/Documents/Scrum-2017v3/On the Lookout/On the Lookout.inform/Build/StatusCblorb.html"
 
 
 ! Identification
 
-<<<<<<< HEAD
-project folder "C:\Users\Franzi\Documents\GitHub\Scrum-2017v3\On the Lookout\On the Lookout.inform"
-release to "C:\Users\Franzi\Documents\GitHub\Scrum-2017v3\On the Lookout\On the Lookout.materials\Release"
-=======
-project folder "C:\Users\tgasc_000\Documents\GitHub\Scrum-2017v3\On the Lookout\On the Lookout.inform"
-release to "C:\Users\tgasc_000\Documents\GitHub\Scrum-2017v3\On the Lookout\On the Lookout.materials\Release"
->>>>>>> 12dab4f2509e661684bd9244a5e7b90b37ef4370
+project folder "/Users/kevinkoch/Documents/Scrum-2017v3/On the Lookout/On the Lookout.inform"
+release to "/Users/kevinkoch/Documents/Scrum-2017v3/On the Lookout/On the Lookout.materials/Release"
 
 ! Blorb instructions
 
 storyfile leafname "On the Lookout.gblorb"
-<<<<<<< HEAD
-storyfile "C:\Users\Franzi\Documents\GitHub\Scrum-2017v3\On the Lookout\On the Lookout.inform\Build\output.ulx" include
-ifiction "C:\Users\Franzi\Documents\GitHub\Scrum-2017v3\On the Lookout\On the Lookout.inform\Metadata.iFiction" include
-cover "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
-picture 1 "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
-=======
-storyfile "C:\Users\tgasc_000\Documents\GitHub\Scrum-2017v3\On the Lookout\On the Lookout.inform\Build\output.ulx" include
-ifiction "C:\Users\tgasc_000\Documents\GitHub\Scrum-2017v3\On the Lookout\On the Lookout.inform\Metadata.iFiction" include
-cover "C:\Users\tgasc_000\Desktop\Inform 7\Internal\Miscellany\Cover.jpg"
-picture 1 "C:\Users\tgasc_000\Desktop\Inform 7\Internal\Miscellany\Cover.jpg"
->>>>>>> 12dab4f2509e661684bd9244a5e7b90b37ef4370
+storyfile "/Users/kevinkoch/Documents/Scrum-2017v3/On the Lookout/On the Lookout.inform/Build/output.ulx" include
+ifiction "/Users/kevinkoch/Documents/Scrum-2017v3/On the Lookout/On the Lookout.inform/Metadata.iFiction" include
+cover "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
+picture 1 "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
 
 ! Placeholder variables
 

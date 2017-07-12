@@ -1,152 +1,166 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Skein rootNode="node-1">
-  <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-14"/>
-  <item nodeId="node-1">
-    <command xml:space="preserve">- start -</command>
-    <result xml:space="preserve">Your ship falls through thick layers of dark clouds. Red flashes illuminate your surroundings. The lights on your console warn you of the dangerously fast approaching energy level zero. As you finally break through the last cloud, you get a glimpse of what awaits you underneath. &#x000A;Black planes and sharp cliffs of a dark red shape the landscape. In the east you perceive a massive rock formation, in the west you see a thick blue stream cutting through the plane , illuminating big portions of it in the process. Somewhere to the south there seem to be some sort of industrial constructions, far in the north you believe to recognize cubic shapes that reveal a city. You don't have time to study the landscape much longer. All you concentration is desperately needed as you find a gap in the ghastly cliffs and bring down your ship. Heavy jolting, followed by a sudden blow signalize your landing. &#x000A;Your ship's on the ground, and you are too, barely. Welcome to Frizza.&#x000A;&#x000A;On the Lookout&#x000A;An Interactive Fiction by Daniel, Franziska, Tim, Kevin, Tobias&#x000A;Release 1 / Serial number 170712 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Your arrival point. The Flat Rock&#x000A;You arrive on a planet called Sitis. You think the landing went great but as you leave your spaceship, you realise that two of your three water container broke down. Without minimum one new watertank you can not continue your journey. Far away in the east you recognise some kind of different rooftops. Maybe someones living there who could help you?&#x000A;&#x000A;You can see Teleportation Stone - Sitis, Teleportation Stone - Gaisetto, Teleportation Stone - Geysiria, Teleportation Stone - Frizza and Teleportation Stone - Kaldr&#x00ED;ss here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">NO</temporary>
-    <children>
-      <child nodeId="node-2"/>
-      <child nodeId="node-4"/>
-      <child nodeId="node-12"/>
-    </children>
-  </item>
-  <item nodeId="node-2">
-    <command xml:space="preserve">take frizza</command>
-    <result xml:space="preserve">Landing Zone&#x000A;You step out of your ship onto a small square in the middle of nowhere. Your ship's dead and so is the computer. It seems like you ought to explore the environment. You remeber having seen civilization-like shapes to the south-west and to the north. To the east  there is a huge mountain, to the west there seems to be a Flux.&#x000A;&#x000A;You can see a Discharged Spaceship (in which is a Power Unit (empty)) here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-3"/>
-    </children>
-  </item>
-  <item nodeId="node-3">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Wasteland&#x000A;A pitiful piece of land. Black sand, red rocks and some sickish looking plants. If you are not looking for something particular there is no need to linger.&#x000A;&#x000A;You can go west, north and south.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-  </item>
-  <item nodeId="node-4">
-    <command xml:space="preserve">kaldr&#x00ED;ss</command>
-    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-5"/>
-    </children>
-  </item>
-  <item nodeId="node-5">
-    <command xml:space="preserve">Kaldr&#x00ED;ss</command>
-    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-6"/>
-    </children>
-  </item>
-  <item nodeId="node-6">
-    <command xml:space="preserve">kaldriss</command>
-    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-7"/>
-    </children>
-  </item>
-  <item nodeId="node-7">
-    <command xml:space="preserve">take Kaldr&#x00ED;ss</command>
-    <result xml:space="preserve">Spaceship Bridge&#x000A;The place where all the magic happens. Well, it used to be at least - during the impact most of the important equpiment including the communication systems must have been fried and doesn't seem to work anymore.  There's only a single flickering light inside the command panel. What could this mean? I should probably open the command panel and take a look. I could also go south and check the storage of the spaceship first.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-8"/>
-    </children>
-  </item>
-  <item nodeId="node-8">
-    <command xml:space="preserve">x command panel</command>
-    <result xml:space="preserve">You see nothing special about the command panel.&#x000A;&#x000A;You could open this baby up and take a peak inside.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-9"/>
-    </children>
-  </item>
-  <item nodeId="node-9">
-    <command xml:space="preserve">open panel</command>
-    <result xml:space="preserve">You open the command panel, revealing a protector glove, a fried communicator, a power reserve, a green button and an encryption key.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-10"/>
-    </children>
-  </item>
-  <item nodeId="node-10">
-    <command xml:space="preserve">take all</command>
-    <result xml:space="preserve">Teleportation Stone - Kaldr&#x00ED;ss: Spaceship Bridge&#x000A;The place where all the magic happens. Well, it used to be at least - during the impact most of the important equpiment including the communication systems must have been fried and doesn't seem to work anymore.  There's only a single flickering light inside the command panel. What could this mean? I should probably open the command panel and take a look. I could also go south and check the storage of the spaceship first.&#x000A;&#x000A;You can see Teleportation Stone - Frizza, Teleportation Stone - Geysiria, Teleportation Stone - Gaisetto and Teleportation Stone - Sitis here.&#x000A;&#x000A;Teleportation Stone - Frizza: Landing Zone&#x000A;You step out of your ship onto a small square in the middle of nowhere. Your ship's dead and so is the computer. It seems like you ought to explore the environment. You remeber having seen civilization-like shapes to the south-west and to the north. To the east  there is a huge mountain, to the west there seems to be a Flux.&#x000A;&#x000A;You can see a Discharged Spaceship (in which is a Power Unit (empty)) here.&#x000A;&#x000A;(Since something dramatic has happened, your list of commands has been cut short.)&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-11"/>
-    </children>
-  </item>
-  <item nodeId="node-11">
-    <command xml:space="preserve">drop all</command>
-    <result xml:space="preserve">(the backpack)&#x000A;(first taking the backpack off)&#x000A;Dropped.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-  </item>
-  <item nodeId="node-12">
-    <command xml:space="preserve">take kaldr&#x00ED;ss</command>
-    <result xml:space="preserve">Spaceship Bridge&#x000A;The place where all the magic happens. Well, it used to be at least - during the impact most of the important equpiment including the communication systems must have been fried and doesn't seem to work anymore.&#x000A;&#x000A;There's only a single flickering light inside the command panel.&#x000A;&#x000A;What could this mean? I should probably open the command panel and take a look. I could also go south and check the storage of the spaceship first.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-13"/>
-    </children>
-  </item>
-  <item nodeId="node-13">
-    <command xml:space="preserve">open command panel</command>
-    <result xml:space="preserve">You manage to remove the protective layer of the command panel revealing the mainframe with all the important stuff.  Usually it's not advised to do this by yourself but tough times call for tough measures.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-14"/>
-    </children>
-  </item>
-  <item nodeId="node-14">
-    <command xml:space="preserve">x command panel</command>
-    <result xml:space="preserve">In the command panel are a protector glove, a fried communicator, a power reserve, a green button and an encryption key.&#x000A;&#x000A;You could open this baby up and take a peak inside.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-  </item>
+<?xml version="1.0"?>
+
+<Skein rootNode="node-2614">
+    <generator>Inform Mac Client (Inform version 1.65/6.33/6M62)</generator>
+    <item nodeId="node-2614">
+        <command xml:space="preserve">On the Lookout</command>
+        <result xml:space="preserve">Your ship falls through thick layers of dark clouds. Red flashes illuminate your surroundings. The lights on your console warn you of the dangerously fast approaching energy level zero. As you finally break through the last cloud, you get a glimpse of what awaits you underneath. 
+Black planes and sharp cliffs of a dark red shape the landscape. In the east you perceive a massive rock formation, in the west you see a thick blue stream cutting through the plane , illuminating big portions of it in the process. Somewhere to the south there seem to be some sort of industrial constructions, far in the north you believe to recognize cubic shapes that reveal a city. You don't have time to study the landscape much longer. All you concentration is desperately needed as you find a gap in the ghastly cliffs and bring down your ship. Heavy jolting, followed by a sudden blow signalize your landing. 
+Your ship's on the ground, and you are too, barely. Welcome to Frizza.
+
+On the Lookout
+An Interactive Fiction by Daniel, Franziska, Tim, Kevin, Tobias
+Release 1 / Serial number 170712 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Your arrival point. The Flat Rock
+You arrive on a planet called Sitis. You think the landing went great but as you leave your spaceship, you realise that two of your three water container broke down. Without minimum one new watertank you can not continue your journey. Far away in the east you recognise some kind of different rooftops. Maybe someones living there who could help you?
+
+You can see Teleportation Stone - Sitis, Teleportation Stone - Gaisetto, Teleportation Stone - Geysiria, Teleportation Stone - Frizza and Teleportation Stone - Kaldríss here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2617"></child>
+            <child nodeId="node-2615"></child>
+            <child nodeId="node-2625"></child>
+        </children>
+    </item>
+    <item nodeId="node-2625">
+        <command xml:space="preserve">take kaldríss</command>
+        <result xml:space="preserve">Spaceship Bridge
+The place where all the magic happens. Well, it used to be at least - during the impact most of the important equpiment including the communication systems must have been fried and doesn't seem to work anymore.
+
+There's only a single flickering light inside the command panel.
+
+What could this mean? I should probably open the command panel and take a look. I could also go south and check the storage of the spaceship first.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2626"></child>
+        </children>
+    </item>
+    <item nodeId="node-2626">
+        <command xml:space="preserve">open command panel</command>
+        <result xml:space="preserve">You manage to remove the protective layer of the command panel revealing the mainframe with all the important stuff.  Usually it's not advised to do this by yourself but tough times call for tough measures.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2627"></child>
+        </children>
+    </item>
+    <item nodeId="node-2627">
+        <command xml:space="preserve">x command panel</command>
+        <result xml:space="preserve">In the command panel are a protector glove, a fried communicator, a power reserve, a green button and an encryption key.
+
+You could open this baby up and take a peak inside.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2615">
+        <command xml:space="preserve">take frizza</command>
+        <result xml:space="preserve">Landing Zone
+You step out of your ship onto a small square in the middle of nowhere. Your ship's dead and so is the computer. It seems like you ought to explore the environment. You remeber having seen civilization-like shapes to the south-west and to the north. To the east  there is a huge mountain, to the west there seems to be a Flux.
+
+You can see a Discharged Spaceship (in which is a Power Unit (empty)) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2616"></child>
+        </children>
+    </item>
+    <item nodeId="node-2616">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Wasteland
+A pitiful piece of land. Black sand, red rocks and some sickish looking plants. If you are not looking for something particular there is no need to linger.
+
+You can go west, north and south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2617">
+        <command xml:space="preserve">kaldríss</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2618"></child>
+        </children>
+    </item>
+    <item nodeId="node-2618">
+        <command xml:space="preserve">Kaldríss</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2619"></child>
+        </children>
+    </item>
+    <item nodeId="node-2619">
+        <command xml:space="preserve">kaldriss</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2620"></child>
+        </children>
+    </item>
+    <item nodeId="node-2620">
+        <command xml:space="preserve">take Kaldríss</command>
+        <result xml:space="preserve">Spaceship Bridge
+The place where all the magic happens. Well, it used to be at least - during the impact most of the important equpiment including the communication systems must have been fried and doesn't seem to work anymore.  There's only a single flickering light inside the command panel. What could this mean? I should probably open the command panel and take a look. I could also go south and check the storage of the spaceship first.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2621"></child>
+        </children>
+    </item>
+    <item nodeId="node-2621">
+        <command xml:space="preserve">x command panel</command>
+        <result xml:space="preserve">You see nothing special about the command panel.
+
+You could open this baby up and take a peak inside.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2622"></child>
+        </children>
+    </item>
+    <item nodeId="node-2622">
+        <command xml:space="preserve">open panel</command>
+        <result xml:space="preserve">You open the command panel, revealing a protector glove, a fried communicator, a power reserve, a green button and an encryption key.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2623"></child>
+        </children>
+    </item>
+    <item nodeId="node-2623">
+        <command xml:space="preserve">take all</command>
+        <result xml:space="preserve">Teleportation Stone - Kaldríss: Spaceship Bridge
+The place where all the magic happens. Well, it used to be at least - during the impact most of the important equpiment including the communication systems must have been fried and doesn't seem to work anymore.  There's only a single flickering light inside the command panel. What could this mean? I should probably open the command panel and take a look. I could also go south and check the storage of the spaceship first.
+
+You can see Teleportation Stone - Frizza, Teleportation Stone - Geysiria, Teleportation Stone - Gaisetto and Teleportation Stone - Sitis here.
+
+Teleportation Stone - Frizza: Landing Zone
+You step out of your ship onto a small square in the middle of nowhere. Your ship's dead and so is the computer. It seems like you ought to explore the environment. You remeber having seen civilization-like shapes to the south-west and to the north. To the east  there is a huge mountain, to the west there seems to be a Flux.
+
+You can see a Discharged Spaceship (in which is a Power Unit (empty)) here.
+
+(Since something dramatic has happened, your list of commands has been cut short.)
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2624"></child>
+        </children>
+    </item>
+    <item nodeId="node-2624">
+        <command xml:space="preserve">drop all</command>
+        <result xml:space="preserve">(the backpack)
+(first taking the backpack off)
+Dropped.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
 </Skein>

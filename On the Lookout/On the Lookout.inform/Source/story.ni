@@ -12,7 +12,6 @@ The player is in the Flat Rock_Sitis.
 
 Instead of going to the Anchors, say "There is no way to advance in this direction."
 
-The Landing Zone_Geysiria is west of the Cave_Geysiria. The Village_Geysiria is north of the Landing Zone_Geysiria.
 
 [---]
 
@@ -720,31 +719,328 @@ After going to the landingzone_gaisetto:
 		say "finally you found somethink to eat and you leave the planet!".]
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Chapter 3- Geysiria
+
 
 [Eckige Klammer hier: nur der für die Übersichtlichkeit, Initialisierung]
 
 [Initialisation]
-[Include Basic Screen Effects by Emily Short.
-The Start of the Adventure is a scene. The Start of the Adventure begins when play begins. ]
-[Axesto_Geysiria is a person. The player is Axesto_Geysiria. The printed name of Axesto_Geysiria is "Axesto".]
-[End of Initialisation]
+Include Basic Screen Effects by Emily Short.
+The Start of the Adventure is a scene. 
+The Start of the Adventure begins when play begins. 
 
-[Regions and Rooms]
-The Landing Plane_Geysiria is a region. The Landing Zone_Geysiria is in the Landing Plane_Geysiria. 
-The OceanRegion_Geysiria is a region. The VolcanoArea_Geysiria is a region. The Cave_Geysiria and the Village_Geysiria are in the VolcanoArea_Geysiria. 
-
-[Rooms]
-Instead of going nowhere from the Landing Plane_Geysiria, say "Huge cloud of ash, leave this zone as soon as possible. Risk of death, don't smother."
-Instead of going nowhere from the OceanRegion_Geysiria, say "Danger: submerged rocks, strong currents and long hold downs because of massive waves."
-Instead of going nowhere from the VolcanoArea_Geysiria, say "Hot lava, huge ash clouds and falling rocks, do you really want to stay here?"
-Instead of going nowhere from the Cave_Geysiria, say "You're in a cave, go explore or leave if you can't find anything you need. Geysiria is not a planet you want to spend much time on."
 
 [Story]
 
-[When play begins:
+When play begins:
 	 say 
-	"Mayday, Mayday - your sight is extremly limited to only a few meters, you have to land the space ship as soon as possible. Loss of signal to your surrounding satellites will mean plane crash. You make your way down through massive ash clouds with flying rocks everywhere. Luckily you are able to land safely on planet Geysiria. A planet where no life exists.  Volcanoes, lava rocks, big waves, geysirs and deserted landcsape is what you find here. In order to leave this planet you need to bring the volcanoes to a standstill or find another way to leave this unpleasant planet. Good luck."]
+	"Mayday, Mayday - your sight is extremly limited to only a few meters, you have to land the space ship as soon as possible. Loss of signal to your surrounding satellites will mean plane crash. You make your way down through massive ash clouds with flying rocks everywhere. Luckily you are able to land safely on planet Geysiria. A planet where no life exists.  Volcanoes, lava rocks, big waves, geysirs and deserted landcsape is what you find here. In order to leave this planet you need to bring the volcanoes to a standstill or find another way to leave this unpleasant planet. Good luck."
+
+SECTION 1 - CRASH SITE
+	
+[Global Error Message]
+
+Instead of taking some scenery, say "You don't seem to be strong enough."
+
+
+[Limited Inventory]
+The carrying capacity of the player is 3. The backpack is the player's holdall. The player is wearing the backpack. The carrying capacity of the backpack is 3.
+
+[Suit Capacitor]
+
+[prevent other items from being put into suit capacitor]
+
+The player wears a suit capacitor. The description of the suit capacitor is "This capacitor only holds certain types of energy sources which usually maintain the suit's functionality such as protecting the wearer from extreme temperatures. Inserting other energy sources might increase those functions even further or result in a horrible death." The suit capacitor is a container. The carrying capacity of the suit capacitor is 1. 
+
+
+[Regions and Rooms]
+
+The Spaceship_Geysiria is a region.
+The Spaceship Bridge_Geysiria, the Spaceship Storage_Geysiria and the Spaceship Exit_Geysiria are in the Spaceship_Geysiria. 
+
+
+[Rooms]
+
+The Spaceship Bridge_Geysiria is a room. The printed name of the Spaceship Bridge_Geysiria is "Spaceship Bridge". The description is "Shit, this was exhausting. The impact of the landing was pretty heavy. The Spaceship Bridge still works though. Hm, on your left side there is a little bit of food, to your right there is a small storage unit with an encryption key [Bold type] Examine this key in order to see if it's the right combination [Roman Type]."
+
+The encryptionkey is in the Spaceship Bridge_Geysiria. The encryptionkey is an object. 
+	After examining the key: 
+	say "An encryption key. It says 0.. I can't see it too clearly, is it a 2? Well, I guess. So zero, two, five and nine. That's it. "
+
+The Spaceship Storage_Geysiria is a room. 
+The printed name of the  Spaceship Storage_Geysiria is "Spaceship Storage". The description is "Taking a quick look inside the storage room doesn't seem to reveal anything particularly interesting. There are only some random souvenirs from your previous intergalactic travels and your locker which you haven't opened in ages. [Bold type] Examine this locker in order to see if the key fits [Roman type]." 
+
+[Items]
+In the Spaceship Storage_Geysiria is a lockbox. It is a container. It is not portable. The lockbox is an openable lockable container in the Spaceship Storage_Geysiria. It is closed, locked and openable. The encryptionkey unlocks the lockbox. 
+After examining the lockbox:
+say "Now I remember! I used to store things in here that could come in very hand in emergencies! Let's see if the encryption key works. Zero... Click... Two... Click... Five.... Click... Aaaand the last one here: Nine. Click. Boom, that's it. You should be able to unlock and open the locker now."
+
+The underwater system map is an object.
+In the lockbox is an underwater system map. The underwater system map can be taken. 
+Before taking the underwater system map:
+	say "This will allow me to stop one or maybe a few of those massive geysir fountains and the volcanoes if used correctly."
+
+The Spaceship Exit_Geysiria is a room.
+The printed name of the Spaceship Exit_Geysiria is "Spaceship Exit". The description is "Bye Spaceship. Let's go and have a look around. There's more to this planet than ash clouds, lava and rocky landscape if you use your knowledge and cleverness. On the western side you see massives waves detonating on the shores. You turn around and you see a vastland of volcanoes, mountains and dry land. This must be the vast landscape of Geysiria. First I try to explain the map a little - sorry, I don't know everything, but I think I can give you some hints I know from King Kamehameha. Here are your options, respectively the options I know: On the horizon, in the east, there is your landing zone, where you normally land. You landed a little more west on a steep cliff but you were lucky, the spaceship is still in one piece. Here you can either head north on the Kamehameha Route to the North Shore to hopefully reach the big area where all the infamous geysirs are. Your second option is heading towards the little village which is in the eastern part of the planet. You can explore the region of all the volcanoes here. To this point I don't know much more. Keep me updated and I will try and connect the dots at the next stops."
+
+Instead of going nowhere from the Spaceship_Geysiria, say "The key to leave the spaceship is going south. If you stand in the exit already - you will need to head east as you stand on the edge of cliff where only going east will make sense."
+
+
+Instead of going west from the Landing Zone_Geysiria, say "Really? You want to dive into those massive waves? How long can you hold your breath? I'm not too sure if that's a good idea... Think again."
+
+
+Instead of going south from the Landing Zone_Geysiria, say "A massive crater is in front of you. No tools you have at hand will help you to cross this crater as you don't have enough water and food to go through it."
+
+
+
+[Directions]
+Spaceship Bridge_Geysiria is north of the Spaceship Storage_Geysiria. 
+The Spaceship Storage_Geysiria is north of the Spaceship Exit_Geysiria.
+The Landing Zone_Geysiria is east of the Spaceship Exit_Geysiria.
+
+[Landing Zone]
+The Landing Plane_Geysiria is a region.
+The Landing Zone_Geysiria is in the Landing Plane_Geysiria. 
+The printed name of the Landing Zone_Geysiria is "Landing Zone". "It is windy, dusty and your sight is limited to only a few meters. Look around, as you maybe realised you are on Geysiria. The name comes from its massive Geysirs in the north east of the planet which will maybe help you out of this unpleasant vastland. Hmmm, or is it more clever to head to the village in order to search for hints in this little ghost town? I don't know, you decide."
+
+
+[Restrictions]
+Instead of going nowhere from the Landing Zone_Geysiria, say "Huge cloud of ash, leave this zone as soon as possible. Risk of death, don't smother."
+
+	
+[TWO DIRECTIONS POSSIBLE; Ocean OR VOLCANO]
+[Direction Ocean]
+
+
+SECTION 2 - OCEAN REGION
+
+[Ocean Region]
+The coast is a region.
+The Coastway is a room in the coast. The Seaside is a room in the coast. The Geysir_Area is a room in the coast. The Underwater_Cave is a room in the coast. The Underwater_CaveHeart is a room in the coast. The Mine_Area is a room in the coast.
+The printed name of OceanRegion_Geysiria is "Ocean Region". 
+
+[Directions]
+North of the Landing Zone_Geysiria is the Coastway. 
+[North of the Coastway is the door.
+South of the Seaside is the door.]
+East of the Coastway is the Mine_Area.
+East of the Seaside is the Geysir_Area. 
+The Geysir_Area is above the Underwater_Cave. 
+The Underwater_CaveHeart is west of the Underwater_Cave. 
+
+[Printed Names]
+The printed name of the Coastway is "Kamehameha Route".
+The printed name of the Seaside is "North Shore".
+The printed name of the Geysir_Area is "Geysir Chambers".
+The printed name of the Underwater_Cave is "Pu'ulau Cave".
+The printed name of the Mine_Area is "Field of Death".
+The printed name of the Underwater_CaveHeart is "The Heart of Geysiria".
+
+[Room Descritions]
+The description of the Coastway is "A very famous route you are walking on. A century ago King Kamehameha ventured along this very tiny path you can barely see anymore. He made this entire path for about two hundred kilometers until Hale'iwa, a little spot on the northern Shores of Geysiria. This little spot is called after a bird that is living there. It is a little outlook nestled in a vast land where you can overlook the whole North Shore. The windward west side, the eastern side where many land mines lay below the ground and the ocean is what you can see here."
+
+The description of the Seaside is "The final point where King Kamehameha landed back when you weren't existing. This is actually the last location where King Kamehameha was known to be alive. He built his Ho'kulea and set sail to reach another planet. His return to his home planet should be very soon but he never came back. By the looks of the ocean I'm not too sure if he made it behind the outer reefs. It is a very dangerous place and I recommend to stay out of the water. Or are you keen enough to set sail to the next planet? I don't think so."
+
+The description of the Geysir_Area is "Whooooosh, whoooosh - Geysirs everywhere. Massive chambers of lava stone push enormous water massses into the air - what a breathtaking phenomenon! You have been hiking for hours with only a few liters of fresh water. The way was very long and hard, the dangers of falling and getting caught by monstrous waves were contstant. But you made it. Congratulations. So what next? First, you should drink as much as you can, some Geysirs here have fresh drinking water, some are saltwater. You will find out pretty quickly. Now it's time to to get serious. How long can you rest on this planet? Think quick and choose your options wisely. Did you find the underwater map of the underwater volcano system in the spaceship? If yes, you will find the heart of the volcano with the help of this map. Otherwise, you will have to choose another option..."
+
+The description of the Underwater_Cave is "The infamous Pu'ulau Cave - no one has ever been here before. Many have had the underwater map, but congratulations again, you are the first one to ever connect the dots and find the right way into this little and very complex underwater system. Do you see the black hole at the end? This is the heart of the volcano. If you reach it before lava comes out - you will destroy every volcano on this planet and you can head back to your spaceship to leave the extincted area."
+
+The description of the Mine_Area is "People say there are some land mines still in this area. You can go back to the Landing Zone and try another way. In order to master the Kamehameha Route which only King Kamehameha passed a few hundred years ago you need some tools to get access to the Seaside. Be patient, calm and collected and make good choices. You would be the second one to master this way full of obstacles."
+
+The description of Underwater_CaveHeart is "This is your last step to finally stop all the ash clouds and the constant lava flow above ground. The underwater system map lead you here - you should make use of your one and only tool that will fit into the little heart that is at the end of this tiny corridor. May Geysiria rest in peace."
+
+
+
+[Restrictions]
+Instead of going nowhere from the Coastway, say "Stay on track. In the east there is an area full of land mines. People don't call it [italic type] Field of Death [Roman type] for no reason but a land mine could be useful as there are a lot of rocks and obstacles on the Kamehameha Route."
+
+[Objects]
+The land mine is an object in the Mine_Area. 
+Before going to the Seaside:
+	unless player carries land mine:
+		move the player to the Mine_Area;
+		say "Take the land mine.";
+		stop the action.
+
+The massive rock is door. 
+The massive rock is north of the Coastway.
+The massive rock is south of the Seaside. 
+Detonate is an action applying to nothing.
+Understand "Detonate" as detonate. 
+
+[Before going to the Seaside:
+	unless player detonate:
+		move the player to the Coastway;
+		say "You'll need something to destroy this massive pile of rocks in front of you. Isn't there an area on your way that has the right tools on offer?";
+		stop the action.]
+
+
+
+Instead of going nowhere from the Seaside, say "The North Shore of Geysiria is known for its massive outer reef waves. The Hokule'a boats tried to pass the shorebreaks and outer reef bombs but as you know, they have never been seen again. You can take a short break and watch the waves and breathe some clean ocean air - but I guess that's pretty much all you can do here... The windward side is the roughest. There are not many animals on this planet - to be honest, there are about six species living here. Five are not dangerous and only active at night, you won't see any of them. But the mountain lion only living on the windward west side of the planet is dangerous as it is very calm and collected. It's like the Great White Shark. Once you see it, it's too late. Please turn around, the east side is much more welcoming."
+
+Instead of going nowhere from the Geysir_Area, say "The Geysir Area is the last thing you will see on the eastern side of the planet. Passing a few hundred Geysirs to just see the ocean behind them is not really promising I guess. Take your time and watch this beautiful water spectacle. You can always go back - but as you know the Kamehameha Walk from the Landing Zone over the North Shore to the Geysir Chambers is not the nicest way, always keep that in mind. But if you have no other way back to the spaceship, go for it."
+
+Instead of going nowhere from the Underwater_Cave, say "Try and find the heart of the Volcano or leave it, if you don't have any clue on how to get to the heart of the volcano. The map will help you but without the map you will not find the heart. I know it must be frustrating after the long journey but you better leave the Cave if you left the map in the spaceship - you save time, energy and you can return to the Geysir Chambers to fill up your bottles with fresh drinking water to make your way back on the Kamehameha trail. I hope you make it."
+
+
+[DIRECTION VOLCANO]
+SECTION 3 - VOLCANO AREA
+
+[Regions & Rooms]
+The Volcano_Area is a region.
+The Volcanoway is a room in the Volcano_Area. The Volcano_VillageSquare is a room in the Volcano_Area. The Volcano is a room in the Volcano_Area. The Volcanoway2 is a room in the Volcano_Area. 
+The Volcano_Cave is a room in the Volcano_Area.
+
+[Village Rooms]
+The Volcano_VillageChapel is a room in the Volcano_Area.
+The Volcano_VillageMayorhouse is a room in the Volcano_Area.
+The Volcano_VillageWeedhut is a room in the Volcano_Area.
+The Volcano_VillageOldbuilding is a room in the Volcano_Area.
+
+[Village Directions]
+The Volcano_VillageChapel is east of the Volcano_VillageSquare.
+The Volcano_VillageMayorhouse is south of the Volcano_VillageChapel.
+The Volcano_VillageOldbuilding is west of the Volcano_VillageSquare.
+The Volcano_VillageWeedhut is south of the Volcano_VillageSquare.
+The Volcano_VillageWeedhut is west of the Volcano_VillageMayorhouse.
+The Volcanoway2 is north of the Volcano_VillageChapel.
+
+[Directions]
+The Volcanoway is east of the Landing Zone_Geysiria. 
+The Volcano is east of the Volcanoway. 
+The Volcano_VillageSquare is south of the Volcanoway. 
+
+The Volcanoway2 is south of the Volcano. 
+The Volcano is above the Volcano_Cave.
+The Volcano_Cave is east of the Underwater_Cave.
+
+[Printed Names]
+The printed name of Volcanoway is "Pe'ahi Trail".
+The printed name of Volcano is "Haiku Volcano".
+The printed name of Volcano_VillageSquare is "Lihue".
+The printed name of Volcanoway2 is "Na Pali Trail".
+The printed name of Volcano_Cave is "Paia Cave".
+
+[Room Descriptions]
+The description of Volcanoway is "The well known Pe'ahi Trail, better known as Jaws is a nerv-wracking trail with lots of ups and downs - you will walk for hours eventhough the walk itself is only a few kilometers long. On this part of the planet the temperature at day is around 35 to 40 degrees celcius, so you might want to hike in the early hours, in the evening or even at night. In the night time you will see a few animals but they are shy and you won't see many anyway. But if you do, say hi and be happy about some company eventhough the animals don't speak your language."
+
+The description of Volcano is "Very high, very bad sight and dangerous drop-offs characterize the Haiku Volcano. Many centruies ago this volcano area has been formed and Haiku Volcano is the highest one. Imagine the power that has been set free in that eruption. This must have been a massive spectacke. Ah, yeah and you can climb that infamous volcano - if it's not too cloudy you will have a great view over... well... wasteland. You know it, only deserted landscape without much more. But anyway, standing on top something is cool isn't it? Decide for yourself if it's worth the hassle."
+
+The description of Volcano_VillageSquare is "A little Village called Lihue nestled in - oh wonder - deserted landscape. Lihue is a ghost town. Many thousand years ago this little town used was rich because of a gold rush. It only took a few years until the little village turned into a ghost town as the gold rush didn't take very long. You have many houses you can look into and search for some hints in order to leave this planet as soon as possible. Stroll around, here are a few spots you should definitely check out. There is an interesting old building right next to the big market place - you will probably need a special key to open the doors there... Around the place there are lots of other buildings, the house of the mayor with a huge amount of old files and many hidden treasure boxes, a little hut where they used to sell weed and a little chapel which kind of looks a bit intimidating."
+
+The description of Volcano_VillageChapel is "Tons of figures you know from the bible and other holy papers are exhibited here. No one knows why, maybe they explain the gold rush where people from all over the galaxy flocked to this particular place. Some seemed to be very religious and brought some belongings along with them. The ceiling is a little bit demolished but the chapel as a whole doesn't look too bad actually. It's quite an intimidating place because there is not a soul in sight and the pictures on the wall have angry faces everywhere. In the corner where the confessional box is there is an arsenal of a few old weapons including swords and a dagger. The dagger might help you as it has a volcano engraved. The coffin under the altar contains something you will need for sure. Somewhere in the little Village there is a hidden key for that particular coffin. Go search for that key and come back later."
+The printed name of Volcano_VillageChapel is "The Old Chapel".
+
+The description of Volcano_VillageWeedhut is "You are standing in front of a little hut, there is not much here except a little toolbox. Back in the day they used to sell weed here as it was legal. The only thing the inhabitants of the village didn't know was the fact that the owners of the little hut regularly stole from the Lihue people. That's the reason why you see this little picklock on top of every other tool. Who needs a grinder, some lamps and spades when you have a picklock that opens any door and makes you rich while other people sleep? Take it and make use of it."
+The printed name of Volcano_VillageWeedhut is "The Blunt Box".
+
+The description of Volcano_VillageOldbuilding is "I'm not sure why this building is still standing. It is huge, very old and it seems to crack down the very next moment. But there is something special about this building. The beautiful, embellished doors and the oil paintings on the crumbled walls. The owner of this house was rich, he found out that the rivers - that are now dried up - were full of gold. He quickly became a millionaire but was shot in a fight with one of the gangs who tried to control the gold rush. Since then his wife lived there alone, she was a respected member of the community and nobody wanted to mess with her. She has a little treasure box in her office room (which used to be his office room). The legend says no one ever opened this little treasure box. You are the lucky one to finally open the magic doors. Now you can open the treasure box and look what the rumour is all about."
+The printed name of Volcano_VillageOldbuilding is "The Gold House".
+
+The description of Volcano_VillageMayorhouse is "The house where the mayor lived. Some say he was a good mayor, some others say he was corrupt, an alcoholic and he had a feed of clay for cocaine. But there is no proof. Maybe you find a cocaine line somewhere but I guess it is too late for you to play detective. You better check the surroundings in this house in order to find something you really need."
+The printed name of Volcano_VillageMayorhouse is "The Mayor Mansion".
+
+
+Before going to Volcano_VillageOldbuilding:
+	unless player carries old key:
+		move the player to Volcano_VillageSquare; 
+		say "The door is locked. You need a special key in order to open this door.";
+		stop the action.
+		
+[Items in the Village]		
+The old key is an object. The case is a container in the Volcano_VillageMayorhouse. It is fixed in place. 
+The case is an openable container. It is locked. 
+The picklock unlocks the case. The old key is in the case.
+The picklock is an object. 
+The picklock is in the Volcano_VillageWeedhut. 
+
+The water dagger [Wasserdolch] is an object. The coffin [Sarg] is a container in the Volcano_VillageChapel. It is fixed in place. The case is an openable container. It is locked. 
+The picklock unlocks the coffin. The water dagger is in the coffin. 
+
+[The code combination is an object. The blackbox is container in the Old Building. It is fixed in place. The blackbox is an openable container. The code combination unlocks the blackbox. The water dagger is in the blackbox. The code combination is in the Old Building.]
+
+Old Building is an object. It is scenery. Old Building is in the Volcano_VillageSquare. 
+After examining Old Building:
+	say "Look into old building and check your surroundings. Do you have the map that is supposed to be in the spaceship? Did you forget it? The old building has a few maps of Geysiria - I'm not too sure if there is one of the underwater system but since you only have a few buildings with easy access you should consider checking it out. So many folders in those massive shelves. Take the ladder to your right and search through every map folder here - maybe you're lucky and find a copy of that particular underwater system map. You already found the treasure box, so why shouldn't you be able to find the map you need.".
+	
+[Water dagger kann noch nicht in Herz des Vulkans gerammt werden]
+	
+The water dagger hole is a container in the Underwater_CaveHeart.
+
+After inserting the water dagger into the Underwater_CaveHeart:
+	say "Boooooooooom. Explosions everywhere. Luckily you are under the ground and everything you feel is just a little earthquake. The good thing is your spaceship is in the west of the island and the exploding volcanoes are here in the east. Lava, falling rocks and huge ash clouds turn Geysiria into hell. It takes a few hours to let the volcanoes disappear... I know, you are not very patient Axesto but it's better to wait until the last volcano is destroyed. [italic type] Sixteen hours later... [Roman type] Now it's time to head back to the spaceship on the western side of the planet and leave the planet as soon as possible. You are starting the engine and the spaceship is flying high above the wasteland that is Geysiria now. Wow, finally you can see this vast landscape from above. No ashclouds, nothing. A totally clear view of the planet that let you struggle so much. But in the end it was worth it. A quick look onto your planet map says the next stop will be Frizza. Hmmm, Frizza, it sounds a little freezing, doesn't it? You have a few hundred more hours to fly through the galaxy, so turn on the auto pilot and get some rest. The days on Geysiria were tough. Axesto is sleeping like a little child on the locker between some folders and some first aid kits. [Italic type] Three days later, Axesto finally sees the Flux which must be the Flux of Frizza. [Roman type]. [paragraph break]Chapter 4 - Frizza[paragraph break]Frizza looks like a monstrous black rock, nothing more. Is this really the planet you are supposed to land on? Yes, you have to land on Frizza because your little fusion reactor is working slower than before. It's an old one you got on Fidartis. This planet is not known to produce the best technology. So you better try to land safely on Frizza. This turns out to be an extreme adventure as you end up in a massive thunderstorm. But that's not a problemm for you - you are the most experienced spaceship commander in the whole galaxy. Without any noise you land smoothly on Frizza. Your first impression from many kilometers away are confirmed: it looks very unfriendly and actually uninhabited too. Maybe you should talk to your on-board computer first, there may be a few hints that will help you to explore Frizza. I heard it's supposed to be a planet with a lot of potential. Have fun."
+
+
+
+[[Volcano Area]
+The VolcanoArea_Geysiria is a room.
+The printed name of VolcanoArea_Geysiria is "Volcano Vastland". "You know the pictures from erupting volcanoes, right? Here you have around 35 erupting volcanoes which makes it almost impossible to breathe. Think twice before you waste too much oxygen. If you're a tough cookie you can try and hike on top of one of the volcanoes and enjoy the view - it has never been done before people say. But as I said, just do it if you have to prove something."
+
+[Restrictions]
+Instead of going nowhere from the VolcanoArea_Geysiria, say "Hot lava, huge ash clouds and falling rocks, do you really want to stay here?"
+
+SECTION 5 - VILLAGE
+
+[Village]
+The Village_Geysiria is a room.
+The printed name of Village_Geysiria is "Village".
+"Welcome to the only village on the island. Many thousand years ago native Geysirians used to live here. I really have no idea how they survived for almost two decades with no food and only very few spring water sources. But they did - these are the remaining houses and some shipwrecks. The Geysirians used to be good fishermen and were brave enough to wait for a set pause and skip the massive shore on the eastern and western shores of Geysiria. Many of them died trying to survive - that's the reason Geysiria Village is now a ghost town. But you are clever, maybe you'll find a helpful tool to leave this village and the planet as soon as possible."
+
+SECTION 6 - CAVE
+
+[Cave]
+The Cave_Geysiria is a room. 
+The printed name of Cave_Geysiria is "Cave". 
+"The Cave is a place where you can't see too good, but that is no problem for you as you have good eye sight. You will find access to the heart of the Volcano grid. Want to try it with your bare hands or do you have any tools with you?"
+
+[Restrictions]
+Instead of going nowhere from the Cave_Geysiria, say "You're in a cave, go explore or leave if you can't find anything you need. Geysiria is not a planet you want to spend much time on."]
+
+
+
+
+[[Directions]
+The OceanRegion_Geysiria is north of the Cave_Geysiria.
+The Cave_Geysiria is north of the Landing Zone_Geysiria.
+The Village_Geysiria is east of the Landing Zone_Geysiria.
+The Geysir Area_Geysiria is south of the Village_Geysiria.
+The Volcano Area_Geysiria is north of the Geysir Area_Geysiria.
+The Volcano Area_Geysiria is east of the Cave_Geysiria.
+The OceanRegion_Geysiria is north of the Volcano Area_Geysiria.
+The Landing Zone is west of the Village_Geysiria.
+The Cave_Geysiria is north of the Village_Geysiria.
+
+[Restrictions]
+Instead of going nowhere from the OceanRegion_Geysiria, say "Danger: submerged rocks, strong currents and long hold downs because of massive waves."
+
+
+SECTION 3 - GEYSIR AREA
+
+[Geysir Area]
+Geysir Area_Geysiria is a room.
+The printed name of Geysir Area_Geysiria is "Geysir". 
+"Whoooooosh - Your ears are hurting from the water masses which are launched a few hundred meters into the air! These are the infamous Geysirs of Geysiria. You won't find a phenomenon like this in the whole galaxy. Take a moment and enjoy this spectacular show. But not too long - you know, you don't have too much time."]
+
+
+
+
+
 
 
 

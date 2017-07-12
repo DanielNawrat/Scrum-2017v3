@@ -1344,13 +1344,14 @@ After asking Trapist about "Discharged Spaceship":
 - Capacitor Mechanik ggf. vereinfachen (Instead of inserting anything other than into .. )
 ]
 
+
 Chapter 5 - Kaldríss
 
 Section 1 - Crash Site
 
 [Finding a way off the space ship]
 
-Axesto is a person. The Player is Axesto.
+[Axesto is a person. The Player is Axesto.]
 
 [Spacesuit with energy capacitor]
 A spacesuit is a kind of thing. A spacesuit is always wearable. An energy capacitor is a kind of container. The energy capacitor is part of every spacesuit.
@@ -1377,7 +1378,7 @@ Before inserting Yarwol's Keystone into the energy capacitor:
 	say "There is only one place this keystone would fit.";
 	stop the action.
 
-Before inserting the pure flux essence into the energy capacitor for the first time:
+Before inserting the flux essence fragment into the energy capacitor for the first time:
 	say "[italic type]Do I really wanna do this? Chances of me dying are quite high. On the other hand, I will probably die anyway. Careful now. And ..[paragraph break]oh no ..[paragraph break]NONONO[paragraph break]WAIT .. EUREKA .. it actually worked![roman type]";
 	continue the action.
 
@@ -1398,7 +1399,7 @@ After putting on the protector glove for the first time:
 	say "This should work!";
 	continue the action.
 
-After taking the pure flux essence for the first time:
+After taking the flux essence fragment for the first time:
 	say "This glove truly works wonders. No harm done.".
 
 
@@ -1417,16 +1418,19 @@ The Crash Site_Kaldríss is a region.The Spaceship Bridge_Kaldríss, the Spacesh
 
 [Items]	
 [Hidden Items/Riddles]
+[Command Panel]
 In the Spaceship Bridge_Kaldríss is a command panel. It is scenery.  In the command panel is a fried communicator, a protector glove and a power reserve. It is closed and openable. The power reserve is a container. The power reserve is fixed in place. It is closed, locked and openable. The description of the power reserve is "Of course! The power reserve basically contains a large portion of the spaceships energy reservoir. If you manage to open it and check if there is still energy left you might be able to use it to power something."
 
+After opening the command panel:
+	say "You manage to remove the protective layer of the command panel revealing the mainframe with all the important stuff.  Usually it's not advised to do this by yourself but tough times call for tough measures.".
+	
+After closing the command panel:
+	say "You put everything back in place and pretend like it never happened. Nobody would ever notice.".
+
+The green button unlocks the power reserve. In the power reserve is a flux essence fragment. The flux essence fragment is an electrified thing. The description of flux essence fragment is "Energy in its purest form. But at the same time just as dangerous and unstable. What you have here are just the remains of the once fully capable flux essence that you put into the spaceship's generator in order to escape from Frizza. Small portions of the main energy stream within the spaceship are stored in here for emergency cases - just like this one you are in.". The flux essence fragment can be taken.
 
 
-The green button unlocks the power reserve. [In the power reserve is a pure flux essence.] The pure flux essence is an electrified thing. [The description of pure flux essence is "If used correctly this pure flux essence creates a warm energy that withstands even the coldest temperatures. However, a catalyst is required in order to make use of the orbs sheer amount of energy."] The pure flux essence can be taken. 
-
-The green button unlocks the power reserve. [In the power reserve is a pure flux essence.] The pure flux essence is an electrified thing. [The description of pure flux essence is "Energy in its purest form. But at the same time just as dangerous and unstable. What you have here are just the remains of the once fully capable flux essence that you put into the spaceship's generator in order to escape from Frizza. Small portions of the main energy stream within the spaceship are stored in here for emergency cases - just like this one you are in.". The pure flux essence can be taken. ]
-
-
-Before taking the pure flux essence:
+Before taking the flux essence fragment:
 	say "This flux essence used to contain way more energy its remains might contain just enough energy to power your spacesuit."
 
 
@@ -1455,10 +1459,22 @@ After examining fried communicator:
 Before taking the fried communicator:
 	say "You don't have the tools to disassemble the communicator. Since it doesn't seem to work you would be wasting your time anyway.". 
 
-After examining the command panel:
-	say "You could open this baby up and take a peak inside."
 
-[Emergency Torch]
+
+
+
+Before examining the command panel:
+	if CommandPanelOpen is true:
+		say "You could open this baby up and take a peak inside.";
+	if CommandPanelOpen is false:
+		say "[italic type]The exposed mainframe is truly gorgeous but I should focus on more important things now![roman type][paragraph break]";
+		continue the action.
+
+
+
+	
+
+[Emergency Torch in the Locker]
 In the Spaceship Storage_Kaldríss is a locker. It is scenery. The locker is an openable lockable container in the Spaceship Storage_Kaldríss. It is closed, locked and openable. The encryption key unlocks the locker. The description of the locker is "You remember putting something important in here but you can't recall what exactly it was. Should probably open it up to know for sure.".
 In the locker is an emergency torch. The emergency torch can be taken. The description of the emergency torch is "Plasma Torch Mk. IV - Survival Issue".
 Before taking the emergency torch:
@@ -1471,8 +1487,9 @@ After opening the suit chamber:
 	
 After closing the suit chamber:
 	say "[italic type]Seal Status: [bold type]ACTIVATED //[roman type][paragraph break][italic type]Closing chamber.[paragraph break]Initiating cleaning sequence --- [roman type][bold type]BOOTING[roman type][paragraph break][roman type]".
+
 [Rooms]
-The Spaceship Bridge_Kaldríss is a room.  "The place where all the magic happens. Well, it used to be at least - during the impact most of the important equpiment including the communication systems must have been fried and doesn't seem to work anymore.  There's only a single flickering light inside the command panel. What could this mean? I should probably open the [bold type]command panel[roman type] and take a look. I could also go south and check the storage of the spaceship first." The printed name of the Spaceship Bridge_Kaldríss is "Spaceship Bridge".
+The Spaceship Bridge_Kaldríss is a room.  "The place where all the magic happens. Well, it used to be at least - during the impact most of the important equpiment including the communication systems must have been fried and doesn't seem to work anymore.[paragraph break]There's only a single flickering light inside the [bold type]command panel[roman type].[paragraph break][italic type]What could this mean? I should probably open the command panel and take a look. I could also go south and check the storage of the spaceship first[roman type]." The printed name of the Spaceship Bridge_Kaldríss is "Spaceship Bridge".
 	
 The Spaceship Storage_Kaldríss is a room. "Taking a quick look inside the storage room doesn't seem to reveal anything particularly interesting. There are only some random souvenirs from your previous intergalactic travels but also your [bold type]locker[roman type] which possibly contains things you could really use in this kind of situation. Oh, and the [bold type]suit chamber[roman type] of course. It also looks like the airlock in the south doesn't seem to function anymore so perhaps I should go check that out as well?" The printed name of the  Spaceship Storage_Kaldríss is "Spaceship Storage".
 The Spaceship Exit_Kaldríss is a room. "The airlock also seems to be affected by the crash and the temperatures inside the spaceship are nearing dangerous levels. I could leave the spaceship right now by going east but I if I don't have something to protect me from the cold I will probably die." The printed name of the  Spaceship Exit_Kaldríss is "Spaceship Exit".
@@ -1529,11 +1546,20 @@ Before going to the Crash Zone_Kaldríss:
 [Variables]
 EnergyCapacitorReady is a truth state that varies. EnergyCapacitorReady is false.
 
-After inserting pure flux essence into energy capacitor:
+After inserting flux essence fragment into energy capacitor:
 	now EnergyCapacitorReady is true.
 	
-After removing pure flux essence from energy capacitor:
+After removing flux essence fragment from energy capacitor:
 	now EnergyCapacitorReady is false.
+
+
+CommandPanelOpen is a truth state that varies. CommandPanelOpen is false.
+
+After opening the command panel:
+	now CommandPanelOpen is true.
+	
+After closing the command panel:
+	now CommandPanelOpen is false.
 	
 After going to the Crash Zone_Kaldríss:
 	say "Now that you found a way to stay warm you should be able to leave the spaceship without instantly freezing to death.";
@@ -1695,5 +1721,3 @@ After asking heimdallr about "open sesame":
 After entering the Bifröst Portal Chamber :
 	end the story;
 	say "You did it!"
-
-

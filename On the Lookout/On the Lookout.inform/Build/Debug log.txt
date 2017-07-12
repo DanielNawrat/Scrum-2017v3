@@ -1,12 +1,20 @@
 Debugging log of Inform 7
+<<<<<<< HEAD
 Inform called as: C:\Users\tgasc_000\Desktop\Inform 7\Compilers\ni -internal C:\Users\tgasc_000\Desktop\Inform 7\Internal -project C:\Users\tgasc_000\Documents\GitHub\Scrum-2017v3\On the Lookout\On the Lookout.inform -format=ulx
+=======
+Inform called as: C:\Program Files (x86)\Inform 7\Compilers\ni -internal C:\Program Files (x86)\Inform 7\Internal -project D:\Documents\Scrum-2017v3\On the Lookout\On the Lookout.inform -format=ulx
+>>>>>>> 95192c0f580123996336e37137ad32743207724b
 Found language bundle 'English' (built in)
 Found language bundle 'French' (built in)
 Found language bundle 'German' (built in)
 Found language bundle 'Italian' (built in)
 Found language bundle 'Spanish' (built in)
 Found language bundle 'Swedish' (built in)
+<<<<<<< HEAD
 Reading language definition from <C:\Users\tgasc_000\Desktop\Inform 7\Internal\Languages\English\Syntax.preform>
+=======
+Reading language definition from <C:\Program Files (x86)\Inform 7\Internal\Languages\English\Syntax.preform>
+>>>>>>> 95192c0f580123996336e37137ad32743207724b
 720 declarations read (14183 words)
 
 
@@ -14,7 +22,11 @@ Reading language definition from <C:\Users\tgasc_000\Desktop\Inform 7\Internal\L
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
+<<<<<<< HEAD
 I've now read your source text, which is 22151 words long.
+=======
+I've now read your source text, which is 21168 words long.
+>>>>>>> 95192c0f580123996336e37137ad32743207724b
 
 
 -----------------------------------------------------
@@ -24,6 +36,13 @@ Phase II ... Semantic analysis Ia
 I've also read Standard Rules by Graham Nelson, which is 42655 words long.
 I've also read English Language by Graham Nelson, which is 2297 words long.
 I've also read Basic Screen Effects by Emily Short, which is 2218 words long.
+<<<<<<< HEAD
+=======
+I've also read Simple Graphical Window by Emily Short, which is 1935 words long.
+I've also read Location Images by Emily Short, which is 237 words long.
+I've also read Glulx Entry Points by Emily Short, which is 2682 words long.
+I've also read Glulx Text Effects by Emily Short, which is 2182 words long.
+>>>>>>> 95192c0f580123996336e37137ad32743207724b
 
 
 -----------------------------------------------------
@@ -78,6 +97,7 @@ Phase VII ... First pass through assertions
      == region
     Regional: CONSTANT_VNT'jungle_gaisetto'-region()(I113'jungle_gaisetto')
      == region
+<<<<<<< HEAD
     Regional: CONSTANT_VNT'the formizer_village'-region()(I137'formizer_village')
      == region
     Regional: CONSTANT_VNT'formizer_village'-region()(I137'formizer_village')
@@ -91,6 +111,23 @@ Phase VII ... First pass through assertions
     Regional: CONSTANT_VNT'formizer_village'-region()(I137'formizer_village')
      == region
     Regional: CONSTANT_VNT'formizer_village'-region()(I137'formizer_village')
+=======
+    Regional: CONSTANT_VNT'the formizer_village'-region()(I131'formizer_village')
+     == region
+    Regional: CONSTANT_VNT'formizer_village'-region()(I131'formizer_village')
+     == region
+    Regional: CONSTANT_VNT'formizer_village'-region()(I131'formizer_village')
+     == region
+    Regional: CONSTANT_VNT'formizer_village'-region()(I131'formizer_village')
+     == region
+    Regional: CONSTANT_VNT'formizer_village'-region()(I131'formizer_village')
+     == region
+    Regional: CONSTANT_VNT'formizer_village'-region()(I131'formizer_village')
+     == region
+    Regional: CONSTANT_VNT'formizer_village'-region()(I131'formizer_village')
+     == region
+    Regional: CONSTANT_VNT'formizer_village'-region()(I131'formizer_village')
+>>>>>>> 95192c0f580123996336e37137ad32743207724b
      == region
 
 
@@ -243,8 +280,13 @@ Providing for a total heap of 8192, given requirement of 8192
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
+<<<<<<< HEAD
 Total of 112 files written as streams.
 CPU time: 1103 centiseconds
+=======
+Total of 115 files written as streams.
+CPU time: 267 centiseconds
+>>>>>>> 95192c0f580123996336e37137ad32743207724b
 
 
 That concludes the debugging log from this run of Inform.
